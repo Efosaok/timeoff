@@ -1,0 +1,14 @@
+{{# with leave ~}}
+  {{~# if this.get_leave_type_name ~}}{{~ this.get_leave_type_name }} {{/if~}}
+  from {{# with this.get_start_leave_day ~}}
+    {{~ as_date this.date ~}}
+    {{~# if this.is_morning_leave}} (AM 1/2 Day){{/if~}}
+    {{~# if this.is_quarter_leave}} (Quarter Day){{/if~}}
+    {{~# if this.is_afternoon_leave}} (PM 1/2 Day){{/if~}}
+  {{~/with}} to {{# with this.get_end_leave_day ~}}
+    {{~ as_date this.date ~}}
+    {{~# if this.is_morning_leave}} (AM 1/2 Day){{/if~}}
+    {{~# if this.is_quarter_leave}} (Quarter Day){{/if~}}
+    {{~# if this.is_afternoon_leave}} (PM 1/2 Day){{/if~}}
+  {{~/with~}}
+{{~/with~}}

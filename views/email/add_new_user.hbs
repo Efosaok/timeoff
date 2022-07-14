@@ -1,0 +1,15 @@
+New Rocco's Collision PTO account for {{#with new_user }}{{this.full_name}}{{/with}}
+=====
+<p>Hello <strong>{{new_user.name}}</strong>,</p>
+
+<p>We just registered a new account for you as an employee of <strong>{{company.name}}</strong>.</p>
+
+<p>Follow the link below to set a password:
+
+{{# with new_user ~}}
+{{> email/link href=(concatenate (get_application_domain) '/reset-password/?t=' (this.get_reset_password_token)) text='Set new password'}}
+{{/ with }}
+
+</p>
+
+<p>Thanks</p>

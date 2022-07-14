@@ -1,0 +1,27 @@
+{
+  "number_of_future_months_in_team_view_feed" : 7,
+  "number_of_past_months_in_team_view_feed" : 3,
+  "allow_create_new_accounts" : false,
+  "send_emails"              : true,
+  "application_sender_email" : " Rocco's Collision PTO <pto@roccosnetwork.com>",
+  "email_transporter" : {
+    "host" : "mail.smtp2go.com",
+    "port" : 80,
+    "auth" : {
+      "user" : "roccospto",
+      "pass" : "6Dxp2x0x1Dlu5Pjr"
+    }
+  },
+  "sessionStore": {
+    "useRedis": false,
+    "redisConnectionConfiguration": {
+      "host": "localhost",
+      "port": 6379
+    }
+  },
+  "ga_analytics_on" : false,
+  "crypto_secret" : "!2~`HswpPPLa22+=±§sdq qwe,appp qwwokDF_",
+  "application_domain" : "https://pto.roccosnetwork.com",
+  "promotion_website_domain" : "https://pto.roccosnetwork.com",
+  "locale_code_for_sorting": "en"
+}

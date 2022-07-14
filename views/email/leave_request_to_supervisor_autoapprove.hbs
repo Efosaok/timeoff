@@ -1,0 +1,11 @@
+New PTO was added and auto approved.
+=====
+<p>Hello <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>,</p>
+
+<p><strong>{{#with requester}}{{this.full_name}}{{/with}}</strong> added new PTO <strong>{{>leave_request_detail leave=leave }}</strong>.</p>
+
+{{> email/leave_comments comments=comments }}
+
+<p>There is no need to approve/reject PTO from {{#with requester}}{{this.full_name}}{{/with}}.</p>
+
+<p>Thanks</p>
