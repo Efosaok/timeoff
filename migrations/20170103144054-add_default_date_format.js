@@ -5,9 +5,9 @@ module.exports = {
 
     queryInterface.describeTable('Companies').then(function(attributes){
 
-      if (attributes.hasOwnProperty('date_format')) {
-        return 1;
-      }
+      // if (attributes.hasOwnProperty('date_format')) {
+      //   return 1;
+      // }
 
       return queryInterface.addColumn(
         'Companies',

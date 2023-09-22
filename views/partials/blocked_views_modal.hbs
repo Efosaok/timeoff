@@ -1,0 +1,47 @@
+<div class="modal fade" id="blocked_views_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Create Blocked View</h4>
+        </div>
+
+        <div class="modal-body">
+            <div class="form-group">
+              <label for="leave_type" class="control-label">Department</label>
+              <select class="form-control" id="mod_leave_type" name="leave_type">
+                <option>BODY</option>
+                <option>CORP</option>
+                <option>DET</option>
+                <option>EST</option>
+                <option>FOM</option>
+                <option>GLASS</option>
+                <option>IT</option>
+                <option>MAINTT</option>
+                <option>MATT</option>
+                <option>PAINT</option>
+                <option>PARTS</option>
+                <option>TEST</option>
+                <option>TOW</option>
+                <option>ZZ</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="leave_type" class="control-label">Date</label>
+              <input type="date" class="form-control book-leave-from-input" id="from" data-provide="datepicker">
+            </div>
+            <br>
+            <br>
+              <label for="rejection_reason" class="control-label">Reason:</label>
+              <textarea class="form-control" id="rejecter_reason" name="rejection_reason"></textarea>
+            <br>
+            <input type="submit" class="btn btn-primary single-click" value="Add" id="reject_leave_btn">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

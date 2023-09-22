@@ -1,0 +1,38 @@
+{
+  "company": {
+    "ldap_auth_config": null,
+    "id": 1,
+    "name": "Rocco's Collision Center",
+    "country": "US",
+    "start_of_new_year": 1,
+    "share_all_absences": false,
+    "is_team_view_hidden": true,
+    "ldap_auth_enabled": false,
+    "date_format": "MM/DD/YY",
+    "company_wide_message": null,
+    "mode": 1,
+    "timezone": "America/New_York",
+    "integration_api_enabled": true,
+    "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+    "carry_over": 1000,
+    "createdAt": "2022-03-08T17:44:45.875Z",
+    "updatedAt": "2022-04-01T21:33:36.412Z"
+  },
+  "ldap_config": null,
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

@@ -20,13 +20,12 @@
           </div>
           {{/if_equal}}
 
-{{#if logged_user.admin}}
+
+          {{# if_equal logged_user.supervised_users.length 1 }}
           <div class="form-group">
             <label for="leave_type" class="control-label">Leave type:</label>
             <select class="form-control" id="leave_type" name="leave_type">
-            {{#each logged_user.company.leave_types }}
-              <option value={{this.id}} data-tom="{{this.name}}" data-tom-index={{@index}}>{{this.name}}</option>
-            {{/each}}
+             <option value=1 data-tom="PAID" data-tom-index=0>PAID</option>
             </select>
           </div>
 {{else}}
@@ -34,14 +33,11 @@
             <label for="leave_type" class="control-label">Leave type:</label>
             <select class="form-control" id="leave_type" name="leave_type">
             {{#each logged_user.company.leave_types }}
-		{{#if_equal this.id 3}}
-		{{else}}		
               <option value={{this.id}} data-tom="{{this.name}}" data-tom-index={{@index}}>{{this.name}}</option>
-	        {{/if_equal}}
             {{/each}}
             </select>
           </div>
-{{/if}}
+{{/if_equal}}
 
 <div class="form-group">
 <label for="comment" class="control-label">Please choose from All Day (100%), Quarter (25%), or Morning/Afternoon (50%).  If choosing quarter, please specify the time you will be out in the reason.</label></div>
@@ -86,6 +82,20 @@
           </div>
 
           <div class="form-group">
+            <label for="time" class="control-label">Time(in increments)</label>
+            <select class="form-control" id="time-increments" name="time">
+              <option>30 minutes</option>
+              <option>1 hour</option>
+              <option>1 hr 30 minutes</option>
+              <option>2 hours</option>
+              <option>2 hours 30 minutes</option>
+              <option>3 hours</option>
+              <option>3 hours 30 minutes</option>
+              <option>4 hours</option>
+            </select>
+          </div>
+
+          <div class="form-group">
             <label for="leave_type" class="control-label">Reason (required):</label>
             <textarea class="form-control" id="leave_reason" name="reason"></textarea>
           </div>
@@ -106,5 +116,3 @@
     </div>
   </div>
 </div>
-
-

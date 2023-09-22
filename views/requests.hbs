@@ -1,5 +1,5 @@
-
 {{> header }}
+{{> handle_request_modal }}
 
 <h1>{{logged_user.name}} {{logged_user.lastname}} messages</h1>
 
@@ -22,9 +22,8 @@
       <thead>
         <tr>
           <th>Employee</th>
-          <th>Department</th>
           <th>Date of request</th>
-          <th>Leave dates</th>
+          <th>Leave summary</th>
           <th>Type</th>
           <th>Days</th>
           <th class="col-xs-2">Comment</th>
@@ -37,24 +36,36 @@
           <td>{{#with this.user}}{{this.full_name}}
             <i class="fa fa-question-circle user-details-summary-trigger" data-user-id="{{this.id}}"></i>{{/with}}
           </td>
-          <td>{{this.user.department.name}}</td>
           <td class="date_of_request">{{as_date_from_timestamp this.createdAt}}</td>
-          <td data-tom-leave-dates="1"><a class="leave-details-summary-trigger" data-leave-id="{{this.id}}" href="#">{{> leave_dates leave=this}}</a></td>
+          <td data-tom-leave-dates="1">
+            {{!-- <a class="leave-details-summary-trigger" data-leave-id="{{this.id}}" href="#">{{> leave_dates leave=this}}</a> --}}
+            <div class="leave-summary" id="{{this.id}}"></div>
+            <div>
+              <strong>Available</strong> 16.25 (16.25 days accrued) out of 16.5
+            </div>
+          </td>
           <td>{{#if this.is_pended_revoke_leave}}REVOKE {{/if}}{{this.leave_type.name}}</td>
           <td data-vpp="days_used">{{ this.get_deducted_days_number }}</td>
           <td>{{this.comment.comment}}</td>
           <td>
             <form action="/requests/reject/" method="POST">
-            <input class="btn btn-warning single-click" type="submit" value="Reject">
-            <input type="hidden" value="{{this.id}}" name="request">
+              <input class="btn btn-warning single-click" type="submit" value="Reject">
+              <input type="hidden" value="{{this.id}}" name="request">
             </form>
           </td>
+          
           <td>
             <form action="/requests/approve/" method="POST">
-            <input class="btn btn-success single-click" type="submit" value="Approve">
-            <input type="hidden" value="{{this.id}}" name="request">
+              <input class="btn btn-success single-click" type="submit" value="Approve">
+              <input type="hidden" value="{{this.id}}" name="request">
             </form>
           </td>
+          {{!-- <td>
+            <div class="form-group">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#handle_request_modal"
+                id="book_time_off_btn">Handle Request</button>
+            </div>
+          </td> --}}
         </tr>
         {{/each}}
       </tbody>

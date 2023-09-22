@@ -1,0 +1,5197 @@
+{
+  "employee": {
+    "start_date": "2021-08-18",
+    "end_date": null,
+    "id": 53,
+    "email": "jabbott@roccoscollision.com",
+    "password": "6460655002fb4e87d14a01c2d2d092b8",
+    "name": "Josephine",
+    "lastname": "Abbott",
+    "activated": true,
+    "admin": false,
+    "auto_approve": false,
+    "createdAt": "2022-05-16T17:16:34.654Z",
+    "updatedAt": "2022-07-25T21:11:56.523Z",
+    "companyId": 1,
+    "DepartmentId": 12,
+    "my_leaves": [
+      {
+        "id": 922,
+        "status": 3,
+        "employee_comment": "SIG.OTHER GETTING EPIDURAL IN BACK/DR'S APPT, CANT DRIVE. UNPAID DAY OFF.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-01-04T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-01-04T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-01-02T13:39:25.565Z",
+        "updatedAt": "2023-01-04T12:44:11.311Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 4,
+        "leave_type": {
+          "id": 4,
+          "name": "PAID NO DEDUCT",
+          "color": "leave_type_color_1",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2023-01-01T23:45:25.666Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 928,
+        "status": 2,
+        "employee_comment": "Unpaid",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-01-04T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-01-04T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-01-04T12:44:41.123Z",
+        "updatedAt": "2023-01-04T12:44:43.587Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 985,
+        "status": 3,
+        "employee_comment": "CRUISE",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-15T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-23T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-01-13T20:02:27.521Z",
+        "updatedAt": "2023-04-07T13:59:39.593Z",
+        "userId": 53,
+        "approverId": 100,
+        "leaveTypeId": 1,
+        "leave_type": {
+          "id": 1,
+          "name": "PAID",
+          "color": "leave_type_color_1",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 1,
+          "createdAt": "2022-03-08T17:44:45.986Z",
+          "updatedAt": "2023-08-02T14:37:41.958Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1167,
+        "status": 2,
+        "employee_comment": "Called out sick.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-03-15T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-03-15T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-03-20T14:15:26.731Z",
+        "updatedAt": "2023-03-20T16:58:23.450Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1213,
+        "status": 3,
+        "employee_comment": "TOOTH EXTRACTION, WILL BE HAVING ANESTHESIA ADMINISTERED :( UNPAID PLEASE.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-01T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-01T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-04-05T16:27:31.516Z",
+        "updatedAt": "2023-04-06T14:07:26.785Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 4,
+        "leave_type": {
+          "id": 4,
+          "name": "PAID NO DEDUCT",
+          "color": "leave_type_color_1",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2023-01-01T23:45:25.666Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1218,
+        "status": 2,
+        "employee_comment": "UNPAID",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-01T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-01T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-04-06T14:07:54.585Z",
+        "updatedAt": "2023-04-06T14:07:59.183Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1223,
+        "status": 3,
+        "employee_comment": "CRUISE, DIDNT REALIZE WE WERE HEADING UP THAT FRIDAY",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-12T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-12T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-04-07T13:30:29.193Z",
+        "updatedAt": "2023-04-07T13:55:21.348Z",
+        "userId": 53,
+        "approverId": 100,
+        "leaveTypeId": 4,
+        "leave_type": {
+          "id": 4,
+          "name": "PAID NO DEDUCT",
+          "color": "leave_type_color_1",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2023-01-01T23:45:25.666Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1224,
+        "status": 2,
+        "employee_comment": "Leaving for cruise a day earlier.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-12T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-12T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-04-07T14:00:37.378Z",
+        "updatedAt": "2023-04-13T11:12:52.068Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1225,
+        "status": 2,
+        "employee_comment": "Taking a cruise.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-15T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-22T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-04-07T14:01:22.374Z",
+        "updatedAt": "2023-04-14T01:02:47.597Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 1,
+        "leave_type": {
+          "id": 1,
+          "name": "PAID",
+          "color": "leave_type_color_1",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 1,
+          "createdAt": "2022-03-08T17:44:45.986Z",
+          "updatedAt": "2023-08-02T14:37:41.958Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1340,
+        "status": 2,
+        "employee_comment": "Called out 5/2/23.  Still having issues with pulled tooth.",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-02T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-02T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-05-11T19:03:37.976Z",
+        "updatedAt": "2023-05-12T11:45:06.609Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": 1343,
+        "status": 2,
+        "employee_comment": "Called out 5/5/23.  Was not feeling well..",
+        "approver_comment": null,
+        "rejecter_comment": null,
+        "general_comments": null,
+        "mod_leave_type": null,
+        "decided_at": null,
+        "date_start": "2023-05-05T00:00:00.000Z",
+        "day_part_start": 1,
+        "date_end": "2023-05-05T00:00:00.000Z",
+        "day_part_end": 1,
+        "createdAt": "2023-05-11T19:17:10.695Z",
+        "updatedAt": "2023-05-12T11:45:36.993Z",
+        "userId": 53,
+        "approverId": 41,
+        "leaveTypeId": 3,
+        "leave_type": {
+          "id": 3,
+          "name": "UNPAID",
+          "color": "leave_type_color_3",
+          "use_allowance": true,
+          "limit": 0,
+          "sort_order": 0,
+          "createdAt": "2022-05-26T17:19:51.000Z",
+          "updatedAt": "2023-08-02T14:37:41.959Z",
+          "companyId": 1
+        },
+        "user": {
+          "start_date": "2021-08-18",
+          "end_date": null,
+          "id": 53,
+          "email": "jabbott@roccoscollision.com",
+          "password": "6460655002fb4e87d14a01c2d2d092b8",
+          "name": "Josephine",
+          "lastname": "Abbott",
+          "activated": true,
+          "admin": false,
+          "auto_approve": false,
+          "createdAt": "2022-05-16T17:16:34.654Z",
+          "updatedAt": "2022-07-25T21:11:56.523Z",
+          "companyId": 1,
+          "DepartmentId": 12,
+          "company": {
+            "ldap_auth_config": null,
+            "id": 1,
+            "name": "Rocco's Collision Center",
+            "country": "US",
+            "start_of_new_year": 1,
+            "share_all_absences": false,
+            "is_team_view_hidden": true,
+            "ldap_auth_enabled": false,
+            "date_format": "MM/DD/YY",
+            "company_wide_message": null,
+            "mode": 1,
+            "timezone": "America/New_York",
+            "integration_api_enabled": true,
+            "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+            "carry_over": 1000,
+            "createdAt": "2022-03-08T17:44:45.875Z",
+            "updatedAt": "2022-04-01T21:33:36.412Z",
+            "bank_holidays": [
+              {
+                "id": 1,
+                "name": "Martin Luther King Day",
+                "date": "2019-01-21T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 2,
+                "name": "Washington’s Birthday",
+                "date": "2019-02-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.714Z",
+                "companyId": 1
+              },
+              {
+                "id": 3,
+                "name": "Memorial Day",
+                "date": "2019-05-27T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 4,
+                "name": "Independence Day",
+                "date": "2019-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 5,
+                "name": "Labor Day",
+                "date": "2019-09-02T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.715Z",
+                "companyId": 1
+              },
+              {
+                "id": 6,
+                "name": "Columbus Day",
+                "date": "2019-10-14T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 7,
+                "name": "Veterans Day",
+                "date": "2019-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 8,
+                "name": "Thanksgiving Day",
+                "date": "2019-11-28T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.716Z",
+                "companyId": 1
+              },
+              {
+                "id": 9,
+                "name": "Christmas Day",
+                "date": "2019-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 10,
+                "name": "New Year's Day",
+                "date": "2020-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 11,
+                "name": "Martin Luther King Day",
+                "date": "2020-01-20T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.717Z",
+                "companyId": 1
+              },
+              {
+                "id": 12,
+                "name": "Washington’s Birthday",
+                "date": "2020-02-17T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 13,
+                "name": "Memorial Day",
+                "date": "2020-05-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 14,
+                "name": "Independence Day (substitute day)",
+                "date": "2020-07-03T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 15,
+                "name": "Independence Day",
+                "date": "2020-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.718Z",
+                "companyId": 1
+              },
+              {
+                "id": 16,
+                "name": "Labor Day",
+                "date": "2020-09-07T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 17,
+                "name": "Columbus Day",
+                "date": "2020-10-12T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 18,
+                "name": "Veterans Day",
+                "date": "2020-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.719Z",
+                "companyId": 1
+              },
+              {
+                "id": 19,
+                "name": "Thanksgiving Day",
+                "date": "2020-11-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 20,
+                "name": "Christmas Day",
+                "date": "2020-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 21,
+                "name": "New Year's Day",
+                "date": "2021-01-01T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.720Z",
+                "companyId": 1
+              },
+              {
+                "id": 22,
+                "name": "Martin Luther King Day",
+                "date": "2021-01-18T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 23,
+                "name": "Washington’s Birthday",
+                "date": "2021-02-15T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 24,
+                "name": "Memorial Day",
+                "date": "2021-05-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.721Z",
+                "companyId": 1
+              },
+              {
+                "id": 25,
+                "name": "Independence Day",
+                "date": "2021-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 26,
+                "name": "Independence Day (substitute day)",
+                "date": "2021-07-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 27,
+                "name": "Labor Day",
+                "date": "2021-09-06T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 28,
+                "name": "Columbus Day",
+                "date": "2021-10-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.722Z",
+                "companyId": 1
+              },
+              {
+                "id": 29,
+                "name": "Veterans Day",
+                "date": "2021-11-11T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 30,
+                "name": "Thanksgiving Day",
+                "date": "2021-11-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 31,
+                "name": "Christmas Day (substitute day)",
+                "date": "2021-12-24T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.723Z",
+                "companyId": 1
+              },
+              {
+                "id": 32,
+                "name": "Christmas Day",
+                "date": "2021-12-25T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 33,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.724Z",
+                "companyId": 1
+              },
+              {
+                "id": 34,
+                "name": "New Year's Day (substitute day)",
+                "date": "2021-12-31T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.027Z",
+                "companyId": 1
+              },
+              {
+                "id": 35,
+                "name": "Memorial Day",
+                "date": "2022-05-30T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 36,
+                "name": "Independence Day",
+                "date": "2022-07-04T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.725Z",
+                "companyId": 1
+              },
+              {
+                "id": 37,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.726Z",
+                "companyId": 1
+              },
+              {
+                "id": 38,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-05-12T23:46:32.028Z",
+                "companyId": 1
+              },
+              {
+                "id": 39,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:42.439Z",
+                "companyId": 1
+              },
+              {
+                "id": 40,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-11T20:24:18.260Z",
+                "companyId": 1
+              },
+              {
+                "id": 41,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:21.363Z",
+                "companyId": 1
+              },
+              {
+                "id": 42,
+                "name": "Labor Day",
+                "date": "2022-09-05T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-04-07T12:41:03.249Z",
+                "companyId": 1
+              },
+              {
+                "id": 43,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-03-08T17:44:45.981Z",
+                "updatedAt": "2023-06-28T15:34:05.728Z",
+                "companyId": 1
+              },
+              {
+                "id": 48,
+                "name": "Christmas Day",
+                "date": "2023-12-25T00:00:00.000Z",
+                "createdAt": "2022-04-08T10:55:52.317Z",
+                "updatedAt": "2023-05-12T23:46:32.029Z",
+                "companyId": 1
+              },
+              {
+                "id": 49,
+                "name": "Christmas Day",
+                "date": "2022-12-26T00:00:00.000Z",
+                "createdAt": "2022-12-15T15:03:42.559Z",
+                "updatedAt": "2022-12-15T15:03:42.559Z",
+                "companyId": 1
+              },
+              {
+                "id": 50,
+                "name": "Labor Day",
+                "date": "2023-09-04T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:03.231Z",
+                "updatedAt": "2023-04-07T12:41:37.998Z",
+                "companyId": 1
+              },
+              {
+                "id": 51,
+                "name": "Memorial Day",
+                "date": "2023-05-29T00:00:00.000Z",
+                "createdAt": "2023-04-07T12:41:21.351Z",
+                "updatedAt": "2023-04-07T12:41:21.351Z",
+                "companyId": 1
+              },
+              {
+                "id": 53,
+                "name": "Thanksgiving",
+                "date": "2023-11-23T00:00:00.000Z",
+                "createdAt": "2023-04-11T20:24:42.427Z",
+                "updatedAt": "2023-04-11T20:24:42.427Z",
+                "companyId": 1
+              },
+              {
+                "id": 54,
+                "name": "July 4th",
+                "date": "2023-07-04T00:00:00.000Z",
+                "createdAt": "2023-05-12T23:46:32.015Z",
+                "updatedAt": "2023-05-12T23:46:32.015Z",
+                "companyId": 1
+              },
+              {
+                "id": 55,
+                "name": "July 3rd",
+                "date": "2023-07-03T00:00:00.000Z",
+                "createdAt": "2023-06-28T15:34:05.713Z",
+                "updatedAt": "2023-06-28T15:34:05.713Z",
+                "companyId": 1
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "department": {
+      "id": 12,
+      "name": "FOM_2W",
+      "allowance": 10,
+      "include_public_holidays": true,
+      "is_accrued_allowance": true,
+      "createdAt": "2022-03-08T17:44:45.979Z",
+      "updatedAt": "2022-05-25T20:11:31.329Z",
+      "companyId": 1,
+      "bossId": 41
+    }
+  },
+  "schedule": {
+    "monday": 1,
+    "tuesday": 1,
+    "wednesday": 1,
+    "thursday": 1,
+    "friday": 1,
+    "saturday": 2,
+    "sunday": 2,
+    "id": null,
+    "company_id": 1
+  },
+  "isUserSpecific": false,
+  "show_schedule_tab": true,
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

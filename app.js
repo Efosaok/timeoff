@@ -7,6 +7,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var moment       = require('moment');
 const createSessionMiddleware = require('./lib/middleware/withSession');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
+const cors = require('cors');
+const Handlebars = require('handlebars');
 
 var app = express();
 
@@ -16,6 +19,7 @@ var handlebars = require('express-handlebars')
     defaultLayout : 'main',
     extname       : '.hbs',
     helpers       : require('./lib/view/helpers')(),
+    handlebars: allowInsecurePrototypeAccess(Handlebars),
   });
 
 app.engine('.hbs', handlebars.engine);
@@ -33,8 +37,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
 // Setup authentication mechanism
 const passport = require('./lib/passport')();
 
@@ -44,7 +46,7 @@ app.use(createSessionMiddleware({
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+app.use(cors({ credentials: true, origin: 'http://localhost:3002' }));
 
 // Custom middlewares
 //
@@ -156,19 +158,6 @@ app.use(function(req, res, next) {
 
 // error handlers
 
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
     res.status(err.status || 500);
@@ -178,4 +167,16 @@ app.use(function(err, req, res, next) {
     });
 });
 
+// will print stacktrace
+//if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+//}
+
+// production error handler
 module.exports = app;

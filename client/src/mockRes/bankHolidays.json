@@ -1,0 +1,2501 @@
+{
+  "company": {
+    "ldap_auth_config": null,
+    "id": 1,
+    "name": "Rocco's Collision Center",
+    "country": "US",
+    "start_of_new_year": 1,
+    "share_all_absences": false,
+    "is_team_view_hidden": true,
+    "ldap_auth_enabled": false,
+    "date_format": "MM/DD/YY",
+    "company_wide_message": null,
+    "mode": 1,
+    "timezone": "America/New_York",
+    "integration_api_enabled": true,
+    "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+    "carry_over": 1000,
+    "createdAt": "2022-03-08T17:44:45.875Z",
+    "updatedAt": "2022-04-01T21:33:36.412Z",
+    "bank_holidays": [
+      {
+        "id": 1,
+        "name": "Martin Luther King Day",
+        "date": "2019-01-21T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.714Z",
+        "companyId": 1
+      },
+      {
+        "id": 2,
+        "name": "Washington’s Birthday",
+        "date": "2019-02-18T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.714Z",
+        "companyId": 1
+      },
+      {
+        "id": 3,
+        "name": "Memorial Day",
+        "date": "2019-05-27T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.715Z",
+        "companyId": 1
+      },
+      {
+        "id": 4,
+        "name": "Independence Day",
+        "date": "2019-07-04T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.715Z",
+        "companyId": 1
+      },
+      {
+        "id": 5,
+        "name": "Labor Day",
+        "date": "2019-09-02T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.715Z",
+        "companyId": 1
+      },
+      {
+        "id": 6,
+        "name": "Columbus Day",
+        "date": "2019-10-14T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.716Z",
+        "companyId": 1
+      },
+      {
+        "id": 7,
+        "name": "Veterans Day",
+        "date": "2019-11-11T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.716Z",
+        "companyId": 1
+      },
+      {
+        "id": 8,
+        "name": "Thanksgiving Day",
+        "date": "2019-11-28T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.716Z",
+        "companyId": 1
+      },
+      {
+        "id": 9,
+        "name": "Christmas Day",
+        "date": "2019-12-25T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.717Z",
+        "companyId": 1
+      },
+      {
+        "id": 10,
+        "name": "New Year's Day",
+        "date": "2020-01-01T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.717Z",
+        "companyId": 1
+      },
+      {
+        "id": 11,
+        "name": "Martin Luther King Day",
+        "date": "2020-01-20T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.717Z",
+        "companyId": 1
+      },
+      {
+        "id": 12,
+        "name": "Washington’s Birthday",
+        "date": "2020-02-17T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.718Z",
+        "companyId": 1
+      },
+      {
+        "id": 13,
+        "name": "Memorial Day",
+        "date": "2020-05-25T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.718Z",
+        "companyId": 1
+      },
+      {
+        "id": 14,
+        "name": "Independence Day (substitute day)",
+        "date": "2020-07-03T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.718Z",
+        "companyId": 1
+      },
+      {
+        "id": 15,
+        "name": "Independence Day",
+        "date": "2020-07-04T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.718Z",
+        "companyId": 1
+      },
+      {
+        "id": 16,
+        "name": "Labor Day",
+        "date": "2020-09-07T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.719Z",
+        "companyId": 1
+      },
+      {
+        "id": 17,
+        "name": "Columbus Day",
+        "date": "2020-10-12T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.719Z",
+        "companyId": 1
+      },
+      {
+        "id": 18,
+        "name": "Veterans Day",
+        "date": "2020-11-11T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.719Z",
+        "companyId": 1
+      },
+      {
+        "id": 19,
+        "name": "Thanksgiving Day",
+        "date": "2020-11-26T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.720Z",
+        "companyId": 1
+      },
+      {
+        "id": 20,
+        "name": "Christmas Day",
+        "date": "2020-12-25T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.720Z",
+        "companyId": 1
+      },
+      {
+        "id": 21,
+        "name": "New Year's Day",
+        "date": "2021-01-01T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.720Z",
+        "companyId": 1
+      },
+      {
+        "id": 22,
+        "name": "Martin Luther King Day",
+        "date": "2021-01-18T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.721Z",
+        "companyId": 1
+      },
+      {
+        "id": 23,
+        "name": "Washington’s Birthday",
+        "date": "2021-02-15T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.721Z",
+        "companyId": 1
+      },
+      {
+        "id": 24,
+        "name": "Memorial Day",
+        "date": "2021-05-31T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.721Z",
+        "companyId": 1
+      },
+      {
+        "id": 25,
+        "name": "Independence Day",
+        "date": "2021-07-04T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.722Z",
+        "companyId": 1
+      },
+      {
+        "id": 26,
+        "name": "Independence Day (substitute day)",
+        "date": "2021-07-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.722Z",
+        "companyId": 1
+      },
+      {
+        "id": 27,
+        "name": "Labor Day",
+        "date": "2021-09-06T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.722Z",
+        "companyId": 1
+      },
+      {
+        "id": 28,
+        "name": "Columbus Day",
+        "date": "2021-10-11T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.722Z",
+        "companyId": 1
+      },
+      {
+        "id": 29,
+        "name": "Veterans Day",
+        "date": "2021-11-11T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.723Z",
+        "companyId": 1
+      },
+      {
+        "id": 30,
+        "name": "Thanksgiving Day",
+        "date": "2021-11-25T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.723Z",
+        "companyId": 1
+      },
+      {
+        "id": 31,
+        "name": "Christmas Day (substitute day)",
+        "date": "2021-12-24T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.723Z",
+        "companyId": 1
+      },
+      {
+        "id": 32,
+        "name": "Christmas Day",
+        "date": "2021-12-25T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.724Z",
+        "companyId": 1
+      },
+      {
+        "id": 33,
+        "name": "New Year's Day (substitute day)",
+        "date": "2021-12-31T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.724Z",
+        "companyId": 1
+      },
+      {
+        "id": 34,
+        "name": "New Year's Day (substitute day)",
+        "date": "2021-12-31T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-05-12T23:46:32.027Z",
+        "companyId": 1
+      },
+      {
+        "id": 35,
+        "name": "Memorial Day",
+        "date": "2022-05-30T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.725Z",
+        "companyId": 1
+      },
+      {
+        "id": 36,
+        "name": "Independence Day",
+        "date": "2022-07-04T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.725Z",
+        "companyId": 1
+      },
+      {
+        "id": 37,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.726Z",
+        "companyId": 1
+      },
+      {
+        "id": 38,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-05-12T23:46:32.028Z",
+        "companyId": 1
+      },
+      {
+        "id": 39,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-04-11T20:24:42.439Z",
+        "companyId": 1
+      },
+      {
+        "id": 40,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-04-11T20:24:18.260Z",
+        "companyId": 1
+      },
+      {
+        "id": 41,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-04-07T12:41:21.363Z",
+        "companyId": 1
+      },
+      {
+        "id": 42,
+        "name": "Labor Day",
+        "date": "2022-09-05T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-04-07T12:41:03.249Z",
+        "companyId": 1
+      },
+      {
+        "id": 43,
+        "name": "Christmas Day",
+        "date": "2022-12-26T00:00:00.000Z",
+        "createdAt": "2022-03-08T17:44:45.981Z",
+        "updatedAt": "2023-06-28T15:34:05.728Z",
+        "companyId": 1
+      },
+      {
+        "id": 49,
+        "name": "Christmas Day",
+        "date": "2022-12-26T00:00:00.000Z",
+        "createdAt": "2022-12-15T15:03:42.559Z",
+        "updatedAt": "2022-12-15T15:03:42.559Z",
+        "companyId": 1
+      },
+      {
+        "id": 51,
+        "name": "Memorial Day",
+        "date": "2023-05-29T00:00:00.000Z",
+        "createdAt": "2023-04-07T12:41:21.351Z",
+        "updatedAt": "2023-04-07T12:41:21.351Z",
+        "companyId": 1
+      },
+      {
+        "id": 55,
+        "name": "July 3rd",
+        "date": "2023-07-03T00:00:00.000Z",
+        "createdAt": "2023-06-28T15:34:05.713Z",
+        "updatedAt": "2023-06-28T15:34:05.713Z",
+        "companyId": 1
+      },
+      {
+        "id": 54,
+        "name": "July 4th",
+        "date": "2023-07-04T00:00:00.000Z",
+        "createdAt": "2023-05-12T23:46:32.015Z",
+        "updatedAt": "2023-05-12T23:46:32.015Z",
+        "companyId": 1
+      },
+      {
+        "id": 50,
+        "name": "Labor Day",
+        "date": "2023-09-04T00:00:00.000Z",
+        "createdAt": "2023-04-07T12:41:03.231Z",
+        "updatedAt": "2023-04-07T12:41:37.998Z",
+        "companyId": 1
+      },
+      {
+        "id": 53,
+        "name": "Thanksgiving",
+        "date": "2023-11-23T00:00:00.000Z",
+        "createdAt": "2023-04-11T20:24:42.427Z",
+        "updatedAt": "2023-04-11T20:24:42.427Z",
+        "companyId": 1
+      },
+      {
+        "id": 48,
+        "name": "Christmas Day",
+        "date": "2023-12-25T00:00:00.000Z",
+        "createdAt": "2022-04-08T10:55:52.317Z",
+        "updatedAt": "2023-05-12T23:46:32.029Z",
+        "companyId": 1
+      }
+    ]
+  },
+  "calendar": [
+    {
+      "month": "January",
+      "moment": "2023-01-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 8,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 15,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 22,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 29,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "February",
+      "moment": "2023-02-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 5,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 12,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 19,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 26,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "March",
+      "moment": "2023-03-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 5,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 12,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 19,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 26,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "April",
+      "moment": "2023-04-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 2,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 9,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 16,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 23,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 30,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        []
+      ]
+    },
+    {
+      "month": "May",
+      "moment": "2023-05-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 7,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 14,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 21,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 28,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 29,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "Memorial Day"
+          },
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "June",
+      "moment": "2023-06-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 11,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 18,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 25,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "July",
+      "moment": "2023-07-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 2,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 3,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "July 3rd"
+          },
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "July 4th"
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 9,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 16,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 23,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 30,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "August",
+      "moment": "2023-08-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 6,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 13,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 20,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 27,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "September",
+      "moment": "2023-09-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 3,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "Labor Day"
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 10,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 17,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null,
+            "is_current_day": true
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 24,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "October",
+      "moment": "2023-10-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 8,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 15,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 22,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 23,
+            "leave_obj": null
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 29,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": 31,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "November",
+      "moment": "2023-11-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null
+          },
+          {
+            "val": 3,
+            "leave_obj": null
+          },
+          {
+            "val": 4,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 5,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null
+          },
+          {
+            "val": 10,
+            "leave_obj": null
+          },
+          {
+            "val": 11,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 12,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null
+          },
+          {
+            "val": 17,
+            "leave_obj": null
+          },
+          {
+            "val": 18,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 19,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "Thanksgiving"
+          },
+          {
+            "val": 24,
+            "leave_obj": null
+          },
+          {
+            "val": 25,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 26,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          }
+        ]
+      ]
+    },
+    {
+      "month": "December",
+      "moment": "2023-12-01T00:00:00.000Z",
+      "weeks": [
+        [
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": ""
+          },
+          {
+            "val": 1,
+            "leave_obj": null
+          },
+          {
+            "val": 2,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 3,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 4,
+            "leave_obj": null
+          },
+          {
+            "val": 5,
+            "leave_obj": null
+          },
+          {
+            "val": 6,
+            "leave_obj": null
+          },
+          {
+            "val": 7,
+            "leave_obj": null
+          },
+          {
+            "val": 8,
+            "leave_obj": null
+          },
+          {
+            "val": 9,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 10,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 11,
+            "leave_obj": null
+          },
+          {
+            "val": 12,
+            "leave_obj": null
+          },
+          {
+            "val": 13,
+            "leave_obj": null
+          },
+          {
+            "val": 14,
+            "leave_obj": null
+          },
+          {
+            "val": 15,
+            "leave_obj": null
+          },
+          {
+            "val": 16,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 17,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 18,
+            "leave_obj": null
+          },
+          {
+            "val": 19,
+            "leave_obj": null
+          },
+          {
+            "val": 20,
+            "leave_obj": null
+          },
+          {
+            "val": 21,
+            "leave_obj": null
+          },
+          {
+            "val": 22,
+            "leave_obj": null
+          },
+          {
+            "val": 23,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 24,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        [
+          {
+            "val": 25,
+            "leave_obj": null,
+            "is_bank_holiday": true,
+            "bank_holiday_name": "Christmas Day"
+          },
+          {
+            "val": 26,
+            "leave_obj": null
+          },
+          {
+            "val": 27,
+            "leave_obj": null
+          },
+          {
+            "val": 28,
+            "leave_obj": null
+          },
+          {
+            "val": 29,
+            "leave_obj": null
+          },
+          {
+            "val": 30,
+            "leave_obj": null,
+            "is_weekend": true
+          },
+          {
+            "val": 31,
+            "leave_obj": null,
+            "is_weekend": true
+          }
+        ],
+        []
+      ]
+    }
+  ],
+  "bankHolidays": [
+    {
+      "id": 51,
+      "name": "Memorial Day",
+      "date": "2023-05-29T00:00:00.000Z",
+      "createdAt": "2023-04-07T12:41:21.351Z",
+      "updatedAt": "2023-04-07T12:41:21.351Z",
+      "companyId": 1
+    },
+    {
+      "id": 55,
+      "name": "July 3rd",
+      "date": "2023-07-03T00:00:00.000Z",
+      "createdAt": "2023-06-28T15:34:05.713Z",
+      "updatedAt": "2023-06-28T15:34:05.713Z",
+      "companyId": 1
+    },
+    {
+      "id": 54,
+      "name": "July 4th",
+      "date": "2023-07-04T00:00:00.000Z",
+      "createdAt": "2023-05-12T23:46:32.015Z",
+      "updatedAt": "2023-05-12T23:46:32.015Z",
+      "companyId": 1
+    },
+    {
+      "id": 50,
+      "name": "Labor Day",
+      "date": "2023-09-04T00:00:00.000Z",
+      "createdAt": "2023-04-07T12:41:03.231Z",
+      "updatedAt": "2023-04-07T12:41:37.998Z",
+      "companyId": 1
+    },
+    {
+      "id": 53,
+      "name": "Thanksgiving",
+      "date": "2023-11-23T00:00:00.000Z",
+      "createdAt": "2023-04-11T20:24:42.427Z",
+      "updatedAt": "2023-04-11T20:24:42.427Z",
+      "companyId": 1
+    },
+    {
+      "id": 48,
+      "name": "Christmas Day",
+      "date": "2023-12-25T00:00:00.000Z",
+      "createdAt": "2022-04-08T10:55:52.317Z",
+      "updatedAt": "2023-05-12T23:46:32.029Z",
+      "companyId": 1
+    }
+  ],
+  "yearCurrent": 2023,
+  "yearPrev": 2022,
+  "yearNext": 2024,
+  "startDateOfYearCurrent": "2023-01-01T00:00:00.000Z",
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

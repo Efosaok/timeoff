@@ -1,0 +1,2930 @@
+{
+  "title": "Department details",
+  "department": {
+    "id": 12,
+    "name": "FOM_2W",
+    "allowance": 10,
+    "include_public_holidays": true,
+    "is_accrued_allowance": true,
+    "createdAt": "2022-03-08T17:44:45.979Z",
+    "updatedAt": "2022-05-25T20:11:31.329Z",
+    "companyId": 1,
+    "bossId": 41,
+    "supervisors": [
+      {
+        "start_date": "2057-01-01",
+        "end_date": null,
+        "id": 100,
+        "email": "ncipparone@roccoscollision.com",
+        "password": "2adc24a4567977d8e8e7a93475aa921e",
+        "name": "Normita",
+        "lastname": "Cipparone",
+        "activated": true,
+        "admin": true,
+        "auto_approve": true,
+        "createdAt": "2022-05-17T14:25:09.164Z",
+        "updatedAt": "2022-05-23T15:01:40.835Z",
+        "companyId": 1,
+        "DepartmentId": 8,
+        "DepartmentSupervisor": {
+          "created_at": "2022-05-17T14:26:24.512Z",
+          "department_id": 12,
+          "user_id": 100
+        }
+      }
+    ],
+    "boss": {
+      "start_date": "2012-08-16",
+      "end_date": null,
+      "id": 41,
+      "email": "jdidonato@roccoscollision.com",
+      "password": "c4d0e7cccb694d3a55c9f5b52c9d5a87",
+      "name": "Joseph",
+      "lastname": "DiDonato",
+      "activated": true,
+      "admin": true,
+      "auto_approve": false,
+      "createdAt": "2022-05-16T17:16:34.507Z",
+      "updatedAt": "2022-08-30T16:56:39.742Z",
+      "companyId": 1,
+      "DepartmentId": 11
+    },
+    "users": [
+      {
+        "start_date": "2021-07-12",
+        "end_date": null,
+        "id": 29,
+        "email": "tlanthier@roccoscollision.com",
+        "password": "0a5167ccca02399707e3010feef08cc2",
+        "name": "Taylor",
+        "lastname": "Lanthier",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.404Z",
+        "updatedAt": "2022-05-20T18:22:19.602Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2015-12-07",
+        "end_date": null,
+        "id": 40,
+        "email": "mdonofrio@roccoscollision.com",
+        "password": "07646aea9400497f3379670798816724",
+        "name": "Monique",
+        "lastname": "Donofrio",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.496Z",
+        "updatedAt": "2023-06-14T17:28:04.018Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2021-07-26",
+        "end_date": null,
+        "id": 45,
+        "email": "lcanzanese@roccoscollision.com",
+        "password": "4223659915ced36085ad6176a54e658b",
+        "name": "Lauren",
+        "lastname": "Canzanese",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.550Z",
+        "updatedAt": "2022-05-20T18:08:01.648Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2021-08-18",
+        "end_date": null,
+        "id": 53,
+        "email": "jabbott@roccoscollision.com",
+        "password": "6460655002fb4e87d14a01c2d2d092b8",
+        "name": "Josephine",
+        "lastname": "Abbott",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.654Z",
+        "updatedAt": "2022-07-25T21:11:56.523Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2021-09-13",
+        "end_date": null,
+        "id": 54,
+        "email": "zackromano57@gmail.com",
+        "password": "bf20cf97f7e8092d98fa2b45c5d0b673",
+        "name": "Zachary",
+        "lastname": "Romano",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.663Z",
+        "updatedAt": "2023-05-18T13:08:01.654Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2022-08-08",
+        "end_date": null,
+        "id": 128,
+        "email": "smacpherson@roccoscollision.com",
+        "password": "59db4c39055d1d2e7872d5f9c2cd5c31",
+        "name": "Sarah",
+        "lastname": "MacPherson",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-08T12:30:57.796Z",
+        "updatedAt": "2022-10-13T17:43:44.266Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2022-08-15",
+        "end_date": null,
+        "id": 135,
+        "email": "bcollins@roccoscollision.com",
+        "password": "f886dcf3e6f35fd15ae4fb08f8193302",
+        "name": "Brielle",
+        "lastname": "Collins",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-15T17:24:18.612Z",
+        "updatedAt": "2023-04-17T19:24:47.537Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-01-16",
+        "end_date": null,
+        "id": 149,
+        "email": "bcardone@roccoscollision.com",
+        "password": "a7bc57879a10acc4388c0cf08dca9648",
+        "name": "Brooke",
+        "lastname": "Cardone",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-01-16T15:44:08.764Z",
+        "updatedAt": "2023-03-13T17:27:28.713Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-02-06",
+        "end_date": null,
+        "id": 159,
+        "email": "talleychantelle54@gmail.com",
+        "password": "5cc23597f21b35bdcc72ff8771d3cdb7",
+        "name": "Chantelle",
+        "lastname": "Talley",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-02-21T20:26:02.425Z",
+        "updatedAt": "2023-06-14T17:36:40.139Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-03-20",
+        "end_date": null,
+        "id": 161,
+        "email": "jrosario@roccoscollision.com",
+        "password": "1f6aa5609b0c340e971c0c733eedc7a9",
+        "name": "Joannie",
+        "lastname": "Rosario",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-03-20T16:42:09.180Z",
+        "updatedAt": "2023-05-12T14:49:42.228Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-05-15",
+        "end_date": null,
+        "id": 168,
+        "email": "jdawejko@roccoscollision.com",
+        "password": "5c63fe84280e8fbd322c1835cad157d9",
+        "name": "Jamie",
+        "lastname": "Dawejko",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-15T13:49:31.142Z",
+        "updatedAt": "2023-06-14T17:27:02.301Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      }
+    ]
+  },
+  "company": {
+    "ldap_auth_config": null,
+    "id": 1,
+    "name": "Rocco's Collision Center",
+    "country": "US",
+    "start_of_new_year": 1,
+    "share_all_absences": false,
+    "is_team_view_hidden": true,
+    "ldap_auth_enabled": false,
+    "date_format": "MM/DD/YY",
+    "company_wide_message": null,
+    "mode": 1,
+    "timezone": "America/New_York",
+    "integration_api_enabled": true,
+    "integration_api_token": "275f09de-7239-42fc-a017-d0f40b8c9442",
+    "carry_over": 1000,
+    "createdAt": "2022-03-08T17:44:45.875Z",
+    "updatedAt": "2022-04-01T21:33:36.412Z",
+    "users": [
+      {
+        "start_date": "2021-08-18",
+        "end_date": null,
+        "id": 53,
+        "email": "jabbott@roccoscollision.com",
+        "password": "6460655002fb4e87d14a01c2d2d092b8",
+        "name": "Josephine",
+        "lastname": "Abbott",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.654Z",
+        "updatedAt": "2022-07-25T21:11:56.523Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-03-27",
+        "end_date": null,
+        "id": 162,
+        "email": "malvarado671@gmail.com",
+        "password": "e4d8b1a71f4d39d0fe5187955467fdef",
+        "name": "Milagros",
+        "lastname": "Alvarado",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-03-31T12:00:19.410Z",
+        "updatedAt": "2023-06-14T17:26:30.178Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2022-01-24",
+        "end_date": null,
+        "id": 52,
+        "email": "sarena@roccoscollision.com",
+        "password": "2789e1e2c0f9f4ee1696b1be37622f54",
+        "name": "Salvatore",
+        "lastname": "Arena",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.640Z",
+        "updatedAt": "2022-05-20T18:02:04.813Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2021-08-16",
+        "end_date": null,
+        "id": 61,
+        "email": "t.dot32@yahoo.com",
+        "password": "90972821e428c5d0d153d1438152b05b",
+        "name": "Terry",
+        "lastname": "Armour-Speller",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.734Z",
+        "updatedAt": "2023-06-15T10:30:23.704Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2020-09-08",
+        "end_date": null,
+        "id": 71,
+        "email": "gbacchues3@gmail.com",
+        "password": "3917fbfd04772b8db96de21ac3048204",
+        "name": "Gregory",
+        "lastname": "Bacchues",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.835Z",
+        "updatedAt": "2023-06-06T15:42:19.416Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2021-11-29",
+        "end_date": null,
+        "id": 50,
+        "email": "sbarr@roccoscollision.com",
+        "password": "9de30e53c0c3bbf5a290d97304e3fe02",
+        "name": "Scott",
+        "lastname": "Barr",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.611Z",
+        "updatedAt": "2023-03-20T12:15:33.304Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2019-08-23",
+        "end_date": null,
+        "id": 60,
+        "email": "beecham17@gmail.com",
+        "password": "a8efe1ebd248524e0c3c6b418249ffe5",
+        "name": "David",
+        "lastname": "Beecham",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.727Z",
+        "updatedAt": "2023-06-14T17:26:06.146Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2022-04-18",
+        "end_date": null,
+        "id": 101,
+        "email": "obryanbernard@icloud.com",
+        "password": "ede94b3375e7018631edbd20c37cef22",
+        "name": "O'Bryan W.",
+        "lastname": "Bernard",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-17T16:21:15.082Z",
+        "updatedAt": "2023-05-12T15:24:27.013Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2023-01-24",
+        "end_date": null,
+        "id": 152,
+        "email": "jbober228@gmail.com",
+        "password": "b87909178346d397652e7d2af4ffc13c",
+        "name": "Justin",
+        "lastname": "Bober",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-01-25T21:12:09.823Z",
+        "updatedAt": "2023-06-08T20:44:38.924Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2022-01-07",
+        "end_date": null,
+        "id": 85,
+        "email": "robertbobko69@gmail.com",
+        "password": "d2dd41ebe63546d5633a4368e6e9a46c",
+        "name": "Robert",
+        "lastname": "Bobko",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.107Z",
+        "updatedAt": "2022-08-15T00:47:31.265Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2021-11-29",
+        "end_date": null,
+        "id": 108,
+        "email": "greg.bobko@gmail.com",
+        "password": "c77a43a6ca809eca00d473fe91c43d55",
+        "name": "Grzegorz",
+        "lastname": "Bobko",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-19T01:57:53.009Z",
+        "updatedAt": "2022-11-07T15:17:54.968Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2020-09-02",
+        "end_date": null,
+        "id": 48,
+        "email": "jbobyn@roccoscollision.com",
+        "password": "3c625c6619c236cabe0a480f4b8c47a6",
+        "name": "Jose",
+        "lastname": "Bobyn",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.590Z",
+        "updatedAt": "2022-07-26T21:14:35.291Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-06-07",
+        "end_date": null,
+        "id": 92,
+        "email": "shaneboston780@yahoo.com",
+        "password": "f42c2530609b8018262e4ce3aee3d11d",
+        "name": "Shane",
+        "lastname": "Boston",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.197Z",
+        "updatedAt": "2022-06-06T12:08:52.733Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2023-01-30",
+        "end_date": null,
+        "id": 154,
+        "email": "domoniquebowe@gmail.com",
+        "password": "cebaecee4d2a63d80e827d703aa56abd",
+        "name": "Domonique",
+        "lastname": "Bowe",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-02-01T21:07:53.240Z",
+        "updatedAt": "2023-02-02T15:13:57.566Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2023-02-02",
+        "end_date": null,
+        "id": 155,
+        "email": "tbrydges@roccoscollision.com",
+        "password": "5244f7ee2ff5e4366ad8941ec83025dc",
+        "name": "Timothy",
+        "lastname": "Brydges",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-02-06T17:42:10.729Z",
+        "updatedAt": "2023-06-27T16:56:05.767Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2022-12-27",
+        "end_date": null,
+        "id": 145,
+        "email": "joselitocaraballo78@gmail.com",
+        "password": "c09977c650bc6b6ca3671799065320f9",
+        "name": "JOSELITO",
+        "lastname": "CARABALLO",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-12-27T20:53:09.610Z",
+        "updatedAt": "2023-05-13T09:54:23.728Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-01-17",
+        "end_date": null,
+        "id": 59,
+        "email": "campbell81691314@gmail.com",
+        "password": "12e933aeff79617cd6b5f63949105555",
+        "name": "Ian",
+        "lastname": "Campbell",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.707Z",
+        "updatedAt": "2023-01-10T17:29:37.383Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2021-07-26",
+        "end_date": null,
+        "id": 45,
+        "email": "lcanzanese@roccoscollision.com",
+        "password": "4223659915ced36085ad6176a54e658b",
+        "name": "Lauren",
+        "lastname": "Canzanese",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.550Z",
+        "updatedAt": "2022-05-20T18:08:01.648Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-01-16",
+        "end_date": null,
+        "id": 149,
+        "email": "bcardone@roccoscollision.com",
+        "password": "a7bc57879a10acc4388c0cf08dca9648",
+        "name": "Brooke",
+        "lastname": "Cardone",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-01-16T15:44:08.764Z",
+        "updatedAt": "2023-03-13T17:27:28.713Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2021-11-01",
+        "end_date": null,
+        "id": 70,
+        "email": "cstephen215@gmail.com",
+        "password": "ce150076258f4c86537f12cd3567a2d0",
+        "name": "Stephen",
+        "lastname": "Case",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.826Z",
+        "updatedAt": "2022-05-21T15:08:15.744Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2057-01-01",
+        "end_date": null,
+        "id": 100,
+        "email": "ncipparone@roccoscollision.com",
+        "password": "2adc24a4567977d8e8e7a93475aa921e",
+        "name": "Normita",
+        "lastname": "Cipparone",
+        "activated": true,
+        "admin": true,
+        "auto_approve": true,
+        "createdAt": "2022-05-17T14:25:09.164Z",
+        "updatedAt": "2022-05-23T15:01:40.835Z",
+        "companyId": 1,
+        "DepartmentId": 8
+      },
+      {
+        "start_date": "2057-01-01",
+        "end_date": null,
+        "id": 117,
+        "email": "acipparone@roccoscollision.com",
+        "password": "ca8ce8cebaf038372972d27aff3cda63",
+        "name": "Annamarie",
+        "lastname": "Cipparone",
+        "activated": false,
+        "admin": true,
+        "auto_approve": true,
+        "createdAt": "2022-05-19T02:13:33.830Z",
+        "updatedAt": "2022-05-20T18:10:19.316Z",
+        "companyId": 1,
+        "DepartmentId": 8
+      },
+      {
+        "start_date": "2057-01-01",
+        "end_date": null,
+        "id": 120,
+        "email": "markcipp@roccoscollision.com",
+        "password": "39e6ca59b064119dcc231a05f630b0d5",
+        "name": "Mark",
+        "lastname": "Cipparone Jr",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-31T16:25:15.116Z",
+        "updatedAt": "2023-05-22T22:27:17.181Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2022-08-15",
+        "end_date": null,
+        "id": 135,
+        "email": "bcollins@roccoscollision.com",
+        "password": "f886dcf3e6f35fd15ae4fb08f8193302",
+        "name": "Brielle",
+        "lastname": "Collins",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-15T17:24:18.612Z",
+        "updatedAt": "2023-04-17T19:24:47.537Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2011-08-15",
+        "end_date": null,
+        "id": 43,
+        "email": "jcordoves@roccoscollision.com",
+        "password": "5ebf5581cad973d56ab5f8afb327fcb1",
+        "name": "Jack",
+        "lastname": "Cordoves",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.530Z",
+        "updatedAt": "2023-05-18T21:56:37.139Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2021-03-15",
+        "end_date": null,
+        "id": 91,
+        "email": "alexis.cosme@yahoo.com",
+        "password": "add91cfb2c60ef6457ceecc457f3201b",
+        "name": "Alexis",
+        "lastname": "Cosme",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.184Z",
+        "updatedAt": "2023-07-06T19:49:59.028Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2021-12-07",
+        "end_date": null,
+        "id": 93,
+        "email": "christopher.cozzone@yahoo.com",
+        "password": "a01c6de225e301fc0fb4f05ae9d7ebc6",
+        "name": "Christopher",
+        "lastname": "Cozzone",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:44:01.086Z",
+        "updatedAt": "2022-06-10T18:22:54.522Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2022-05-17",
+        "end_date": null,
+        "id": 84,
+        "email": "joerell06@gmail.com",
+        "password": "696b72388d7ff1692bcbeeadac760caf",
+        "name": "Joseph",
+        "lastname": "Cuffee",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.107Z",
+        "updatedAt": "2023-05-08T23:19:14.303Z",
+        "companyId": 1,
+        "DepartmentId": 22
+      },
+      {
+        "start_date": "2023-05-15",
+        "end_date": null,
+        "id": 168,
+        "email": "jdawejko@roccoscollision.com",
+        "password": "5c63fe84280e8fbd322c1835cad157d9",
+        "name": "Jamie",
+        "lastname": "Dawejko",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-15T13:49:31.142Z",
+        "updatedAt": "2023-06-14T17:27:02.301Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2012-08-16",
+        "end_date": null,
+        "id": 41,
+        "email": "jdidonato@roccoscollision.com",
+        "password": "c4d0e7cccb694d3a55c9f5b52c9d5a87",
+        "name": "Joseph",
+        "lastname": "DiDonato",
+        "activated": true,
+        "admin": true,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.507Z",
+        "updatedAt": "2022-08-30T16:56:39.742Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2016-06-13",
+        "end_date": null,
+        "id": 58,
+        "email": "shitluck88@gmail.com",
+        "password": "491c2463f8fb7bdd23ca3001fde6030b",
+        "name": "Michael",
+        "lastname": "DiMatties",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.700Z",
+        "updatedAt": "2022-08-30T15:40:17.145Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2015-12-07",
+        "end_date": null,
+        "id": 40,
+        "email": "mdonofrio@roccoscollision.com",
+        "password": "07646aea9400497f3379670798816724",
+        "name": "Monique",
+        "lastname": "Donofrio",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.496Z",
+        "updatedAt": "2023-06-14T17:28:04.018Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2021-04-05",
+        "end_date": null,
+        "id": 39,
+        "email": "ddonovan@roccoscollision.com",
+        "password": "85f3c6b0e38c6f01b556638b149d3469",
+        "name": "William",
+        "lastname": "Donovan",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.487Z",
+        "updatedAt": "2022-08-08T20:16:52.349Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2021-07-29",
+        "end_date": null,
+        "id": 57,
+        "email": "snozzlenozzle@hotmail.com",
+        "password": "85af62a56aee6a6fb3c06ea4d84b36e5",
+        "name": "Timothy",
+        "lastname": "Dorrin",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.692Z",
+        "updatedAt": "2022-05-20T18:16:02.050Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-08-22",
+        "end_date": null,
+        "id": 137,
+        "email": "ddougherty@roccoscollision.com",
+        "password": "d5d01769a9abff432bb204c911485670",
+        "name": "Danielle",
+        "lastname": "Dougherty",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-23T20:28:44.947Z",
+        "updatedAt": "2022-09-02T18:19:19.170Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-11-29",
+        "end_date": null,
+        "id": 65,
+        "email": "dziedzickamil7@gmail.com",
+        "password": "649bd9201d45c3468c134649f9149d52",
+        "name": "Kamil",
+        "lastname": "Dziedzic",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.784Z",
+        "updatedAt": "2022-05-20T18:16:16.798Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2023-05-15",
+        "end_date": null,
+        "id": 167,
+        "email": "tedgar@roccoscollision.com",
+        "password": "f38b05bdd366bfb170b1faaca933eed7",
+        "name": "Tyler",
+        "lastname": "Edgar",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-15T12:52:55.939Z",
+        "updatedAt": "2023-07-07T18:46:48.133Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2023-01-30",
+        "end_date": null,
+        "id": 156,
+        "email": "jfeliciano@roccoscollision.com",
+        "password": "1a3157c6b41f1554a1b4e5e7a8cb1cb3",
+        "name": "Juan",
+        "lastname": "Feliciano",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-02-06T18:34:36.799Z",
+        "updatedAt": "2023-06-20T21:25:58.465Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2005-05-01",
+        "end_date": null,
+        "id": 94,
+        "email": "stevefioravanti49@gmail.com",
+        "password": "85b2dd12e5dd9ea11f37b66dcfd228a2",
+        "name": "Stephen",
+        "lastname": "Fioravanti",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:44:01.086Z",
+        "updatedAt": "2022-07-11T15:15:21.410Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2019-04-12",
+        "end_date": null,
+        "id": 107,
+        "email": "fitzgerald.francis00@yahoo.com",
+        "password": "bb2eca130eb956dfc060a4931e1e3484",
+        "name": "Francis",
+        "lastname": "Fitzgerald",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-19T01:57:53.009Z",
+        "updatedAt": "2022-05-21T05:28:10.408Z",
+        "companyId": 1,
+        "DepartmentId": 14
+      },
+      {
+        "start_date": "2020-12-09",
+        "end_date": null,
+        "id": 11,
+        "email": "bikerboyjr@hotmail.com",
+        "password": "29df80c80c19125f1653355ded570409",
+        "name": "Anthony",
+        "lastname": "Gable",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.200Z",
+        "updatedAt": "2023-04-18T14:42:44.121Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2019-02-18",
+        "end_date": null,
+        "id": 77,
+        "email": "billyg0715@yahoo.com",
+        "password": "1c8562182aed3472d6e27d571e7f5e9d",
+        "name": "William",
+        "lastname": "Gable",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.898Z",
+        "updatedAt": "2022-05-20T18:17:05.865Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-08-03",
+        "end_date": null,
+        "id": 133,
+        "email": "franksr123@hotmail.com",
+        "password": "f228861732089b4e5d1be691467387d7",
+        "name": "Frank",
+        "lastname": "Gallagher",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-09T12:54:50.927Z",
+        "updatedAt": "2022-08-09T21:59:00.295Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2021-12-08",
+        "end_date": null,
+        "id": 55,
+        "email": "cycumg@gmail.com",
+        "password": "3d6f9184d52a0fb937d3010be9b87660",
+        "name": "Maciej",
+        "lastname": "Gniecki",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.672Z",
+        "updatedAt": "2022-05-20T18:17:38.389Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2022-08-08",
+        "end_date": null,
+        "id": 129,
+        "email": "davegood1983@gmail.com",
+        "password": "c6ec0aa7c503b40f5a47efed79ae0840",
+        "name": "David",
+        "lastname": "Good",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-08T13:25:08.861Z",
+        "updatedAt": "2022-08-18T10:56:04.088Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2021-11-15",
+        "end_date": null,
+        "id": 38,
+        "email": "cgriffin@roccoscollision.com",
+        "password": "4389717ce9637e4f0083d0477e5d9147",
+        "name": "Caleb",
+        "lastname": "Griffin",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.479Z",
+        "updatedAt": "2022-07-25T21:14:26.694Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2023-04-13",
+        "end_date": null,
+        "id": 164,
+        "email": "cheilner@roccoscollision.com",
+        "password": "5ec8f495e110126282e63c8847a61922",
+        "name": "CHRISTOPHER",
+        "lastname": "HEILNER",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-04-14T15:48:04.089Z",
+        "updatedAt": "2023-07-12T13:57:43.679Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-09-15",
+        "end_date": null,
+        "id": 90,
+        "email": "steve_02bmw@yahoo.com",
+        "password": "942c60c754c79321228644685557854b",
+        "name": "Stephen",
+        "lastname": "Habicht",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.178Z",
+        "updatedAt": "2022-06-08T13:04:35.009Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2017-10-18",
+        "end_date": null,
+        "id": 37,
+        "email": "lharvey@roccoscollision.com",
+        "password": "c0e51a5df3f5dc4514353cc63719b32d",
+        "name": "Lauren",
+        "lastname": "Harvey",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.469Z",
+        "updatedAt": "2022-05-20T18:18:14.447Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2020-07-06",
+        "end_date": null,
+        "id": 36,
+        "email": "jhaynes@roccoscollision.com",
+        "password": "6184981a457f0b84ec16481c20f09309",
+        "name": "Jeffrey",
+        "lastname": "Haynes",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.462Z",
+        "updatedAt": "2023-01-02T20:31:14.101Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2021-09-13",
+        "end_date": null,
+        "id": 102,
+        "email": "manualteddy@hotmail.com",
+        "password": "87c69cb737a6eb9db39bf237e588e182",
+        "name": "Manual",
+        "lastname": "Henderson",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-17T16:21:15.082Z",
+        "updatedAt": "2022-06-14T15:53:00.774Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2021-02-15",
+        "end_date": null,
+        "id": 35,
+        "email": "dholloway@roccoscollision.com",
+        "password": "2aa0d2f3b912a5cae2535a8fd4ff46f6",
+        "name": "David",
+        "lastname": "Holloway",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.453Z",
+        "updatedAt": "2022-05-20T18:20:11.904Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2020-06-11",
+        "end_date": null,
+        "id": 34,
+        "email": "rhowanitz@roccoscollision.com",
+        "password": "4e488539e395604ec869efccf6554f9f",
+        "name": "Ryan",
+        "lastname": "Howanitz",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.447Z",
+        "updatedAt": "2023-06-01T20:46:17.099Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-08-09",
+        "end_date": null,
+        "id": 33,
+        "email": "kjames@roccoscollision.com",
+        "password": "2f43167c35a0c619523e9d7f4da0ae99",
+        "name": "Kenneth",
+        "lastname": "James",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.441Z",
+        "updatedAt": "2022-05-20T18:20:38.031Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-06-28",
+        "end_date": null,
+        "id": 163,
+        "email": "2159089923@tmomail.net",
+        "password": "c56b9bade19b885deaf2d1348297d76f",
+        "name": "Angelo",
+        "lastname": "Jistarri",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-04-06T11:57:10.345Z",
+        "updatedAt": "2023-04-06T11:59:40.638Z",
+        "companyId": 1,
+        "DepartmentId": 6
+      },
+      {
+        "start_date": "2014-09-25",
+        "end_date": null,
+        "id": 83,
+        "email": "hunter4122@yahoo.com",
+        "password": "0956b994b6866ddaf325bdd23257e4ba",
+        "name": "Jeremy",
+        "lastname": "Jones",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.961Z",
+        "updatedAt": "2023-05-15T19:09:37.332Z",
+        "companyId": 1,
+        "DepartmentId": 20
+      },
+      {
+        "start_date": "2022-08-08",
+        "end_date": null,
+        "id": 131,
+        "email": "andyjorge17@yahoo.com",
+        "password": "f2588a598eda09dd1de868d6864024f6",
+        "name": "Andy",
+        "lastname": "Jorge",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-08T16:04:34.303Z",
+        "updatedAt": "2023-03-28T16:55:11.756Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2019-08-23",
+        "end_date": null,
+        "id": 63,
+        "email": "mkochis43@comcast.net",
+        "password": "25e1d6980cc3c379154a61b6e7df531a",
+        "name": "Michael",
+        "lastname": "Kochis",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.765Z",
+        "updatedAt": "2023-05-15T21:51:37.388Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2023-03-06",
+        "end_date": null,
+        "id": 160,
+        "email": "aidenlarue@hotmail.com",
+        "password": "db0aab2c596c44cb4d1e6f41b3687e80",
+        "name": "Aiden",
+        "lastname": "LaRue",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-03-06T14:33:52.688Z",
+        "updatedAt": "2023-04-18T14:38:34.366Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2010-03-31",
+        "end_date": null,
+        "id": 31,
+        "email": "dlafferty@roccoscollision.com",
+        "password": "ab605599f8b486d5bf84af0170d94007",
+        "name": "Daniel",
+        "lastname": "Lafferty",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.418Z",
+        "updatedAt": "2022-08-03T19:01:26.932Z",
+        "companyId": 1,
+        "DepartmentId": 18
+      },
+      {
+        "start_date": "2020-08-03",
+        "end_date": null,
+        "id": 30,
+        "email": "mlancellotti@roccoscollision.com",
+        "password": "0a5167ccca02399707e3010feef08cc2",
+        "name": "Michael",
+        "lastname": "Lancellotti",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.410Z",
+        "updatedAt": "2022-05-20T18:22:07.518Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-07-12",
+        "end_date": null,
+        "id": 29,
+        "email": "tlanthier@roccoscollision.com",
+        "password": "0a5167ccca02399707e3010feef08cc2",
+        "name": "Taylor",
+        "lastname": "Lanthier",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.404Z",
+        "updatedAt": "2022-05-20T18:22:19.602Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2015-01-26",
+        "end_date": null,
+        "id": 89,
+        "email": "shanelarue1979@hotmail.com",
+        "password": "4532975127bb38014673b1207ca1309d",
+        "name": "Shane",
+        "lastname": "Larue",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.163Z",
+        "updatedAt": "2022-05-20T18:22:48.296Z",
+        "companyId": 1,
+        "DepartmentId": 20
+      },
+      {
+        "start_date": "2021-05-03",
+        "end_date": null,
+        "id": 98,
+        "email": "louie6m@aol.com",
+        "password": "2b0c29c4282c2347087e14e7c8b2e14a",
+        "name": "Louis",
+        "lastname": "Lattera",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:44:01.137Z",
+        "updatedAt": "2022-06-08T10:18:44.150Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2020-08-18",
+        "end_date": null,
+        "id": 82,
+        "email": "wledb219@yahoo.com",
+        "password": "77df891184e7de81c54f806e50fd9dca",
+        "name": "Wayne",
+        "lastname": "Ledbetter",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.957Z",
+        "updatedAt": "2023-06-14T17:31:53.909Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2011-02-21",
+        "end_date": null,
+        "id": 28,
+        "email": "mlisanti@roccoscollision.com",
+        "password": "64400bc97be22f13794c7392e9bb07b6",
+        "name": "Maria",
+        "lastname": "Lisanti",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.391Z",
+        "updatedAt": "2023-04-18T19:35:56.654Z",
+        "companyId": 1,
+        "DepartmentId": 13
+      },
+      {
+        "start_date": "2017-07-05",
+        "end_date": null,
+        "id": 27,
+        "email": "slong@roccoscollision.com",
+        "password": "5afe07fb6040ecadc1647b1cdec587cd",
+        "name": "Samantha",
+        "lastname": "Long",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.382Z",
+        "updatedAt": "2022-05-20T18:23:46.850Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2015-04-16",
+        "end_date": null,
+        "id": 76,
+        "email": "jesusangie2014.jl@gmail.com",
+        "password": "265ec09a8113c276f3c5997c30b2391f",
+        "name": "Juan",
+        "lastname": "Lopez Guzman",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.888Z",
+        "updatedAt": "2022-06-15T20:24:56.133Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-12-19",
+        "end_date": null,
+        "id": 144,
+        "email": "slosado@roccoscollision.com",
+        "password": "c30c037398be7f41566147692a476c57",
+        "name": "Stephanie",
+        "lastname": "Losado",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-12-19T19:51:42.184Z",
+        "updatedAt": "2023-03-07T15:27:26.185Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2017-10-30",
+        "end_date": null,
+        "id": 26,
+        "email": "cludwick@roccoscollision.com",
+        "password": "212d1d2422791864d21593acdb472bf8",
+        "name": "Craig",
+        "lastname": "Ludwick",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.376Z",
+        "updatedAt": "2022-06-27T10:52:25.337Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2022-11-28",
+        "end_date": null,
+        "id": 140,
+        "email": "johnm302@me.com",
+        "password": "378eb61e5b19d8fe2436bf081b907f41",
+        "name": "JOHN",
+        "lastname": "MANGIERI",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-11-28T20:49:27.659Z",
+        "updatedAt": "2022-11-28T20:49:27.659Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-08-08",
+        "end_date": null,
+        "id": 128,
+        "email": "smacpherson@roccoscollision.com",
+        "password": "59db4c39055d1d2e7872d5f9c2cd5c31",
+        "name": "Sarah",
+        "lastname": "MacPherson",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-08T12:30:57.796Z",
+        "updatedAt": "2022-10-13T17:43:44.266Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2020-01-29",
+        "end_date": null,
+        "id": 1,
+        "email": "mmarlowe@roccoscollision.com",
+        "password": "1ddd8ec6389903cf20112bc75f6efcab",
+        "name": "Matthew",
+        "lastname": "Marlowe",
+        "activated": true,
+        "admin": true,
+        "auto_approve": false,
+        "createdAt": "2022-03-08T17:44:46.177Z",
+        "updatedAt": "2023-07-19T15:03:11.424Z",
+        "companyId": 1,
+        "DepartmentId": 2
+      },
+      {
+        "start_date": "2021-09-07",
+        "end_date": null,
+        "id": 23,
+        "email": "lmcgillen@roccoscollision.com",
+        "password": "f0448ecc281f1ce2703796e2972c2a53",
+        "name": "Lehia",
+        "lastname": "McGillen",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.331Z",
+        "updatedAt": "2023-04-17T20:17:11.787Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2019-01-09",
+        "end_date": null,
+        "id": 25,
+        "email": "dmccourt@roccoscollision.com",
+        "password": "2eaa6d5e2a8cf70eb25c9f755e0d5dfc",
+        "name": "Dorothy",
+        "lastname": "Mccourt",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.353Z",
+        "updatedAt": "2023-06-14T17:33:40.251Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2020-12-08",
+        "end_date": null,
+        "id": 62,
+        "email": "joe_melo@icloud.com",
+        "password": "4ccc6f902517cd9cfd5d6f114a4f550f",
+        "name": "Jose",
+        "lastname": "Melo",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.754Z",
+        "updatedAt": "2022-10-24T16:38:58.102Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2012-05-29",
+        "end_date": null,
+        "id": 75,
+        "email": "djof06@gmail.com",
+        "password": "793a7ff97872958ce65e95487a903c20",
+        "name": "George",
+        "lastname": "Menk",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.878Z",
+        "updatedAt": "2023-02-10T21:59:51.925Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2021-08-30",
+        "end_date": null,
+        "id": 74,
+        "email": "dominicmotta@aol.com",
+        "password": "6796feebf84225c53ac9a94a31ba8903",
+        "name": "Dominic",
+        "lastname": "Motta",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.871Z",
+        "updatedAt": "2022-07-12T18:46:21.524Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2023-06-05",
+        "end_date": null,
+        "id": 172,
+        "email": "insuzuman76@gmail.com",
+        "password": "74c0761acebfc8c62bed6c84e2701c85",
+        "name": "James",
+        "lastname": "Moyer",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-06-05T19:34:04.752Z",
+        "updatedAt": "2023-06-05T19:34:04.752Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2023-06-12",
+        "end_date": null,
+        "id": 173,
+        "email": "dnguyen@roccoscollision.com",
+        "password": "91be87cd5e767a9d8f8dc89dfbd4b275",
+        "name": "Don",
+        "lastname": "Nguyen",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-06-12T15:25:52.693Z",
+        "updatedAt": "2023-06-12T15:45:27.940Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2023-07-26",
+        "end_date": null,
+        "id": 174,
+        "email": "efosaokpugie@gmail.com",
+        "password": "1ddd8ec6389903cf20112bc75f6efcab",
+        "name": "Efosa",
+        "lastname": "Okpugie",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-07-26T18:40:22.621Z",
+        "updatedAt": "2023-07-26T18:41:00.881Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2020-11-30",
+        "end_date": null,
+        "id": 104,
+        "email": "vdubs84@yahoo.com",
+        "password": "f54884bcc948e545c551e66ad8436c47",
+        "name": "Theodore",
+        "lastname": "Ostrander",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-17T16:21:15.107Z",
+        "updatedAt": "2022-05-20T18:33:28.427Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2021-02-15",
+        "end_date": null,
+        "id": 22,
+        "email": "eowens@roccoscollision.com",
+        "password": "0a5167ccca02399707e3010feef08cc2",
+        "name": "Elizabeth",
+        "lastname": "Owens",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.323Z",
+        "updatedAt": "2023-07-07T19:11:10.851Z",
+        "companyId": 1,
+        "DepartmentId": 15
+      },
+      {
+        "start_date": "2022-06-13",
+        "end_date": null,
+        "id": 122,
+        "email": "perry.dm80@gmail.com",
+        "password": "1915841fe7aae3321184aaf3d8caef3e",
+        "name": "Dennis",
+        "lastname": "Perry",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-06-14T16:49:37.987Z",
+        "updatedAt": "2022-06-15T22:33:55.999Z",
+        "companyId": 1,
+        "DepartmentId": 22
+      },
+      {
+        "start_date": "2022-08-01",
+        "end_date": null,
+        "id": 127,
+        "email": "sponnamaneni@roccoscollision.com",
+        "password": "b15b26c9d48a3974935dbece2072fcdc",
+        "name": "Sharath",
+        "lastname": "Ponnamaneni",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-02T17:50:35.320Z",
+        "updatedAt": "2022-09-27T14:05:00.041Z",
+        "companyId": 1,
+        "DepartmentId": 7
+      },
+      {
+        "start_date": "2021-12-16",
+        "end_date": null,
+        "id": 73,
+        "email": "ezpottsy@hotmail.com",
+        "password": "178eda50399967325e58028d5abb7afa",
+        "name": "Eric",
+        "lastname": "Potts",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.852Z",
+        "updatedAt": "2022-12-20T01:50:51.681Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2023-01-09",
+        "end_date": null,
+        "id": 148,
+        "email": "mlrodriguez@roccoscollision.com",
+        "password": "01f40e843d841db5add202371c57175e",
+        "name": "MATT L.",
+        "lastname": "RODRIGUEZ",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-01-09T18:28:32.941Z",
+        "updatedAt": "2023-04-26T10:51:16.091Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2020-07-20",
+        "end_date": null,
+        "id": 121,
+        "email": "srager21@yahoo.com",
+        "password": "e970c775fb660b3456e2b37972013d12",
+        "name": "Shane",
+        "lastname": "Rager",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-31T19:39:44.409Z",
+        "updatedAt": "2023-04-17T13:31:27.492Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-02-25",
+        "end_date": null,
+        "id": 72,
+        "email": "renart48@icloud.com",
+        "password": "6ff75b873496a91d6f8556a2bff8c1a7",
+        "name": "Eric",
+        "lastname": "Renart",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.841Z",
+        "updatedAt": "2022-05-20T18:35:04.750Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2022-10-17",
+        "end_date": null,
+        "id": 139,
+        "email": "nrivera@roccoscollision.com",
+        "password": "13d5e4e85ca278f407506ec239124c2b",
+        "name": "Noel",
+        "lastname": "Rivera",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-10-17T12:20:19.460Z",
+        "updatedAt": "2022-10-17T13:41:57.710Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2023-03-27",
+        "end_date": null,
+        "id": 165,
+        "email": "crivera@roccoscollision.com",
+        "password": "86bf25beba5e61c1a1cf202a85a1d019",
+        "name": "Christina",
+        "lastname": "Rivera",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-12T14:39:03.688Z",
+        "updatedAt": "2023-05-12T14:39:03.688Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2020-06-08",
+        "end_date": null,
+        "id": 19,
+        "email": "mrodriguez@roccoscollision.com",
+        "password": "807835e5f5bebc9c5abc1aafe6d78916",
+        "name": "Melanie",
+        "lastname": "Rodriguez",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.278Z",
+        "updatedAt": "2023-07-07T16:24:03.113Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2021-09-13",
+        "end_date": null,
+        "id": 54,
+        "email": "zackromano57@gmail.com",
+        "password": "bf20cf97f7e8092d98fa2b45c5d0b673",
+        "name": "Zachary",
+        "lastname": "Romano",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.663Z",
+        "updatedAt": "2023-05-18T13:08:01.654Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-03-20",
+        "end_date": null,
+        "id": 161,
+        "email": "jrosario@roccoscollision.com",
+        "password": "1f6aa5609b0c340e971c0c733eedc7a9",
+        "name": "Joannie",
+        "lastname": "Rosario",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-03-20T16:42:09.180Z",
+        "updatedAt": "2023-05-12T14:49:42.228Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2015-09-02",
+        "end_date": null,
+        "id": 17,
+        "email": "lsanders@roccoscollision.com",
+        "password": "aa81c539df9f9d74bc0333d8a6257d03",
+        "name": "Leon",
+        "lastname": "Sanders",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.259Z",
+        "updatedAt": "2022-05-20T18:36:10.910Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2020-06-17",
+        "end_date": null,
+        "id": 110,
+        "email": "steveschnatter@yahoo.com",
+        "password": "4a62799b8e97390c52c63fcbcea08697",
+        "name": "Steve",
+        "lastname": "Schnatter",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-19T01:57:53.029Z",
+        "updatedAt": "2023-03-28T11:40:19.721Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2018-01-15",
+        "end_date": null,
+        "id": 103,
+        "email": "drebelins@yahoo.com",
+        "password": "05fd5d3c8ff4aeffa40e284c6d9116df",
+        "name": "David",
+        "lastname": "Senecal",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-17T16:21:15.105Z",
+        "updatedAt": "2023-07-18T12:45:26.025Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2018-11-26",
+        "end_date": null,
+        "id": 15,
+        "email": "rserrano@roccoscollision.com",
+        "password": "0acb2b7adcf56cf10fe626b0ca7338ed",
+        "name": "Raymond",
+        "lastname": "Serrano",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.244Z",
+        "updatedAt": "2022-05-20T18:39:05.357Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2022-01-10",
+        "end_date": null,
+        "id": 14,
+        "email": "jsnell@roccoscollision.com",
+        "password": "702ee1d16cfad3f57e28f5962ec2ff65",
+        "name": "Jason",
+        "lastname": "Snell",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.241Z",
+        "updatedAt": "2022-05-27T19:22:28.445Z",
+        "companyId": 1,
+        "DepartmentId": 21
+      },
+      {
+        "start_date": "2016-01-22",
+        "end_date": null,
+        "id": 78,
+        "email": "sprkplug656@yahoo.com",
+        "password": "cb9069598867c72f730f39274631120e",
+        "name": "Charlie",
+        "lastname": "Sparks",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.912Z",
+        "updatedAt": "2022-05-20T18:39:37.115Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2021-05-03",
+        "end_date": null,
+        "id": 68,
+        "email": "mspigelmyer7235@gmail.com",
+        "password": "a6db9e90bdc7feece13f7a14004091d4",
+        "name": "Matthew",
+        "lastname": "Spigelmyer",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.812Z",
+        "updatedAt": "2023-02-14T17:31:04.846Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2017-05-15",
+        "end_date": null,
+        "id": 97,
+        "email": "anthonyjspi@gmail.com",
+        "password": "7161addb9d1ed7e5a41e1b9c9b48cb52",
+        "name": "Anthony",
+        "lastname": "Spirito",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:44:01.123Z",
+        "updatedAt": "2022-10-17T23:12:27.706Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2021-06-21",
+        "end_date": null,
+        "id": 88,
+        "email": "summersdale955@gmail.com",
+        "password": "c79965b9c502b7731412a8790b31a6a1",
+        "name": "Dale",
+        "lastname": "Summers",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:23:40.160Z",
+        "updatedAt": "2023-06-14T17:35:28.952Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2021-12-06",
+        "end_date": null,
+        "id": 67,
+        "email": "tomaszsydor@yahoo.com",
+        "password": "2e1677e4ccbd704b203ab9bf0e1e2038",
+        "name": "Tomasz",
+        "lastname": "Sydor",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.806Z",
+        "updatedAt": "2022-07-26T13:55:06.680Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2020-12-07",
+        "end_date": null,
+        "id": 125,
+        "email": "wieslaw133@aol.com",
+        "password": "a0f7540b64ff088d21da6f590ac09058",
+        "name": "Wesley",
+        "lastname": "Szerling",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-07-11T21:04:20.767Z",
+        "updatedAt": "2023-06-14T17:36:09.700Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2023-05-12",
+        "end_date": null,
+        "id": 166,
+        "email": "test@test.com",
+        "password": "ec72b83a797dad872b1ccc31fdc8a4fd",
+        "name": "TEST DELETE",
+        "lastname": "TEST DELETE",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-12T23:58:02.712Z",
+        "updatedAt": "2023-05-12T23:58:13.620Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2022-12-01",
+        "end_date": null,
+        "id": 141,
+        "email": "cousins1023@gmail.com",
+        "password": "be36e7d8d8eb67415959ca5f14588556",
+        "name": "DANTE",
+        "lastname": "TORRES",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-12-01T19:43:58.220Z",
+        "updatedAt": "2023-07-05T18:16:26.579Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2023-02-06",
+        "end_date": null,
+        "id": 159,
+        "email": "talleychantelle54@gmail.com",
+        "password": "5cc23597f21b35bdcc72ff8771d3cdb7",
+        "name": "Chantelle",
+        "lastname": "Talley",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-02-21T20:26:02.425Z",
+        "updatedAt": "2023-06-14T17:36:40.139Z",
+        "companyId": 1,
+        "DepartmentId": 12
+      },
+      {
+        "start_date": "2023-05-30",
+        "end_date": null,
+        "id": 170,
+        "email": "carmel1720@comcast.net",
+        "password": "7137105359ed95d1ad5f342c2575403f",
+        "name": "Carmel",
+        "lastname": "Tassone",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-05-30T15:29:50.757Z",
+        "updatedAt": "2023-05-30T15:29:50.757Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      },
+      {
+        "start_date": "2021-04-19",
+        "end_date": null,
+        "id": 13,
+        "email": "nvazquez@roccoscollision.com",
+        "password": "594cc5c47fc9a49215336e18fa5abf83",
+        "name": "Natasha",
+        "lastname": "Vazquez",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.229Z",
+        "updatedAt": "2022-06-09T17:15:18.915Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2021-07-26",
+        "end_date": null,
+        "id": 66,
+        "email": "ryanwagner3253@gmail.com",
+        "password": "9eb57851610b6c8d3a132adf40892baa",
+        "name": "Ryan",
+        "lastname": "Wagner",
+        "activated": false,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.799Z",
+        "updatedAt": "2022-07-13T19:06:03.947Z",
+        "companyId": 1,
+        "DepartmentId": 4
+      },
+      {
+        "start_date": "2019-07-02",
+        "end_date": null,
+        "id": 96,
+        "email": "turbocivicr@gmail.com",
+        "password": "f50752903cee544b77e4757b67e1b9fb",
+        "name": "Mike",
+        "lastname": "Wells",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:44:01.121Z",
+        "updatedAt": "2023-07-05T12:06:41.051Z",
+        "companyId": 1,
+        "DepartmentId": 19
+      },
+      {
+        "start_date": "2022-08-15",
+        "end_date": null,
+        "id": 136,
+        "email": "mrhandsomerayw21@gmail.com",
+        "password": "7fd989e12b554024d66fdcb8ed7ec832",
+        "name": "Ray",
+        "lastname": "Williams",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-17T12:10:28.537Z",
+        "updatedAt": "2022-09-24T05:06:23.126Z",
+        "companyId": 1,
+        "DepartmentId": 9
+      },
+      {
+        "start_date": "2022-08-29",
+        "end_date": null,
+        "id": 138,
+        "email": "jwilson@roccoscollision.com",
+        "password": "22822d2a9548ef1110c831b50de0dd7a",
+        "name": "John",
+        "lastname": "Wilson",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-08-29T19:10:54.813Z",
+        "updatedAt": "2023-07-07T16:05:22.104Z",
+        "companyId": 1,
+        "DepartmentId": 11
+      },
+      {
+        "start_date": "2019-11-11",
+        "end_date": null,
+        "id": 12,
+        "email": "jwood@roccoscollision.com",
+        "password": "8d649f384fa9db2a7e070e0ea929c261",
+        "name": "Jordan",
+        "lastname": "Wood",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2022-05-16T17:16:34.227Z",
+        "updatedAt": "2023-06-14T17:37:10.801Z",
+        "companyId": 1,
+        "DepartmentId": 10
+      },
+      {
+        "start_date": "2023-06-05",
+        "end_date": null,
+        "id": 171,
+        "email": "seanvzarate@yahoo.com",
+        "password": "8562ff2c0a98c483bf320f49193ff95f",
+        "name": "Sean",
+        "lastname": "Zarate",
+        "activated": true,
+        "admin": false,
+        "auto_approve": false,
+        "createdAt": "2023-06-05T19:28:23.237Z",
+        "updatedAt": "2023-06-05T20:45:45.038Z",
+        "companyId": 1,
+        "DepartmentId": 5
+      }
+    ]
+  },
+  "allowance_options": [
+    {
+      "value": 0,
+      "caption": "None"
+    },
+    {
+      "value": 0.25,
+      "caption": 0.25
+    },
+    {
+      "value": 0.5,
+      "caption": 0.5
+    },
+    {
+      "value": 0.75,
+      "caption": 0.75
+    },
+    {
+      "value": 1,
+      "caption": 1
+    },
+    {
+      "value": 1.25,
+      "caption": 1.25
+    },
+    {
+      "value": 1.5,
+      "caption": 1.5
+    },
+    {
+      "value": 1.75,
+      "caption": 1.75
+    },
+    {
+      "value": 2,
+      "caption": 2
+    },
+    {
+      "value": 2.25,
+      "caption": 2.25
+    },
+    {
+      "value": 2.5,
+      "caption": 2.5
+    },
+    {
+      "value": 2.75,
+      "caption": 2.75
+    },
+    {
+      "value": 3,
+      "caption": 3
+    },
+    {
+      "value": 3.25,
+      "caption": 3.25
+    },
+    {
+      "value": 3.5,
+      "caption": 3.5
+    },
+    {
+      "value": 3.75,
+      "caption": 3.75
+    },
+    {
+      "value": 4,
+      "caption": 4
+    },
+    {
+      "value": 4.25,
+      "caption": 4.25
+    },
+    {
+      "value": 4.5,
+      "caption": 4.5
+    },
+    {
+      "value": 4.75,
+      "caption": 4.75
+    },
+    {
+      "value": 5,
+      "caption": 5
+    },
+    {
+      "value": 5.25,
+      "caption": 5.25
+    },
+    {
+      "value": 5.5,
+      "caption": 5.5
+    },
+    {
+      "value": 5.75,
+      "caption": 5.75
+    },
+    {
+      "value": 6,
+      "caption": 6
+    },
+    {
+      "value": 6.25,
+      "caption": 6.25
+    },
+    {
+      "value": 6.5,
+      "caption": 6.5
+    },
+    {
+      "value": 6.75,
+      "caption": 6.75
+    },
+    {
+      "value": 7,
+      "caption": 7
+    },
+    {
+      "value": 7.25,
+      "caption": 7.25
+    },
+    {
+      "value": 7.5,
+      "caption": 7.5
+    },
+    {
+      "value": 7.75,
+      "caption": 7.75
+    },
+    {
+      "value": 8,
+      "caption": 8
+    },
+    {
+      "value": 8.25,
+      "caption": 8.25
+    },
+    {
+      "value": 8.5,
+      "caption": 8.5
+    },
+    {
+      "value": 8.75,
+      "caption": 8.75
+    },
+    {
+      "value": 9,
+      "caption": 9
+    },
+    {
+      "value": 9.25,
+      "caption": 9.25
+    },
+    {
+      "value": 9.5,
+      "caption": 9.5
+    },
+    {
+      "value": 9.75,
+      "caption": 9.75
+    },
+    {
+      "value": 10,
+      "caption": 10
+    },
+    {
+      "value": 10.25,
+      "caption": 10.25
+    },
+    {
+      "value": 10.5,
+      "caption": 10.5
+    },
+    {
+      "value": 10.75,
+      "caption": 10.75
+    },
+    {
+      "value": 11,
+      "caption": 11
+    },
+    {
+      "value": 11.25,
+      "caption": 11.25
+    },
+    {
+      "value": 11.5,
+      "caption": 11.5
+    },
+    {
+      "value": 11.75,
+      "caption": 11.75
+    },
+    {
+      "value": 12,
+      "caption": 12
+    },
+    {
+      "value": 12.25,
+      "caption": 12.25
+    },
+    {
+      "value": 12.5,
+      "caption": 12.5
+    },
+    {
+      "value": 12.75,
+      "caption": 12.75
+    },
+    {
+      "value": 13,
+      "caption": 13
+    },
+    {
+      "value": 13.25,
+      "caption": 13.25
+    },
+    {
+      "value": 13.5,
+      "caption": 13.5
+    },
+    {
+      "value": 13.75,
+      "caption": 13.75
+    },
+    {
+      "value": 14,
+      "caption": 14
+    },
+    {
+      "value": 14.25,
+      "caption": 14.25
+    },
+    {
+      "value": 14.5,
+      "caption": 14.5
+    },
+    {
+      "value": 14.75,
+      "caption": 14.75
+    },
+    {
+      "value": 15,
+      "caption": 15
+    },
+    {
+      "value": 15.25,
+      "caption": 15.25
+    },
+    {
+      "value": 15.5,
+      "caption": 15.5
+    },
+    {
+      "value": 15.75,
+      "caption": 15.75
+    },
+    {
+      "value": 16,
+      "caption": 16
+    },
+    {
+      "value": 16.25,
+      "caption": 16.25
+    },
+    {
+      "value": 16.5,
+      "caption": 16.5
+    },
+    {
+      "value": 16.75,
+      "caption": 16.75
+    },
+    {
+      "value": 17,
+      "caption": 17
+    },
+    {
+      "value": 17.25,
+      "caption": 17.25
+    },
+    {
+      "value": 17.5,
+      "caption": 17.5
+    },
+    {
+      "value": 17.75,
+      "caption": 17.75
+    },
+    {
+      "value": 18,
+      "caption": 18
+    },
+    {
+      "value": 18.25,
+      "caption": 18.25
+    },
+    {
+      "value": 18.5,
+      "caption": 18.5
+    },
+    {
+      "value": 18.75,
+      "caption": 18.75
+    },
+    {
+      "value": 19,
+      "caption": 19
+    },
+    {
+      "value": 19.25,
+      "caption": 19.25
+    },
+    {
+      "value": 19.5,
+      "caption": 19.5
+    },
+    {
+      "value": 19.75,
+      "caption": 19.75
+    },
+    {
+      "value": 20,
+      "caption": 20
+    },
+    {
+      "value": 20.25,
+      "caption": 20.25
+    },
+    {
+      "value": 20.5,
+      "caption": 20.5
+    },
+    {
+      "value": 20.75,
+      "caption": 20.75
+    },
+    {
+      "value": 21,
+      "caption": 21
+    },
+    {
+      "value": 21.25,
+      "caption": 21.25
+    },
+    {
+      "value": 21.5,
+      "caption": 21.5
+    },
+    {
+      "value": 21.75,
+      "caption": 21.75
+    },
+    {
+      "value": 22,
+      "caption": 22
+    },
+    {
+      "value": 22.25,
+      "caption": 22.25
+    },
+    {
+      "value": 22.5,
+      "caption": 22.5
+    },
+    {
+      "value": 22.75,
+      "caption": 22.75
+    },
+    {
+      "value": 23,
+      "caption": 23
+    },
+    {
+      "value": 23.25,
+      "caption": 23.25
+    },
+    {
+      "value": 23.5,
+      "caption": 23.5
+    },
+    {
+      "value": 23.75,
+      "caption": 23.75
+    },
+    {
+      "value": 24,
+      "caption": 24
+    },
+    {
+      "value": 24.25,
+      "caption": 24.25
+    },
+    {
+      "value": 24.5,
+      "caption": 24.5
+    },
+    {
+      "value": 24.75,
+      "caption": 24.75
+    },
+    {
+      "value": 25,
+      "caption": 25
+    },
+    {
+      "value": 25.25,
+      "caption": 25.25
+    },
+    {
+      "value": 25.5,
+      "caption": 25.5
+    },
+    {
+      "value": 25.75,
+      "caption": 25.75
+    },
+    {
+      "value": 26,
+      "caption": 26
+    },
+    {
+      "value": 26.25,
+      "caption": 26.25
+    },
+    {
+      "value": 26.5,
+      "caption": 26.5
+    },
+    {
+      "value": 26.75,
+      "caption": 26.75
+    },
+    {
+      "value": 27,
+      "caption": 27
+    },
+    {
+      "value": 27.25,
+      "caption": 27.25
+    },
+    {
+      "value": 27.5,
+      "caption": 27.5
+    },
+    {
+      "value": 27.75,
+      "caption": 27.75
+    },
+    {
+      "value": 28,
+      "caption": 28
+    },
+    {
+      "value": 28.25,
+      "caption": 28.25
+    },
+    {
+      "value": 28.5,
+      "caption": 28.5
+    },
+    {
+      "value": 28.75,
+      "caption": 28.75
+    },
+    {
+      "value": 29,
+      "caption": 29
+    },
+    {
+      "value": 29.25,
+      "caption": 29.25
+    },
+    {
+      "value": 29.5,
+      "caption": 29.5
+    },
+    {
+      "value": 29.75,
+      "caption": 29.75
+    },
+    {
+      "value": 30,
+      "caption": 30
+    },
+    {
+      "value": 30.25,
+      "caption": 30.25
+    },
+    {
+      "value": 30.5,
+      "caption": 30.5
+    },
+    {
+      "value": 30.75,
+      "caption": 30.75
+    },
+    {
+      "value": 31,
+      "caption": 31
+    },
+    {
+      "value": 31.25,
+      "caption": 31.25
+    },
+    {
+      "value": 31.5,
+      "caption": 31.5
+    },
+    {
+      "value": 31.75,
+      "caption": 31.75
+    },
+    {
+      "value": 32,
+      "caption": 32
+    },
+    {
+      "value": 32.25,
+      "caption": 32.25
+    },
+    {
+      "value": 32.5,
+      "caption": 32.5
+    },
+    {
+      "value": 32.75,
+      "caption": 32.75
+    },
+    {
+      "value": 33,
+      "caption": 33
+    },
+    {
+      "value": 33.25,
+      "caption": 33.25
+    },
+    {
+      "value": 33.5,
+      "caption": 33.5
+    },
+    {
+      "value": 33.75,
+      "caption": 33.75
+    },
+    {
+      "value": 34,
+      "caption": 34
+    },
+    {
+      "value": 34.25,
+      "caption": 34.25
+    },
+    {
+      "value": 34.5,
+      "caption": 34.5
+    },
+    {
+      "value": 34.75,
+      "caption": 34.75
+    },
+    {
+      "value": 35,
+      "caption": 35
+    },
+    {
+      "value": 35.25,
+      "caption": 35.25
+    },
+    {
+      "value": 35.5,
+      "caption": 35.5
+    },
+    {
+      "value": 35.75,
+      "caption": 35.75
+    },
+    {
+      "value": 36,
+      "caption": 36
+    },
+    {
+      "value": 36.25,
+      "caption": 36.25
+    },
+    {
+      "value": 36.5,
+      "caption": 36.5
+    },
+    {
+      "value": 36.75,
+      "caption": 36.75
+    },
+    {
+      "value": 37,
+      "caption": 37
+    },
+    {
+      "value": 37.25,
+      "caption": 37.25
+    },
+    {
+      "value": 37.5,
+      "caption": 37.5
+    },
+    {
+      "value": 37.75,
+      "caption": 37.75
+    },
+    {
+      "value": 38,
+      "caption": 38
+    },
+    {
+      "value": 38.25,
+      "caption": 38.25
+    },
+    {
+      "value": 38.5,
+      "caption": 38.5
+    },
+    {
+      "value": 38.75,
+      "caption": 38.75
+    },
+    {
+      "value": 39,
+      "caption": 39
+    },
+    {
+      "value": 39.25,
+      "caption": 39.25
+    },
+    {
+      "value": 39.5,
+      "caption": 39.5
+    },
+    {
+      "value": 39.75,
+      "caption": 39.75
+    },
+    {
+      "value": 40,
+      "caption": 40
+    },
+    {
+      "value": 40.25,
+      "caption": 40.25
+    },
+    {
+      "value": 40.5,
+      "caption": 40.5
+    },
+    {
+      "value": 40.75,
+      "caption": 40.75
+    },
+    {
+      "value": 41,
+      "caption": 41
+    },
+    {
+      "value": 41.25,
+      "caption": 41.25
+    },
+    {
+      "value": 41.5,
+      "caption": 41.5
+    },
+    {
+      "value": 41.75,
+      "caption": 41.75
+    },
+    {
+      "value": 42,
+      "caption": 42
+    },
+    {
+      "value": 42.25,
+      "caption": 42.25
+    },
+    {
+      "value": 42.5,
+      "caption": 42.5
+    },
+    {
+      "value": 42.75,
+      "caption": 42.75
+    },
+    {
+      "value": 43,
+      "caption": 43
+    },
+    {
+      "value": 43.25,
+      "caption": 43.25
+    },
+    {
+      "value": 43.5,
+      "caption": 43.5
+    },
+    {
+      "value": 43.75,
+      "caption": 43.75
+    },
+    {
+      "value": 44,
+      "caption": 44
+    },
+    {
+      "value": 44.25,
+      "caption": 44.25
+    },
+    {
+      "value": 44.5,
+      "caption": 44.5
+    },
+    {
+      "value": 44.75,
+      "caption": 44.75
+    },
+    {
+      "value": 45,
+      "caption": 45
+    },
+    {
+      "value": 45.25,
+      "caption": 45.25
+    },
+    {
+      "value": 45.5,
+      "caption": 45.5
+    },
+    {
+      "value": 45.75,
+      "caption": 45.75
+    },
+    {
+      "value": 46,
+      "caption": 46
+    },
+    {
+      "value": 46.25,
+      "caption": 46.25
+    },
+    {
+      "value": 46.5,
+      "caption": 46.5
+    },
+    {
+      "value": 46.75,
+      "caption": 46.75
+    },
+    {
+      "value": 47,
+      "caption": 47
+    },
+    {
+      "value": 47.25,
+      "caption": 47.25
+    },
+    {
+      "value": 47.5,
+      "caption": 47.5
+    },
+    {
+      "value": 47.75,
+      "caption": 47.75
+    },
+    {
+      "value": 48,
+      "caption": 48
+    },
+    {
+      "value": 48.25,
+      "caption": 48.25
+    },
+    {
+      "value": 48.5,
+      "caption": 48.5
+    },
+    {
+      "value": 48.75,
+      "caption": 48.75
+    },
+    {
+      "value": 49,
+      "caption": 49
+    },
+    {
+      "value": 49.25,
+      "caption": 49.25
+    },
+    {
+      "value": 49.5,
+      "caption": 49.5
+    },
+    {
+      "value": 49.75,
+      "caption": 49.75
+    },
+    {
+      "value": 50,
+      "caption": 50
+    }
+  ],
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

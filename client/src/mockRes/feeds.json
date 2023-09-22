@@ -1,0 +1,38 @@
+{
+  "title": "My feeds",
+  "calendar_feed": {
+    "id": 1,
+    "name": "Calendar Feed",
+    "feed_token": "f3d78a16-8186-48ec-9fa2-4d79807638d5",
+    "type": "calendar",
+    "createdAt": "2022-03-08T18:11:13.575Z",
+    "updatedAt": "2022-03-08T18:11:13.575Z",
+    "userId": 1
+  },
+  "team_view_feed": {
+    "id": 2,
+    "name": "Calendar Feed",
+    "feed_token": "e0d4e955-6d55-489b-94c4-0bf33ea38ec3",
+    "type": "teamview",
+    "createdAt": "2022-03-08T18:11:13.578Z",
+    "updatedAt": "2022-04-02T18:09:25.130Z",
+    "userId": 1
+  },
+  "current_host": "localhost:3000",
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

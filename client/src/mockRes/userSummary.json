@@ -1,0 +1,60 @@
+{
+  "layout": false,
+  "userFullName": "Matthew Marlowe",
+  "departmentName": "IT_3W",
+  "userAllowance": {
+    "_user": {
+      "start_date": "2020-01-29",
+      "end_date": null,
+      "id": 1,
+      "email": "mmarlowe@roccoscollision.com",
+      "password": "1ddd8ec6389903cf20112bc75f6efcab",
+      "name": "Matthew",
+      "lastname": "Marlowe",
+      "activated": true,
+      "admin": true,
+      "auto_approve": false,
+      "createdAt": "2022-03-08T17:44:46.177Z",
+      "updatedAt": "2023-07-19T15:03:11.424Z",
+      "companyId": 1,
+      "DepartmentId": 2,
+      "department": {
+        "id": 2,
+        "name": "IT_3W",
+        "allowance": 15,
+        "include_public_holidays": true,
+        "is_accrued_allowance": true,
+        "createdAt": "2022-03-08T18:07:49.525Z",
+        "updatedAt": "2022-05-24T16:29:48.214Z",
+        "companyId": 1,
+        "bossId": 41
+      }
+    },
+    "_number_of_days_taken_from_allowance": 0.25,
+    "_manual_adjustment": -15,
+    "_carry_over": 16.5,
+    "_nominal_allowance": 15,
+    "_now": "2023-09-16T19:11:30.448Z"
+  },
+  "supervisorNames": [
+    "Joseph DiDonato",
+    "Normita Cipparone",
+    "Matthew Marlowe"
+  ],
+  "loggedUser": {
+    "start_date": "2020-01-29",
+    "end_date": null,
+    "id": 1,
+    "email": "mmarlowe@roccoscollision.com",
+    "password": "1ddd8ec6389903cf20112bc75f6efcab",
+    "name": "Matthew",
+    "lastname": "Marlowe",
+    "activated": true,
+    "admin": true,
+    "auto_approve": false,
+    "createdAt": "2022-03-08T17:44:46.177Z",
+    "updatedAt": "2023-07-19T15:03:11.424Z",
+    "companyId": 1,
+    "DepartmentId": 2
+  }
+}

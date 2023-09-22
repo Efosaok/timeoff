@@ -1,4 +1,3 @@
-
 /*
  * Book Leave request pop-up window.
  *
@@ -194,6 +193,55 @@ $(document).ready(function(){
   }
 });
 
+const approveLeave = (body, e) => {
+  e.preventDefault();
+
+  fetch({
+    method: 'POST',
+    url: '/requests/approve/',
+    body,
+  })
+  .then((res) => res)
+  .then((res) => {
+    console.log(res.status);
+  });
+};
+
+const rejectLeave = (body, e) => {
+  e.preventDefault();
+
+  fetch({
+    method: 'POST',
+    url: '/requests/reject/',
+    body,
+  })
+  .then((res) => res.json())
+  .then((res) => {
+    console.log(res.status);
+  });
+}
+
+$(document).ready(function () {
+  const apNode = document.querySelector('#approver_comments');
+  const rejNode = document.querySelector('#rejecter_reason');
+  const leaveTypeNode = document.querySelector('#mod_leave_type');
+  const approveBtn = document.querySelector('#approve_leave_btn');
+  const idHolderEl = document.querySelector('#id-holder');
+  const rejectBtn = document.querySelector('#reject_leave_btn');
+
+  approveBtn.addEventListener('click', (e) => approveLeave({
+    approver_comment: apNode.value,
+    mod_leave_type: leaveTypeNode.value,
+    request: idHolderEl.value,
+  }, e));
+
+  rejectBtn.addEventListener('click', (e) => rejectLeave({
+    approver_comment: rejNode.value,
+    mod_leave_type: leaveTypeNode.value,
+    request: 'Reject',
+  }, e));
+});
+
 $(document).ready(function(){
   $('.leave-details-summary-trigger').popover({
     title: 'Leave summary',
@@ -216,6 +264,18 @@ $(document).ready(function(){
     });
     return '<div id="'+ divId +'">Loading...</div>';
   }
+
+  const allLeaveSummaries = document.querySelectorAll('.leave-summary');
+  allLeaveSummaries.forEach((leaveNode) => {
+    const { id } = leaveNode;
+
+    $.ajax({
+      url: '/calendar/leave-summary/'+id+'/',
+      success: function(response){
+        leaveNode.innerHTML = response;
+      }
+    });
+  });
 });
 
 $(document).ready(function() {

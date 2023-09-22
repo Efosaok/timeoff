@@ -8,7 +8,6 @@
         <h4 class="modal-title">Add new Bank Holiday</h4>
       </div>
 
-
       {{#each company.bank_holidays}}
         <input type="hidden" value="{{name}}" name="name__{{@index}}">
         <input type="hidden" value="{{as_date date}}" name="date__{{@index}}">
@@ -46,5 +45,3 @@
     </div>
   </div>
 </div>
-
-

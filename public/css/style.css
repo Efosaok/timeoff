@@ -228,6 +228,13 @@ div.feeds-holder {
   body.modal-open {
     position: fixed; } }
 
+@media (max-width: 600px) {
+  .leave_header_dpt,
+  .department_name {
+    display: none;
+  }
+}
+
 /* To be used for selected items in lists */
 .selected-item {
   background: #F5F7F8;
@@ -247,3 +254,12 @@ div.feeds-holder {
 
 .leave_type_color_5 {
   background: #00BCD4 !important; }
+
+.leave_summary div:nth-child(2),
+.leave_summary div:nth-child(3),
+.leave_summary div:nth-child(4),
+.leave_summary div:nth-child(5),
+.leave_summary div:nth-child(6),
+.leave_summary div:nth-child(7) {
+  display: none;
+}
