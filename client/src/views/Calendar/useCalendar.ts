@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "react-query"
 import fetchInstance from "../../axios/fetchInstance"
+import useSearchParamsInQuery from "../../hooks/useSearchParamsInQuery";
 
 interface CalWeekI {
   val: number;
@@ -20,22 +21,22 @@ interface CalendarPageResponseI {
 }
 
 const useCalendar = () => {
-  const [showFullYear, setShowFullYear] = useState(false);
+  const url = '/calendar';
+  const { urlWithSearchQuery, params } = useSearchParamsInQuery(url);
 
-  const url = showFullYear ? `/calendar?show_full_year=1` : '/calendar';
 
-  const { data: calData, isLoading } = useQuery('calendarData', () => fetchInstance.get(url));
-
-  const toggleShowFullYear = () => setShowFullYear(!showFullYear);
+  const showFullYear = params.get('show_full_year');
+  const { data: calData, isLoading } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
 
   const loggedUser = calData?.data?.loggedUser;
 
+  const res = calData?.data;
+
   return {
-    calData,
     isLoading,
     loggedUser,
     showFullYear,
-    toggleShowFullYear,
+    res,
   };
 };
 

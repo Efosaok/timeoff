@@ -1,12 +1,17 @@
 import React, { useContext } from "react";
-import ModalContext from "../../../contexts/ModalContext";
+import ModalContext, { ModalProps } from "../../../contexts/ModalContext";
 
-interface ModalProps {
+interface ModalWrapProps {
   children: React.ReactNode;
   title: string;
+  name?: keyof ModalProps;
 }
-const Modal: React.FC<ModalProps> = ({ children, title }) => {
-  const { showModal, toggleShowModal } = useContext(ModalContext);
+const Modal: React.FC<ModalWrapProps> = ({ children, title, name }) => {
+  const { canShowModal, toggleShowModal } = useContext(ModalContext);
+
+  const toggleModal = () => toggleShowModal(name)
+
+  const showModal = canShowModal(name);
 
   return (
     <div className="modal-open">
@@ -16,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ children, title }) => {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <button onClick={toggleShowModal} type="button" className="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button onClick={toggleModal} type="button" className="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 className="modal-title" id="exampleModalLabel">{title}</h4>
               </div>
               {children}

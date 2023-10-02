@@ -22,6 +22,8 @@ import UserCalendar from './components/partials/user_details/Calendar';
 import Emails from "./components/audit/Emails";
 import Root from "./components/layouts/Root";
 import BankHolidays from "./views/BankHolidays";
+import ForgotPassword from "./views/Auth/ForgotPassword";
+import BlockedViews from "./views/BlockedViews";
 
 const routes = createBrowserRouter([
   {
@@ -35,6 +37,10 @@ const routes = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/forgot-password',
+        element: <ForgotPassword />
       },
       {
         path: '/calendar',
@@ -97,6 +103,10 @@ const routes = createBrowserRouter([
       {
         path: '/bankholidays',
         element: <BankHolidays />
+      },
+      {
+        path: '/blocked-views',
+        element: <BlockedViews />,
       },
       {
         path: '/departments',

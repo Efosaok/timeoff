@@ -1,9 +1,19 @@
 import React, { useState } from "react"
 
-const useInputs = (defaults: Record<string, string>) => {
+const useInputs = (defaults: Record<string, any>) => {
   const [inputs, setInputs] = useState(defaults);
 
-  const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setInputs({ ...inputs, [event.target.name]: event.target.value })
+  const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | any>) => {
+    const { type, name, value, checked } = event.target;
+
+    let finalValue = value;
+  
+    const newInputs = { ...inputs };
+    if (type === 'checkbox' && !checked) newInputs[name] = undefined;
+    else newInputs[name] = finalValue;
+
+    setInputs(newInputs);
+  }
 
   const clearInputs = () => setInputs(defaults);
 

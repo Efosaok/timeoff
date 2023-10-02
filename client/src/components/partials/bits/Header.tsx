@@ -4,7 +4,7 @@ import BookLeave from "../modals/BookLeave";
 import useLoginDetails from "./hooks/useLoginDetails";
 
 const Header = () => {
-  const { res, toggleShowModal } = useLoginDetails();
+  const { res, toggleModal, logout } = useLoginDetails();
 
   return (
     <div className="header">
@@ -32,7 +32,7 @@ const Header = () => {
                     {res?.loggedUser.admin ? (<li className="hidden-xs"><Link to="/users/">Employees</Link></li>) : null}
                     <li className="navbar-form navbar-left">
                       <div className="form-group">
-                    <button onClick={toggleShowModal} type="button" className="btn btn-info" id="book_time_off_btn">New absence</button>
+                    <button onClick={toggleModal} type="button" className="btn btn-info" id="book_time_off_btn">New absence</button>
                   </div>
                 </li>
                 </>) : null
@@ -58,6 +58,7 @@ const Header = () => {
                           <li role="separator" className="divider"></li>
                           <li><Link to="/departments/">Departments</Link></li>
                           <li><Link to="/bankholidays/">Bank Holidays</Link></li>
+                          <li><Link to="/blocked-views">Blocked Views</Link></li>
                           <li><Link to="/authentication/">LDAP configuration</Link></li>
                           <li><Link to="/integration-api/">API configuration</Link></li>
                           <li><Link to="/users/import/">Import employees</Link></li>
@@ -75,7 +76,7 @@ const Header = () => {
                         <li><Link to="/requests/">Requests</Link></li>
                         <li className="hidden-xs"><Link to="/feeds/">Feeds</Link></li>
                         <li role="separator" className="divider hidden-xs"></li>
-                        <li><a href="/logout/">Logout</a></li>
+                        <li><Link to="#" onClick={logout}>Logout</Link></li>
                       </ul>
                     </li>
                   </>

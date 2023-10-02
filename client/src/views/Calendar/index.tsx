@@ -9,18 +9,18 @@ import useCalendar from "./useCalendar";
 
 const Calendar = () => {
   const {
-    loggedUser, calData, isLoading, showFullYear, toggleShowFullYear,
+    loggedUser, res, isLoading, showFullYear,
   } = useCalendar();
 
   return (
     <Page isLoading={isLoading} error="" >
-      {calData ? (
+      {res ? (
         <div className="calendar">
           <h1>Employee calendar</h1>
 
           <div className="row">
             <div className="col-md-6 lead">
-              {loggedUser?.name} {loggedUser?.lastname}'s calendar for {calData?.data?.current_year}
+              {loggedUser?.name} {loggedUser?.lastname}'s calendar for {res?.current_year}
             </div>
             <div className="col-md-6" />
           </div>
@@ -38,27 +38,27 @@ const Calendar = () => {
             <div className="col-md-3 top-leave-type-statistics">
               <dl>
                 <dt data-tom-days-available-in-allowance>
-                  { calData?.data?.user_allowance?._carry_over - calData?.data?.user_allowance?._number_of_days_taken_from_allowance }
+                  { res?.user_allowance?._carry_over - res?.user_allowance?._number_of_days_taken_from_allowance }
                 </dt>
                 <dd>Days available</dd>
                 <dd>out of <span data-tom-total-days-in-allowance>
-                  {calData?.data?.user_allowance?._carry_over}
+                  {res?.user_allowance?._carry_over}
                 </span> in allowance</dd>
               </dl>
             </div>
 
             <div className="col-md-3 secondary-leave-type-statistics hidden-xs">
-              <AllowanceBreakdown {...calData?.data?.allowanceMeta} previous_year={calData?.data?.previous_year} />
+              <AllowanceBreakdown {...res?.allowanceMeta} previous_year={res?.previous_year} />
             </div>
 
             <div className="col-md-3 secondary-leave-type-statistics hidden-xs">
               <dl>
                 <dt>Used so far</dt>
 
-                {calData?.data?.leave_type_statistics ?
+                {res?.leave_type_statistics ?
                   (
                     <>
-                      {calData?.data?.leave_type_statistics?.map((leaveType: any) => (
+                      {res?.leave_type_statistics?.map((leaveType: any) => (
                         <dd>
                           <em> {leaveType?.leave_type?.name}:</em>
                           <span className="pull-right">
@@ -80,27 +80,27 @@ const Calendar = () => {
                   <em>
                     Supervisor:
                   </em>
-                  {calData?.data?.supervisors?.map((sup: any) => (
+                  {res?.supervisors?.map((sup: any) => (
                     <span className="pull-right">
                       <a href={`mailto:${sup?.email}`}>
                         { sup.name } {sup.lastname}
                       </a>
                     </span>
                   ))}
-                  { calData?.data?.supervisors?.map(() => <br />)}
+                  { res?.supervisors?.map(() => <br />)}
                 </dd>
                 <dd>
                   <em>Department:</em>
                   <span className="pull-right">
-                    <Link to={`/teamview/?department=${calData?.data?.current_user?.DepartmentId} `}>
+                    <Link to={`/teamview/?department=${res?.current_user?.DepartmentId} `}>
                       {/* {{ current_user.department.name }} */}
                     </Link>
                   </span>
                 </dd>
                 <dd>
-                  <em>Allowance in {calData?.data?.current_year}:</em>
+                  <em>Allowance in {res?.current_year}:</em>
                   <span className="pull-right">
-                    {calData?.data?.user_allowance._carry_over } days
+                    {res?.user_allowance._carry_over } days
                   </span>
                 </ dd>
               </dl>
@@ -117,10 +117,10 @@ const Calendar = () => {
           <div className="row">
             <div className="col-xs-2">
               {showFullYear ? (
-                <a className="btn btn-default" href="/calendar/?year={{previous_year}}{{#if show_full_year}}&show_full_year=1{{/if}}">
+                <Link className="btn btn-default" to={`/calendar/?year=${res?.previous_year}${showFullYear ? '&show_full_year=1' : ''}`}>
                 <span aria-hidden="true" className="fa fa-chevron-left" />
-                {calData?.data?.previous_year}
-              </a>
+                {res?.previous_year}
+              </Link>
               ): null}
             </div>
             <div className="col-xs-8 calendar-section-caption">
@@ -130,7 +130,7 @@ const Calendar = () => {
               </strong>
               &nbsp;
 
-              <Link className="btn btn-default" to="#" onClick={toggleShowFullYear}>
+              <Link className="btn btn-default" to={showFullYear ? '/calendar' : '/calendar/?show_full_year=1'}>
                 {showFullYear ? (
                   <>Less... &nbsp;<span className="fa fa-minus"></span></>
                 ): (
@@ -145,7 +145,7 @@ const Calendar = () => {
               (
                 <>
                   <Link className="btn btn-default pull-right" to="/calendar/?year={{next_year}}{{#if show_full_year}}&show_full_year=1{{/if}}">
-                    {calData?.data?.next_year}
+                    {res?.next_year}
                   <span aria-hidden="true" className="fa fa-chevron-right" />
                   </Link>
                 </>
@@ -157,7 +157,7 @@ const Calendar = () => {
 
           <div className="row clearfix">
 
-            {calData?.data?.calendar?.map((cal: any) => (
+            {res?.calendar?.map((cal: any) => (
               <div className="col-md-3 month_container">
                 <table className={`calendar_month month_${cal?.month}`}>
                 <thead>
@@ -197,9 +197,9 @@ const Calendar = () => {
 
             <>
             <div className="row main-row_header">
-              <p className="col-md-12">All my absences in {calData?.data?.current_year}</p>
+              <p className="col-md-12">All my absences in {res?.current_year}</p>
             </div>
-            <UserRequests loggedUser={calData?.data?.loggedUser} leaves={calData?.data?.leaves} metaData={calData?.data?.leavesMeta}  />
+            <UserRequests loggedUser={res?.loggedUser} leaves={res?.leaves} metaData={res?.leavesMeta}  />
             </>
 
           ) : null}

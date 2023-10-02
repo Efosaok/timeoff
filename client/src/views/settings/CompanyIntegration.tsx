@@ -1,16 +1,29 @@
 import React from 'react';
+import FlashMessages from '../../components/partials/bits/FlashMessages';
+import Page from '../../components/partials/bits/Page';
+import ActionButton from '../../components/partials/button/ActionButton';
 import useCompanyIntegration from './hooks/useCompanyIntegration';
 
 const CompanyIntegration = () => {
-  const { res } = useCompanyIntegration();
+  const {
+    res,
+    messages,
+    errors,
+    isLoading,
+    saveIntegrationApiConfig,
+    savingIntegrationApiConfig,
+    isRegeneratingToken,
+    onChange,
+  } = useCompanyIntegration();
 
   return (
-    <div className='company-integration'>
+    <Page isLoading={isLoading} error="">
+      <div className='company-integration'>
       <h1>Integration API (beta)</h1>
 
       <p className="lead">Configure access to account data via integration API</p>
 
-      {/* {{> show_flash_messages }} */}
+      <FlashMessages messages={messages} errors={errors} />
 
       <div className="row main-row_header">
         <p className="col-md-12">Description</p>
@@ -41,9 +54,9 @@ const CompanyIntegration = () => {
                 <input
                   id="integration_api_enabled"
                   type="checkbox"
-                  // {{# if company.integration_api_enabled }} checked="checked" {{/if}}
-                  checked={res?.company?.integration_api_enabled}
+                  defaultChecked={res?.company?.integration_api_enabled}
                   name="integration_api_enabled"
+                  onChange={onChange}
                 />&nbsp;
                 Enable integration API
                 </label>
@@ -65,8 +78,25 @@ const CompanyIntegration = () => {
             <div className="form-group">
               <div className="col-md-offset-3 col-md-5">
                 <div className="pull-right">
-                  <button type="submit" className="btn btn-default single-click" id="regenerate_token_btn" name="regenerate_token" value="1">Regenerate token</button>
-                  <button type="submit" className="btn btn-success single-click" id="save_settings_btn">Save integration API configuration</button>
+                  <ActionButton
+                    nativeProps={{
+                      type: 'button',
+                      className: 'btn btn-default single-click',
+                      onClick: () => saveIntegrationApiConfig('1'),
+                    }}
+                    isLoading={isRegeneratingToken}
+                    text="Regenerate token"
+                  />
+                  {' '}
+                  <ActionButton
+                    nativeProps={{
+                      type: 'button',
+                      className: 'btn btn-success single-click',
+                      onClick: () => saveIntegrationApiConfig(''),
+                    }}
+                    isLoading={savingIntegrationApiConfig}
+                    text="Save integration API configuration"
+                  />
                 </div>
               </div>
             </div>
@@ -74,6 +104,7 @@ const CompanyIntegration = () => {
         </div>
       </div>
     </div>
+    </Page>
   );
 };
 

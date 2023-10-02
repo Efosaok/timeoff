@@ -1,4 +1,5 @@
 import React, { FC, ReactNode, useEffect, useState } from "react";
+import { PageSpinner } from "./Spinners";
 
 interface PageProps {
   isLoading: boolean;
@@ -14,7 +15,7 @@ const Page: FC<PageProps> = ({ isLoading, error, children }) => {
 
   return (
     <div className="page">
-      {isInitialLoad ? <div>Loading......</div> : null}
+      {isInitialLoad ? <PageSpinner /> : null}
       {!isInitialLoad && !error ? children : null}
     </div>
   );

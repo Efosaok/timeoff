@@ -1,15 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import FlashMessages from "../../components/partials/bits/FlashMessages";
+import ActionButton from "../../components/partials/button/ActionButton";
 import useLogin from "./hooks/useLogin";
 
 const Login = () => {
-  const { onChange, login, error } = useLogin();
+  const { onChange, login, errors, isLoading } = useLogin();
 
   return (
     <div className="login">
       <h1>Login</h1>
 
-      <FlashMessages errors={error?.response?.data?.errors} />
+      <FlashMessages errors={errors} />
 
       <div className="form-horizontal">
 
@@ -31,10 +33,18 @@ const Login = () => {
 
         <div className="form-group">
           <div className="col-md-offset-4 col-md-1">
-            <button onClick={login} className="btn btn-success single-click" id="submit_login">Login</button>
+            <ActionButton
+              nativeProps={{
+                className: 'btn btn-success single-click',
+                type: 'button',
+                onClick: login,
+              }}
+              isLoading={isLoading}
+              text="Login"
+            />
           </div>
           <div className="col-md-4">
-            <p className="pull-right"><a href="/forgot-password/">Forgot password?</a>
+            <p className="pull-right"><Link to="/forgot-password/">Forgot password?</Link>
             {/* {{#if allow_create_new_accounts }} | <a href="/register/">Register new company</a>{{/if}} */}
             </p>
           </div>

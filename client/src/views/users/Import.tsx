@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { generateApiPath } from "../../utils/constants";
 
 const Import = () => {
 
@@ -33,9 +34,9 @@ const Import = () => {
       <div className="row">
         <div className="col-md-9 col-md-offset-1">
 
-          <form className="form-horizontal" method="POST" action="/users/import-sample/" id="users_import_sample_form">
+          <form className="form-horizontal" method="POST" action={generateApiPath('users/import-sample/')} id="users_import_sample_form">
             <p className="text-bigger">
-              <strong>1.</strong> Download example of <strong>.CSV</strong> file based on employees currently available:
+              <strong>1.</strong> Download example of <strong>.CSV</strong> file based on employees currently available:{' '}
               <button
                 type  = "submit"
                 id    = "users_import_sample_btn"
@@ -55,7 +56,7 @@ const Import = () => {
           <p className="text-bigger">
             <strong>3.</strong> Upload <strong>.CSV</strong> file:
 
-            <form action="/users/import/" method="post" encType="multipart/form-data" className="panel-body">
+            <form action={generateApiPath('users/import/')} method="post" encType="multipart/form-data" className="panel-body">
               <div className="form-group">
                 <input id="users_input_inp" type="file" name="users_import" />
               </div>

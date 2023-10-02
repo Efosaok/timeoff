@@ -349,6 +349,22 @@ div.feeds-holder {
   -webkit-animation: spin .5s linear infinite;
 }
 
+.loader-wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content-loader {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin .5s linear infinite;
+  -webkit-animation: spin .5s linear infinite;
+}
+
 @keyframes spin {
   to {
     -webkit-transform: rotate(360deg);
@@ -368,4 +384,13 @@ div.feeds-holder {
 
 .action-btn-content .loader {
   margin-right: 5px
+}
+
+.employee_colum {
+  width: max-content;
+}
+
+.blocked-views-list {
+  width: 740px;
+  margin: 50px auto 18px;
 }

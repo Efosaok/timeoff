@@ -4,7 +4,7 @@
 const
   htmlToText = require('html-to-text'),
   Promise = require('bluebird'),
-  models = require('../lib/model/db');
+  models = require('../../lib/model/db');
 
 module.exports = {
   up: () => {

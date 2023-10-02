@@ -2,11 +2,25 @@ import moment from "moment";
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import CalendarCell from "../../components/partials/bits/CalendarCell";
+import FlashMessages from "../../components/partials/bits/FlashMessages";
 import Page from "../../components/partials/bits/Page";
+import ActionButton from "../../components/partials/button/ActionButton";
+import AddBankHoliday from "../../components/partials/modals/AddBankHoliday";
 import useBankHolidays from "./useBankHolidays";
 
 const BankHolidays = () => {
-  const { res, isLoading } = useBankHolidays();
+  const {
+    res,
+    isLoading,
+    toggleModal,
+    deleteBankHoliday,
+    showDeletingLoader,
+    messages,
+    onChange,
+    errors,
+    saveHolidays,
+    savingHolidays,
+  } = useBankHolidays();
 
   return (
     <Page isLoading={isLoading} error="">
@@ -20,15 +34,14 @@ const BankHolidays = () => {
           <div className="col-md-3 col-md-offset-3">
             <div className="btn-group pull-right">
               <button type="button" className="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span aria-hidden="true" className="fa fa-plus"></span> Add new
-                <span className="caret"></span>
+                <span aria-hidden="true" className="fa fa-plus" /> Add new <span className="caret" />
                 <span className="sr-only">Toggle Dropdown</span>
               </button>
               <ul className="dropdown-menu">
                 <li><Link to="#" id="bankholiday-import-btn">Import default holidays for
                 {res?.yearCurrent}
                 </Link></li>
-                <li><Link to="#" id="add_new_department" data-toggle="modal" data-target="#add_new_bank_holiday_modal">Add new bank holiday</Link></li>
+                <li><Link to="#" id="add_new_department" onClick={toggleModal}>Add new bank holiday</Link></li>
               </ul>
             </div>
           </div>
@@ -36,7 +49,7 @@ const BankHolidays = () => {
 
         <div className="row">&nbsp;</div>
 
-        {/* {{> show_flash_messages }} */}
+        <FlashMessages messages={messages} errors={errors} />
 
         <div className="row">
           <div className="col-xs-2">
@@ -69,12 +82,12 @@ const BankHolidays = () => {
                       </td>
                     </tr>
                     <tr>
+                      <td colSpan={2}>S</td>
                       <td colSpan={2}>M</td>
                       <td colSpan={2}>T</td>
                       <td colSpan={2}>W</td>
                       <td colSpan={2}>T</td>
                       <td colSpan={2}>F</td>
-                      <td colSpan={2}>S</td>
                       <td colSpan={2}>S</td>
                     </tr>
                   </thead>
@@ -108,10 +121,7 @@ const BankHolidays = () => {
                 <div className="col-md-12 tst-no-bank-holidays text-center">No Bank holiday records</div>
               </div>
             ): null}
-
-            <form id="delete_bankholiday_form" method="post" action="/settings/bankholidays/delete/">
-              <input name="year" value="{{yearCurrent}}" type="hidden" />
-              </form>
+  
               <form id="import_bankholiday_form" method="post" action="/settings/bankholidays/import/?year={{yearCurrent}}"></form>
               <form id="update_bankholiday_form" method="post" action="/settings/bankholidays/?year={{yearCurrent}}">
                 {res?.bankHolidays?.map((holiday: any, i: number) => (
@@ -119,15 +129,24 @@ const BankHolidays = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="input-append date">
-                        <input type="text" className="form-control" value={moment(holiday?.date).format('MM/DD/YY')} name={`date__${holiday?.id}`} tom-test-hook={`date__${i}`} data-date-autoclose="1" data-provide="datepicker" data-date-format="'MM/DD/YY'" data-date-week-start="1" />
+                        <input type="text" className="form-control" defaultValue={moment(holiday?.date).format('MM/DD/YY')} name={`date__${holiday?.id}`} tom-test-hook={`date__${i}`} data-date-autoclose="1" data-provide="datepicker" data-date-format="mm/dd/yy" data-date-week-start="1" />
                         <span className="add-on"><i className="icon-th"></i></span>
                         </div>
                       </div>
                       <div className="col-md-6">
-                        <input type="text" className="form-control" value={holiday?.name} name="name__{{id}}" tom-test-hook="name__{{@index}}" />
+                        <input onChange={onChange} type="text" className="form-control" defaultValue={holiday?.name} name={`name__${holiday?.id}`} />
                       </div>
                       <div className="col-md-2">
-                        <button className="btn btn-default pull-right bankholiday-remove-btn" type="button" value="{{id}}" tom-test-hook="remove__{{@index}}"><span className="fa fa-remove"></span></button>
+                        <ActionButton
+                          nativeProps={{
+                            className: 'btn btn-default pull-right bankholiday-remove-btn',
+                            type: 'button',
+                            onClick: () => deleteBankHoliday(holiday?.id),
+                          }}
+                          isLoading={showDeletingLoader(holiday?.id)}
+                        >
+                          {!showDeletingLoader(holiday?.id) ? <span className="fa fa-remove" /> : null}
+                        </ActionButton>
                       </div>
                     </div>
 
@@ -141,9 +160,17 @@ const BankHolidays = () => {
                   <div className="col-md-12">
                     <div className="pull-right">
                       {/* {{ <button id="bankholiday-import-btn" className="btn btn-default" type="button">Import default holidays</button> }} */}
-                      <button className="btn btn-default" type="button" data-toggle="modal" data-target="#add_new_bank_holiday_modal" id="add_new_bank_holiday_btn">Add new</button>
+                      <button onClick={toggleModal} className="btn btn-default" type="button" id="add_new_bank_holiday_btn">Add new</button>{' '}
                       {res?.bankHolidays?.length ? (
-                        <button type="submit" className="btn btn-success single-click">Save changes</button>
+                        <ActionButton
+                          nativeProps={{
+                            type: 'button',
+                            className: 'btn btn-success single-click',
+                            onClick: saveHolidays,
+                          }}
+                          text="Save changes"
+                          isLoading={savingHolidays}
+                        />
                       ): null}
                     </div>
                   </div>
@@ -154,14 +181,7 @@ const BankHolidays = () => {
           </div>
 
           <div className="row">&nbsp;</div>
-
-          {/* {{> add_new_bank_holiday_modal
-            container_id='add_new_bank_holiday_modal'
-            form_action='/settings/bankholidays/'
-            startDateOfYearCurrent=startDateOfYearCurrent
-            yearCurrent=yearCurrent
-          }} */}
-
+          <AddBankHoliday yearCurrent={res?.yearCurrent} toggleModal={toggleModal} />
       </div>
     </Page>
   )

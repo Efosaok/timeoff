@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useDepartmentDetails from "./hooks/useDepartmentDetails";
 import DepartmentGeneralDetails from '../../components/partials/department_details/General';
+import ActionButton from "../../components/partials/button/ActionButton";
+import FlashMessages from "../../components/partials/bits/FlashMessages";
 
 const Details = () => {
-  const { res } = useDepartmentDetails();
+  const { res, deleteDepartment, deleting, errors } = useDepartmentDetails();
 
   return (
     <div className="department-details">
@@ -12,16 +14,27 @@ const Details = () => {
         {res?.department?.name} details
       </h1>
 
-      <form method="post" action="/settings/departments/delete/{{ department.id }}/">
-        <div className="row">
-          <div className="col-md-3 lead">
-            Department details
-          </div>
-          <div className="col-md-1 col-md-offset-8">
-            <button id="remove_btn" type="submit" className="pull-right btn btn-danger single-click" data-toggle="tooltip" data-placement="top" title="Remove department"><i className="fa fa-trash"></i> Delete</button>
-          </div>
+      <div className="row">
+        <div className="col-md-3 lead">
+          Department details
         </div>
-      </form>
+        <FlashMessages errors={errors} />
+        <div className="col-md-1 col-md-offset-8">
+          <ActionButton
+            nativeProps={{
+              className: 'pull-right btn btn-danger single-click',
+              type: 'button',
+              onClick: deleteDepartment,
+              'data-toggle': 'tooltip',
+              'data-placement': 'top',
+              title: 'Remove department',
+            }}
+            isLoading={deleting}
+          >
+            {!deleting ? <><i className="fa fa-trash" />&nbsp;</> : null} Delete
+          </ActionButton>
+        </div>
+      </div>
 
       <div className="row">&nbsp;</div>
 

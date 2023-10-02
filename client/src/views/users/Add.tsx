@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FlashMessages from "../../components/partials/bits/FlashMessages";
 import ActionButton from "../../components/partials/button/ActionButton";
 import useEmployeeAddition from "./hooks/useEmployeeAddition";
 
 const Add = () => {
-  const { res, inputs, onChange, adding, onSubmit } = useEmployeeAddition();
+  const { res, inputs, onChange, adding, onSubmit, error, newUserRes } = useEmployeeAddition();
 
   return (
     <div className="add-user">
@@ -25,6 +26,8 @@ const Add = () => {
           </ol>
         </div>
       </div>
+
+      <FlashMessages errors={error?.response?.data?.errors} messages={newUserRes?.data?.messages} />
 
       <div className="row main-row_header">
         <p className="col-md-12">Details of new employee</p>

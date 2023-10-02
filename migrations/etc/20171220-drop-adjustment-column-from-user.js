@@ -1,7 +1,7 @@
 
 'use strict';
 
-var models = require('../lib/model/db'),
+var models = require('../../lib/model/db'),
   Promise = require('bluebird');
 
 module.exports = {
