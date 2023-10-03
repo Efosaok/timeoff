@@ -60,5 +60,5 @@ export const RESET_PASSWORD_DEFAULTS = {
   confirm_password: '',
 };
 
-export const API_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '';
+export const API_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://efo-timeoff.onrender.com';
 export const generateApiPath = (path: string) => `${API_BASE_URL}/${path}`;
