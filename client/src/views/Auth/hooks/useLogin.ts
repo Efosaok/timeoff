@@ -1,6 +1,6 @@
 import { AxiosResponse } from "axios";
 import { toast } from "react-hot-toast";
-import { useMutation } from "react-query"
+import { useMutation, useQueryClient } from "react-query"
 import { useNavigate } from "react-router-dom";
 import instance from "../../../axios/fetchInstance"
 import useFlash from "../../../hooks/useFlash";
@@ -32,6 +32,7 @@ interface LoginError {
 const useLogin = () => {
   const { inputs, onChange } = useInputs(defaultInputs);
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
   const { errors, updateFlash } = useFlash()
   const { mutate, error, isLoading } = useMutation<AxiosResponse<any, any>, any>(
@@ -39,7 +40,8 @@ const useLogin = () => {
     {
       onSuccess: (data) => {
         navigate('/calendar');
-        toast.success(data?.data?.messages?.[0])
+        toast.success(data?.data?.messages?.[0]);
+        queryClient.invalidateQueries('/login');
       },
       onError: (err) => {
         updateFlash(err?.response?.data?.errors, 'errors');

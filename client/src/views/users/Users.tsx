@@ -10,10 +10,11 @@ const Users = () => {
     allDepartmentClass,
     getDepartmentClass,
     csvpath,
+    error,
   } = useEmployeeList();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="users">
         <h1>Staff</h1>
 

@@ -14,10 +14,11 @@ const CompanyIntegration = () => {
     savingIntegrationApiConfig,
     isRegeneratingToken,
     onChange,
+    error,
   } = useCompanyIntegration();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className='company-integration'>
       <h1>Integration API (beta)</h1>
 

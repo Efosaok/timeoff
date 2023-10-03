@@ -64,7 +64,7 @@ const Header = () => {
                           <li><Link to="/users/import/">Import employees</Link></li>
                           <li role="separator" className="divider"></li>
                           <li><Link to="/audit/email/">Emails audit</Link></li>
-                          <li><Link to="/reports/">Reports</Link></li>
+                          {/* <li><Link to="/reports/">Reports</Link></li> */}
                         </ul>
                       </li>
                     ) : null}

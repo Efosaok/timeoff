@@ -10,7 +10,7 @@ import { formatScheduleToApiFormat, formatUpdateSettingsInputPreflight, scrollTo
 const useGeneralSettings = () => {
   const url = '/settings/general';
 
-  const { data: settingsData, isLoading } = useQuery(url, () => fetchInstance.get(url));
+  const { data: settingsData, isLoading, error: pageError } = useQuery(url, () => fetchInstance.get(url));
 
   const res = settingsData?.data;
 
@@ -60,7 +60,12 @@ const useGeneralSettings = () => {
   const { inputs, onChange } = useInputs({});
   const updateSettingsFn = () =>
     fetchInstance.post('/settings/company/', formatUpdateSettingsInputPreflight(res, inputs));
-  const { mutate: updateSettingsMutate, isLoading: updatingSettings, data, error } = useMutation<AxiosResponse<any, any>, any>(updateSettingsFn, {
+  const {
+    mutate: updateSettingsMutate,
+    isLoading: updatingSettings,
+    data,
+    error
+  } = useMutation<AxiosResponse<any, any>, any>(updateSettingsFn, {
     onSuccess: () => {
       scrollToTop();
     }
@@ -109,6 +114,7 @@ const useGeneralSettings = () => {
     // deleteErrors,
     deleteMessages,
     selectedLeaveType,
+    pageError,
   }
 };
 

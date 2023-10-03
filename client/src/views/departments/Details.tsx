@@ -4,12 +4,14 @@ import useDepartmentDetails from "./hooks/useDepartmentDetails";
 import DepartmentGeneralDetails from '../../components/partials/department_details/General';
 import ActionButton from "../../components/partials/button/ActionButton";
 import FlashMessages from "../../components/partials/bits/FlashMessages";
+import Page from "../../components/partials/bits/Page";
 
 const Details = () => {
-  const { res, deleteDepartment, deleting, errors } = useDepartmentDetails();
+  const { res, deleteDepartment, deleting, errors, isLoading, detailsError } = useDepartmentDetails();
 
   return (
-    <div className="department-details">
+    <Page isLoading={isLoading} error={detailsError}>
+      <div className="department-details">
       <h1>
         {res?.department?.name} details
       </h1>
@@ -45,12 +47,12 @@ const Details = () => {
         <Link to={`/users/?department=${res?.department?.id}`} className="list-group-item">Employees from department</Link>
       </div>
 
-      {/* {{> department_details/general }} */}
       <DepartmentGeneralDetails department={res?.department} users={res?.company?.users} allowanceOptions={res?.allowance_options} />
 
       <div className="row">&nbsp;</div>
 
     </div>
+    </Page>
   );
 };
 

@@ -5,7 +5,7 @@ import useSearchParamsInQuery from "../../../hooks/useSearchParamsInQuery";
 
 const useEmployeeList = () => {
   const { urlWithSearchQuery, params } = useSearchParamsInQuery('/users');
-  const { data: employeeList, isLoading } = useQuery(urlWithSearchQuery, () => fetchInstance(urlWithSearchQuery));
+  const { data: employeeList, isLoading, error } = useQuery(urlWithSearchQuery, () => fetchInstance(urlWithSearchQuery));
 
   const selectedDepartmentId = params.get('department');
   const allDepartmentClass = classNames(
@@ -32,6 +32,7 @@ const useEmployeeList = () => {
     allDepartmentClass,
     getDepartmentClass,
     csvpath,
+    error
   }
 };
 

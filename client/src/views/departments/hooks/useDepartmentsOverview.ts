@@ -5,7 +5,7 @@ import ModalContext from "../../../contexts/ModalContext";
 
 const useDepartmentsOverview = () => {
   const url = '/settings/departments';
-  const { data, isLoading } = useQuery(url, () => fetchInstance.get(url));
+  const { data, isLoading, error } = useQuery(url, () => fetchInstance.get(url));
 
   const { toggleShowModal } = useContext(ModalContext);
 
@@ -17,6 +17,7 @@ const useDepartmentsOverview = () => {
     res,
     isLoading,
     toggleModal,
+    error,
   };
 };
 

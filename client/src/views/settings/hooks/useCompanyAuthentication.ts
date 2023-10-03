@@ -6,7 +6,7 @@ import { scrollToTop } from "../../../utils/helpers";
 
 const useCompanyAuthentication = () => {
   const url = '/settings/company/authentication';
-  const { data, isLoading } = useQuery(url, () => fetchInstance(url));
+  const { data, isLoading, error } = useQuery(url, () => fetchInstance(url));
 
   const res = data?.data;
 
@@ -34,6 +34,7 @@ const useCompanyAuthentication = () => {
     onChange,
     messages,
     errors,
+    error
   }
 }
 

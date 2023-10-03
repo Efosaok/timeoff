@@ -4,19 +4,17 @@ import AddBlockedView from "../../components/partials/modals/AddBlockedView";
 import BlockedViewItem from "./BlockedViewItem";
 import useBlockViews from "./hooks/useBlockedViews";
 
-
-
 const BlockedViews = () => {
-  const { isLoading, res, toggleModal } = useBlockViews();
+  const { isLoading, res, toggleModal, error } = useBlockViews();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="blocked-views">
         <h1>Blocked Views</h1>
 
          <div className="row">
           <div className="col-md-6 lead">
-            All blocked views for Rocco Collison
+            All registered blocked dates
           </div>
           <div className="col-md-3 col-md-offset-3">
             <div className="btn-group pull-right">

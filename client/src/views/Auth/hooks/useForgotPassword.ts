@@ -8,7 +8,7 @@ const useForgotPassword = () => {
   const { clearInputs, onChange, inputs } = useInputs(FORGOT_PASSWORD_DEFAULTS);
 
   const { messages, errors, updateFlash } = useFlash();
-  const forgotPasswordFn = () => fetchInstance.post('/forgot-password/');
+  const forgotPasswordFn = () => fetchInstance.post('/forgot-password/', inputs);
   const { mutate, isLoading } = useMutation(forgotPasswordFn, {
     onSuccess: (data) => {
       clearInputs();

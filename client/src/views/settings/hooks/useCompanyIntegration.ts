@@ -6,14 +6,13 @@ import { scrollToTop } from "../../../utils/helpers";
 
 const useCompanyIntegration = () => {
   const url = '/settings/company/integration-api/';
-  const { data, isLoading } = useQuery(url, () => fetchInstance.get(url));
+  const { data, isLoading, error } = useQuery(url, () => fetchInstance.get(url));
 
   const res = data?.data;
 
   const { messages, errors, updateFlash } = useFlash();
   const { inputs, onChange } = useInputs({});
 
-  console.log(inputs)
   const saveIntegrationDataFn = (regenerate_token?: string) => {
     let inputsToSend: Record<string, any> = {
       integration_api_enabled: res?.company?.integration_api_enabled ? 'on' : undefined,
@@ -48,6 +47,7 @@ const useCompanyIntegration = () => {
     errors,
     isRegeneratingToken,
     onChange,
+    error,
   }
 };
 

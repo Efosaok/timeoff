@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { toast } from "react-hot-toast";
-import { useMutation, useQuery } from "react-query"
+import { useMutation, useQuery, useQueryClient } from "react-query"
 import { useNavigate } from "react-router-dom";
 import fetchInstance from "../../../../axios/fetchInstance"
 import ModalContext from "../../../../contexts/ModalContext";
@@ -9,6 +9,7 @@ const useLoginDetails = () => {
   const { data } = useQuery('/login', () => fetchInstance.get('/login'));
   const res = data?.data
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
   const { toggleShowModal } = useContext(ModalContext)
 
@@ -19,6 +20,7 @@ const useLoginDetails = () => {
     onSuccess: () => {
       toast.success('Logout succesful');
       navigate('/');
+      queryClient.invalidateQueries('/login');
     },
   })
   const logout = () => mutate();

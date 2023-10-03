@@ -7,7 +7,7 @@ const useBlockViews = () => {
   const url = '/settings/blocked-views';
 
   const fetchBlockViewsFn = () => fetchInstance(url);
-  const { isLoading, data } = useQuery(url, fetchBlockViewsFn);
+  const { isLoading, data, error } = useQuery(url, fetchBlockViewsFn);
 
   const res = data?.data;
 
@@ -18,6 +18,7 @@ const useBlockViews = () => {
     res,
     isLoading,
     toggleModal,
+    error,
   };
 };
 

@@ -10,14 +10,14 @@ const useDepartmentDetails = () => {
 
   const fetchUrl = `/settings/departments/edit/${id}`;
 
-  const { data, isLoading } = useQuery(fetchUrl, () => fetchInstance.get(fetchUrl))
+  const { data, isLoading, error: detailsError } = useQuery(fetchUrl, () => fetchInstance.get(fetchUrl))
 
   const deleteFn = () => fetchInstance.post(`/settings/departments/delete/${id}`);
 
   const { mutate, isLoading: deleting, error } = useMutation<any, any>(deleteFn, {
     onSuccess: (data) => {
       navigate('/departments');
-      toast.success('Departmen deleted sucessfully');
+      toast.success('Department deleted sucessfully');
     },
   });
 
@@ -32,6 +32,7 @@ const useDepartmentDetails = () => {
     deleteDepartment,
     deleting,
     errors,
+    detailsError,
   }
 };
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { toast } from "react-hot-toast";
 import { useMutation } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
@@ -7,7 +8,7 @@ import useInputs from "../../../../hooks/useInputs";
 const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) => void) => {
   const { res, isLoading } = useFetchLeaveFormData();
 
-  const { inputs, onChange, clearInputs } = useInputs({});
+  const { inputs, onChange, clearInputs, setInputs } = useInputs({});
   const approveRequestFn = () => fetchInstance.post('/requests/approve/', {
     mod_leave_type: leave?.leaveTypeId,
     ...inputs,
@@ -42,6 +43,18 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
   });
   const rejectRequest = () => rejectMutate();
 
+  const onChangeRejecterComment = ({ target: { value }}: React.ChangeEvent<HTMLTextAreaElement>) => setInputs({
+    ...inputs,
+    approver_comment: '',
+    rejecter_comment: value,
+  });
+
+  const onChangeApproverComment = ({ target: { value }}: React.ChangeEvent<HTMLTextAreaElement>) => setInputs({
+    ...inputs,
+    approver_comment: value,
+    rejecter_comment: '',
+  });
+
   return {
     res,
     isLoading,
@@ -49,7 +62,10 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
     approving,
     approveRequest,
     rejecting,
-    rejectRequest
+    rejectRequest,
+    onChangeApproverComment,
+    onChangeRejecterComment,
+    inputs,
   }
 };
 

@@ -3,7 +3,7 @@ import fetchInstance from "../../axios/fetchInstance";
 
 const useFeedsList = () => {
   const url = '/calendar/feeds';
-  const { data: feedsData, isLoading } = useQuery(url, () => fetchInstance.get(url));
+  const { data: feedsData, isLoading, error } = useQuery(url, () => fetchInstance.get(url));
 
   const res = feedsData?.data;
   const currentHost = res?.current_host;
@@ -17,6 +17,7 @@ const useFeedsList = () => {
     showTeamFeed,
     teamFeedToken,
     calendarFeedToken,
+    error,
   }
 }
 

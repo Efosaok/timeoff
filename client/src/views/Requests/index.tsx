@@ -1,4 +1,5 @@
 import React from "react";
+import FlashMessages from "../../components/partials/bits/FlashMessages";
 import Page from "../../components/partials/bits/Page";
 import UserRequestsGrouped from "../../components/partials/bits/UserRequestsGrouped";
 import HandleRequest from "../../components/partials/modals/HandleRequest";
@@ -7,16 +8,26 @@ import useRequests from "./useRequests";
 import UserLeaveSummary from "./UserleaveSummary";
 
 const Requests = () => {
-  const { res, isLoading, toggleModal, selectedLeave } = useRequests();
+  const {
+    res,
+    isLoading,
+    toggleModal,
+    selectedLeave,
+    error,
+    messages,
+    errors,
+    updateFlash,
+  } = useRequests();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="requests">
         <h1>
           {res?.loggedUser?.name} {res?.loggedUser?.lastname} messages
         </h1>
 
         {/* {{> show_flash_messages }} */}
+        <FlashMessages messages={messages} errors={errors} />
 
         <div className="row main-row_header">
           <p className="col-md-12">Leave request to approve</p>
@@ -102,6 +113,7 @@ const Requests = () => {
           groups={res?.my_leaves_grouped}
           metaData={res?.groupedLeavesMeta}
           loggedUser={res?.loggedUser}
+          updateFlash={updateFlash}
         />
 
       </div>

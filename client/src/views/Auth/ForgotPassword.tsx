@@ -26,7 +26,7 @@ const ForgotPassword = () => {
             <input onChange={onChange} value={inputs.email} className="form-control" id="email_inp" type="text" name="email" required />
           </div>
         </div>
-
+        <div className='row'>&nbsp;</div>
         <div className="form-group">
           <div className="col-md-offset-4 col-md-2">
             <ActionButton

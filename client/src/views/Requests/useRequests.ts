@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { useQuery } from "react-query";
 import fetchInstance from "../../axios/fetchInstance";
 import ModalContext from "../../contexts/ModalContext";
+import useFlash from "../../hooks/useFlash";
 import useSearchParamsInQuery from "../../hooks/useSearchParamsInQuery";
 
 const useRequests = () => {
@@ -9,6 +10,7 @@ const useRequests = () => {
   const { data, error, isLoading } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
 
   const res = data?.data;
+  const { messages, errors, updateFlash } = useFlash();
 
   const [selectedLeave, setSelectedLeave] = useState({});
   const { toggleShowModal } = useContext(ModalContext);
@@ -23,6 +25,9 @@ const useRequests = () => {
     isLoading,
     toggleModal,
     selectedLeave,
+    messages,
+    errors,
+    updateFlash,
   }
 };
 

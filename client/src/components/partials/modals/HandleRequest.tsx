@@ -17,6 +17,9 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
     rejectRequest,
     rejecting,
     onChange,
+    onChangeApproverComment,
+    onChangeRejecterComment,
+    inputs,
   } = useHandleRequest(leave, toggleModal);
 
   return (
@@ -41,7 +44,7 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
           </div>
 
           <label htmlFor="approver_comments" className="control-label">Approval comments:</label>
-          <textarea onChange={onChange} className="form-control" id="approver_comments" name="approver_comment"></textarea>
+          <textarea value={inputs?.approver_comment} onChange={onChangeApproverComment} className="form-control" id="approver_comments" name="approver_comment"></textarea>
           <ActionButton
             nativeProps={{
               type: 'button',
@@ -51,12 +54,11 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
             isLoading={approving}
             text="Approve"
           />
-          <input id="id-holder" type="hidden" value="{{this.id}}" name="request" />
           <br />
           <br />
           <div>
             <label htmlFor="rejection_reason" className="control-label">Rejection reason:</label>
-            <textarea onChange={onChange} className="form-control" id="rejecter_reason" name="rejecter_comment"></textarea>
+            <textarea value={inputs?.rejecter_comment} onChange={onChangeRejecterComment} className="form-control" id="rejecter_reason" name="rejecter_comment"></textarea>
             <ActionButton
               nativeProps={{
                 type: 'button',

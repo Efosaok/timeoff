@@ -5,10 +5,10 @@ import AddNewDepartment from "../../components/partials/modals/AddNewDepartment"
 import useDepartmentsOverview from "./hooks/useDepartmentsOverview";
 
 const Overview = () => {
-  const { res, isLoading, toggleModal } = useDepartmentsOverview();
+  const { res, isLoading, toggleModal, error } = useDepartmentsOverview();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="departments_overview">
         <h1>Departments</h1>
 

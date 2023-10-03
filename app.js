@@ -46,7 +46,7 @@ app.use(createSessionMiddleware({
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3002' }));
+app.use(cors({ credentials: true, origin: 'http://localhost:3001' }));
 
 // Custom middlewares
 //

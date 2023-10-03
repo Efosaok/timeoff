@@ -13,10 +13,11 @@ const TeamView = () => {
     selectedDepartment,
     setSelectedDepartment,
     currentDate,
+    error
   } = useTeamView();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="team-view">
         <h1>Team View</h1>
 
@@ -24,6 +25,7 @@ const TeamView = () => {
           <div className="col-md-6 lead">
             {teamViewData?.data?.loggedUser?.name} {teamViewData?.data?.loggedUser?.lastname}
             's team
+            {' '}
             <a href="/calendar/feeds/" data-toggle="tooltip" data-placement="right" title="Export Team View to external calendars">
               <span className="fa fa-rss" />
             </a>
@@ -34,11 +36,9 @@ const TeamView = () => {
                 to={`/teamview/?date=${currentDate}&grouped_mode=0&save_grouped_mode=1&save_current_department=1&department=${selectedDepartment?.id}`}
                 className="btn btn-default"
                 aria-disabled={!isGroupedMode}
-                // {{#unless grouped_mode}}disabled=disabled{{/unless}}
               >All</Link>
               <Link to={`/teamview/?date=${currentDate}&grouped_mode=1&save_grouped_mode=1&save_current_department=1&department=${selectedDepartment?.id}`} className="btn btn-default"
                 aria-disabled={!!isGroupedMode}
-              // {{#if grouped_mode}}disabled=disabled{{/if}}
               >By department</Link>
             </div>
           </div>
@@ -53,22 +53,25 @@ const TeamView = () => {
             <div className="col-xs-2">
               <Link className="btn btn-link btn-lg" to={`/teamview/?date=${teamViewData?.data?.prev_date.slice(0, 7)}&department=${selectedDepartment?.id}`}>
                 <span aria-hidden="true" className="fa fa-chevron-left" />
+                {' '}
                 {moment(teamViewData?.data?.prev_date).format('MMM')}
               </Link>
             </div>
 
             <div className="col-xs-8 calendar-section-caption">
                 <button id="team_view_month_select_btn" className="btn btn-link btn-lg" data-tom="/calendar/teamview/?base_date=0" data-provide="datepicker" data-date-format="yyyy-mm" data-date-autoclose="1" data-date-min-view-mode="months">
-                  {/* {{as_date_formatted base_date 'MMMM, YYYY' }} */}
                   {moment(teamViewData?.data?.base_date).format('MMMM, YYYY')}
-                <i className="fa fa-angle-down"></i></button>
+                  {' '}
+                  <i className="fa fa-angle-down" />
+                </button>
             </div>
 
             <div className="col-xs-2">
               <Link className="btn btn-link btn-lg pull-right" to={`/teamview/?date=${teamViewData?.data?.next_date.slice(0, 7)}&department=${selectedDepartment?.id}`}>
-                {/* {{as_date_formatted next_date 'MMM'}} */}
                 {moment(teamViewData?.data?.next_date).format('MMM')}
-              <span aria-hidden="true" className="fa fa-chevron-right"></span></Link>
+                {' '}
+                <span aria-hidden="true" className="fa fa-chevron-right" />
+              </Link>
             </div>
           </div>
         </nav>
@@ -129,12 +132,9 @@ const TeamView = () => {
                             </td>
                             <td>
                               <span className="teamview-deducted-days"
-                                // {{#if statistics }}
-                                data-content="In {{as_date_formatted ../../base_date 'MMMM, YYYY' }} {{#with this.user }}{{this.full_name}} used {{../../statistics.deducted_days }} days from allowance{{/with}}"
                                 data-placement="right"
                                 data-toggle="popover"
                                 data-trigger="focus hover"
-                                // {{/if}}
                               >
                               {teamViewData?.data?.statistics ? teamViewData?.data?.statistics?.deducted_days : null}
                               </span>

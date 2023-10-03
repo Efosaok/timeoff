@@ -11,7 +11,7 @@ import { scrollToTop } from "../../utils/helpers";
 const useBankHolidays = () => {
   const url = '/settings/bankholidays';
   const { urlWithSearchQuery } = useSearchParamsInQuery(url);
-  const { data, isLoading } = useQuery(urlWithSearchQuery, () => fetchInstance(urlWithSearchQuery));
+  const { data, isLoading, error } = useQuery(urlWithSearchQuery, () => fetchInstance(urlWithSearchQuery));
 
   const res = data?.data;
 
@@ -73,6 +73,7 @@ const useBankHolidays = () => {
     errors,
     saveHolidays,
     savingHolidays,
+    error,
   };
 };
 

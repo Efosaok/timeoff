@@ -24,6 +24,8 @@ import Root from "./components/layouts/Root";
 import BankHolidays from "./views/BankHolidays";
 import ForgotPassword from "./views/Auth/ForgotPassword";
 import BlockedViews from "./views/BlockedViews";
+import ResetPassword from "./views/Auth/ResetPassword";
+import NotFound from "./components/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -41,6 +43,10 @@ const routes = createBrowserRouter([
       {
         path: '/forgot-password',
         element: <ForgotPassword />
+      },
+      {
+        path: '/reset-password',
+        element: <ResetPassword />
       },
       {
         path: '/calendar',
@@ -128,6 +134,10 @@ const routes = createBrowserRouter([
         path: '/audit/email',
         element: <Emails />,
       },
+      {
+        path: '*',
+        element: <NotFound />
+      }
     ],
   },
 ]);

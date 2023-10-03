@@ -31,10 +31,11 @@ const General = () => {
     // deleteErrors,
     deleteMessages,
     selectedLeaveType,
+    pageError,
   } = useGeneralSettings();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={pageError}>
       <div className="general-settings">
         <h1>General settings</h1>
 

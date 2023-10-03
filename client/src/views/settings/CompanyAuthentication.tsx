@@ -13,10 +13,11 @@ const CompanyAuthentication = () => {
     onChange,
     messages,
     errors,
+    error,
   } = useCompanyAuthentication();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className='company-authentication'>
         <h1>LDAP authentication</h1>
 

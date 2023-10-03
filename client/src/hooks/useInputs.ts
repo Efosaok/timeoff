@@ -21,6 +21,7 @@ const useInputs = (defaults: Record<string, any>) => {
     inputs,
     onChange,
     clearInputs,
+    setInputs,
   }
 }
 

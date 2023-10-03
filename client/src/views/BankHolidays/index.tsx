@@ -20,10 +20,11 @@ const BankHolidays = () => {
     errors,
     saveHolidays,
     savingHolidays,
+    error,
   } = useBankHolidays();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="bank-holidays">
         <h1>Bank holidays</h1>
 
@@ -53,8 +54,10 @@ const BankHolidays = () => {
 
         <div className="row">
           <div className="col-xs-2">
-            <Link className="btn btn-default" to={`?year=${res?.yearPrev}`}><span aria-hidden="true" className="fa fa-chevron-left"></span>
-            {res?.yearPrev}
+            <Link className="btn btn-default" to={`?year=${res?.yearPrev}`}>
+              <span aria-hidden="true" className="fa fa-chevron-left" />
+              {' '}
+              {res?.yearPrev}
             </Link>
           </div>
           <div className="col-xs-8 calendar-section-caption">
@@ -63,7 +66,9 @@ const BankHolidays = () => {
           <div className="col-xs-2">
             <Link className="btn btn-default pull-right" to={`?year=${res?.yearNext}`}>
               {res?.yearNext}
-            <span aria-hidden="true" className="fa fa-chevron-right"></span></Link>
+              {' '}
+              <span aria-hidden="true" className="fa fa-chevron-right" />
+            </Link>
           </div>
         </div>
 

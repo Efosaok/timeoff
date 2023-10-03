@@ -20,8 +20,6 @@ const useBlockedViewItem = (id: number) => {
           },
         };
 
-        console.log(newCacheData, newData)
-
         return newCacheData;
       });
     },

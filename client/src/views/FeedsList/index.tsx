@@ -4,10 +4,10 @@ import Page from "../../components/partials/bits/Page";
 import useFeedsList from "./useFeedsList";
 
 const FeedsList = () => {
-  const { isLoading, showTeamFeed, currentHost, teamFeedToken, calendarFeedToken } = useFeedsList();
+  const { isLoading, showTeamFeed, currentHost, teamFeedToken, calendarFeedToken, error } = useFeedsList();
 
   return (
-    <Page isLoading={isLoading} error="">
+    <Page isLoading={isLoading} error={error}>
       <div className="feeds-list">
         <h1>My feeds</h1>
 

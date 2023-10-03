@@ -4,4 +4,6 @@
 *.swn
 *.swm
 node_modules/
-*.sqlite
+*.sqlite.bak
+*.sqlite.bak.bak
+db.development.sqlite

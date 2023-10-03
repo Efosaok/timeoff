@@ -14,12 +14,19 @@ interface ActionButtonProps {
   text?: string;
   isLoading?: boolean;
   children?: ReactNode;
+  noLoader?: boolean;
 };
 
-const ActionButton: FC<ActionButtonProps> = ({ nativeProps, text, children, isLoading }) => (
+const ActionButton: FC<ActionButtonProps> = ({
+  nativeProps,
+  text,
+  children,
+  isLoading,
+  noLoader,
+}) => (
   <button {...nativeProps} disabled={isLoading}>
     <div className="action-btn-content">
-      {isLoading ? <div className="loader"/> : null} {text || children}
+      {(isLoading && !noLoader) ? <div className="loader"/> : null} {text || children}
     </div>
   </button>
 );
