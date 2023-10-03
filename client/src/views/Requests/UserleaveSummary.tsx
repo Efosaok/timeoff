@@ -10,10 +10,9 @@ const useUserSummary = (userId: number) => {
   const url = `/users/summary/${userId}`;
   const { data: summaryData, isLoading } = useQuery(url, () => fetchInstance.get(url));
 
-  const accruedDays = summaryData?.data?.userAllowance?._carry_over -
-    summaryData?.data?.userAllowance?._number_of_days_taken_from_allowance;
+  const accruedDays = summaryData?.data?.allowanceMeta?.accruedDays;
 
-  const totalAllowance = summaryData?.data?.userAllowance?._carry_over;
+  const totalAllowance = summaryData?.data?.allowanceMeta?.totalNumberOfDaysInAllowance;
 
   return {
     isLoading,

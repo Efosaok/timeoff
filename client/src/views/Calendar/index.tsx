@@ -37,11 +37,11 @@ const Calendar = () => {
           <div className="col-md-3 top-leave-type-statistics">
             <dl>
               <dt data-tom-days-available-in-allowance>
-                { res?.user_allowance?._carry_over - res?.user_allowance?._number_of_days_taken_from_allowance }
+                { res?.allowanceMeta?.numberOfDaysAvailableInAllowance }
               </dt>
               <dd>Days available</dd>
               <dd>out of <span data-tom-total-days-in-allowance>
-                {res?.user_allowance?._carry_over}
+                {res?.allowanceMeta?.totalNumberOfDaysInAllowance}
               </span> in allowance</dd>
             </dl>
           </div>
@@ -99,7 +99,7 @@ const Calendar = () => {
               <dd>
                 <em>Allowance in {res?.current_year}:</em>
                 <span className="pull-right">
-                  {res?.user_allowance._carry_over } days
+                  {res?.allowanceMeta?.totalNumberOfDaysInAllowance } days
                 </span>
               </ dd>
             </dl>
