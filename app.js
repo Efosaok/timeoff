@@ -158,7 +158,6 @@ app.use(function(req, res, next) {
   res.render('not_found');
 });
 
-
 // error handlers
 
 // no stacktraces leaked to user

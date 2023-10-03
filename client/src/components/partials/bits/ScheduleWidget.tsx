@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { FC, MouseEventHandler } from "react";
+import React, { FC } from "react";
 
 interface ScheduleWidgetProps {
   worksMonday: boolean;

@@ -34,7 +34,7 @@ const Requests = () => {
         </div>
 
         <div className="row">
-          {!res?.to_be_approved_leaves ? (
+          {!res?.to_be_approved_leaves?.length ? (
             <div className="col-md-12 text-muted">
               There are no leave requests to decide on.
             </div>

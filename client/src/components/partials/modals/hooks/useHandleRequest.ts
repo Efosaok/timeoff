@@ -1,12 +1,13 @@
 import React from "react";
 import { toast } from "react-hot-toast";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
 import useFetchLeaveFormData from "../../../../hooks/useFetchLeaveFormData";
 import useInputs from "../../../../hooks/useInputs";
 
 const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) => void) => {
   const { res, isLoading } = useFetchLeaveFormData();
+  const queryClient = useQueryClient();
 
   const { inputs, onChange, clearInputs, setInputs } = useInputs({});
   const approveRequestFn = () => fetchInstance.post('/requests/approve/', {
@@ -16,6 +17,8 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
   });
   const { mutate: approveMutate, isLoading: approving } = useMutation(approveRequestFn, {
     onSuccess: () => {
+      queryClient.invalidateQueries('/requests');
+      queryClient.invalidateQueries('/calendar');
       toast.success('Leave approved successfully');
       clearInputs();
       toggleModal({});
@@ -33,6 +36,8 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
   });
   const { mutate: rejectMutate, isLoading: rejecting } = useMutation(rejectRequestFn, {
     onSuccess: () => {
+      queryClient.invalidateQueries('/requests');
+      queryClient.invalidateQueries('/calendar');
       toast.success('Leave rejected successfully');
       clearInputs();
       toggleModal({});
