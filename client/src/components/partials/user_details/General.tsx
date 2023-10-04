@@ -42,6 +42,7 @@ const General = () => {
             </select>
             <span id="department_help" className="help-block">
               Department current user is part of.
+              {' '}
               <Link to={`/departments/${res?.employee?.DepartmentId}`}>
                 More details
                 <i className="fa fa-angle-double-right" />
@@ -53,8 +54,7 @@ const General = () => {
               <label htmlFor="admin_inp" className="control-label">
                 <input className="" id="admin_inp" name="admin" type="checkbox"
                 checked={res?.employee?.admin}
-                />
-                Is administrator user
+                /> Is administrator user
               </label>
           </div>
 
@@ -62,8 +62,7 @@ const General = () => {
               <label htmlFor="auto_approve_inp" className="control-label">
                 <input className="" id="auto_approve_inp" name="auto_approve" type="checkbox"
                   checked={res?.employee?.auto_approve}
-                />
-                Auto approve leave requests
+                /> Auto approve leave requests
               </label>
               <span className="help-block">
                 Set the flag ON to streamline leave requests from {res?.employee?.name} {res?.employee?.lastname} directly into <strong>Approved</strong> state.</span>
@@ -117,12 +116,12 @@ const General = () => {
 
           <div className="form-group">
             <label htmlFor="link_to_email_audit" className="control-label">
-              <a href={`/audit/email/?user_id=${res?.employee?.id}`}>
+              <Link to={`/audit/email/?user_id=${res?.employee?.id}`}>
                 Emails ever sent to
                 {' '}
                 {/* {{#with employee}}{{this.full_name}}{{/with}} */}
                 {res?.employee?.name} {res?.employee?.lastname}
-              </a>
+              </Link>
             </label>
           </div>
         </div>

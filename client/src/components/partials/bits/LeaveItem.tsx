@@ -32,6 +32,7 @@ const LeaveItem: FC<LeaveItemProps> = ({
         {isPendedRevokeLeave(leave?.status) && <><br />(pended revoke)</>}
       </td>
       <td>{metaData?.[leave?.id]?.deductedDays}</td>
+      <td>{leave?.time}</td>
       <td className="user-request-table-approver">
         {leave?.approver?.name} {leave?.approver?.lastname}
       </td>
@@ -65,6 +66,7 @@ const LeaveItem: FC<LeaveItemProps> = ({
         )}
       </td>
       <td>{leave?.employee_comment}</td>
+      <td>{leave.rejecter_comment}</td>
       <td><span className="pull-right leave-request-row-status">
         {isNew(leave?.status) ? 'Pending' : null}
         {isApproved(leave?.status) ? 'Approved' : null}

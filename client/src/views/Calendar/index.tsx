@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CalendarCell from "../../components/partials/bits/CalendarCell";
+import FlashMessages from "../../components/partials/bits/FlashMessages";
 import Page from "../../components/partials/bits/Page";
 import UserRequests from "../../components/partials/bits/UserRequests";
 import AllowanceBreakdown from "../../components/partials/user_details/AllowanceBreakdown";
@@ -9,7 +10,14 @@ import useCalendar from "./useCalendar";
 
 const Calendar = () => {
   const {
-    loggedUser, res, isLoading, showFullYear, error,
+    loggedUser,
+    res,
+    isLoading,
+    showFullYear,
+    error,
+    messages,
+    errors,
+    updateFlash,
   } = useCalendar();
 
   return (
@@ -24,7 +32,7 @@ const Calendar = () => {
           <div className="col-md-6" />
         </div>
 
-        {/* {{> show_flash_messages }} */}
+        <FlashMessages messages={messages} errors={errors} />
 
         <div className="row">&nbsp;</div>
 
@@ -54,7 +62,7 @@ const Calendar = () => {
             <dl>
               <dt>Used so far</dt>
 
-              {res?.leave_type_statistics ?
+              {res?.leave_type_statistics?.length ?
                 (
                   <>
                     {res?.leave_type_statistics?.map((leaveType: any) => (
@@ -199,7 +207,7 @@ const Calendar = () => {
           <div className="row main-row_header">
             <p className="col-md-12">All my absences in {res?.current_year}</p>
           </div>
-          <UserRequests updateFlash={() => {}} loggedUser={res?.loggedUser} leaves={res?.leaves} metaData={res?.leavesMeta}  />
+          <UserRequests updateFlash={updateFlash} loggedUser={res?.loggedUser} leaves={res?.leaves} metaData={res?.leavesMeta}  />
           </>
 
         ) : null}

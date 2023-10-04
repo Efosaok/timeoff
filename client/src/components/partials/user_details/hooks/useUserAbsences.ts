@@ -6,12 +6,14 @@ const useUserAbsences = () => {
   const { id } = useParams();
   const url = `users/edit/${id}/absences`;
 
-  const { data } = useQuery(url, () => fetchInstance(url));
+  const { data, isLoading, error } = useQuery(url, () => fetchInstance(url));
 
   const res = data?.data;
 
   return {
     res,
+    isLoading,
+    error,
   }
 }
 

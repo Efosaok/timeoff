@@ -8,12 +8,14 @@ const useUserCalendar = () => {
   const url = `users/edit/${id}/calendar`;
   const { urlWithSearchQuery } = useSearchParamsInQuery(url);
 
-  const { data } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
+  const { data, isLoading, error } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
 
   const res = data?.data;
 
   return {
     res,
+    isLoading,
+    error,
   }
 };
 

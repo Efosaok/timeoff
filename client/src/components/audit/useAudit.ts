@@ -10,11 +10,11 @@ const useEmail = () => {
   const { inputs, onChange, clearInputs } = useInputs({ user_id: '', start_date: '', end_date: '' });
   const { urlWithSearchQuery, params, search } = useSearchParamsInQuery(pathname);
 
-  const { data, isLoading } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
+  const { data, isLoading, error } = useQuery(urlWithSearchQuery, () => fetchInstance.get(urlWithSearchQuery));
 
   const res = data?.data;
 
-  const userId = params?.get('user_id') || '';
+  let userId: number = Number(params?.get('user_id')) || 0;
 
   const filter = () => navigate(`${pathname}?user_id=${inputs?.user_id}&start_date=${inputs?.start_date}&end_date=${inputs?.end_date}`);
 
@@ -30,6 +30,7 @@ const useEmail = () => {
     clearInputs,
     filter,
     canReset,
+    error,
   }
 };
 

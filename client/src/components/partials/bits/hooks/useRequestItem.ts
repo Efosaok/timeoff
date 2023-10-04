@@ -16,6 +16,7 @@ const useRequestItem = (
     onSuccess: (data) => {
       updateFlash(data?.data?.messages);
       queryClient.invalidateQueries('/requests');
+      queryClient.invalidateQueries('/calendar');
       scrollToTop();
     },
     onError: (err: any) => {
@@ -30,6 +31,7 @@ const useRequestItem = (
     onSuccess: (data) => {
       updateFlash(data?.data?.messages);
       queryClient.invalidateQueries('/requests');
+      queryClient.invalidateQueries('/calendar');
       scrollToTop();
     },
     onError: (err: any) => {

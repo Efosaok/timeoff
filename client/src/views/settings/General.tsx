@@ -23,12 +23,11 @@ const General = () => {
     onChange,
     updateSettings,
     updatingSettings,
-    updateErrors,
-    updateMessage,
     toggleModal,
     deleteLeaveType,
     deletingLeaveType,
-    // deleteErrors,
+    messages,
+    errors,
     deleteMessages,
     selectedLeaveType,
     pageError,
@@ -41,7 +40,7 @@ const General = () => {
 
         <p className="lead">Account main settings</p>
 
-        <FlashMessages messages={updateMessage} errors={updateErrors} />
+        <FlashMessages messages={messages} errors={errors} />
         <div className="row">&nbsp;</div>
 
         <div className="row">
@@ -400,7 +399,7 @@ const General = () => {
                             account.
                           </em></p>
                           <p><em> This action cannot be reverted.</em></p>
-                          <p><em> It is strongly recommended to <a href="/settings/company/backup/">download</a> employees leave data first.</em></p>
+                          <p><em> It is strongly recommended to <Link to="/settings/company/backup/">download</Link> employees leave data first.</em></p>
                         </div>
                         <div className="col-md-6">
                           {/* <button className="btn btn-danger pull-right" data-toggle="modal" data-target="#remove_company_modal" type="button"><i className="fa fa-remove"></i> Delete company account</button> */}

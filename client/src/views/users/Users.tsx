@@ -11,6 +11,7 @@ const Users = () => {
     getDepartmentClass,
     csvpath,
     error,
+    selectedDepartmentId,
   } = useEmployeeList();
 
   return (
@@ -39,7 +40,7 @@ const Users = () => {
               </ul>
             </div>
             <form action={csvpath} method="GET">
-              <input type="hidden" name="department" value="{{department_id}}" />
+              <input type="hidden" name="department" value={`${selectedDepartmentId}`} />
               <input type="hidden" name="as-csv" value="1" />
               <button
                 className="btn btn-link pull-right single-click"

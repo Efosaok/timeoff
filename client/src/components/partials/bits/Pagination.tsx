@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 interface PagerProps {
   pager: any;
-  userId?: string
+  userId?: number;
 }
 
 const Pagination: FC<PagerProps> = ({ pager, userId }) => (

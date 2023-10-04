@@ -23,7 +23,6 @@ const CompanyAuthentication = () => {
 
         <p className="lead">LDAP authentication details</p>
 
-        {/* {{> show_flash_messages }} */}
         <FlashMessages messages={messages} errors={errors} />
 
         <div className="row main-row_header">

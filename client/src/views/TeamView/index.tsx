@@ -121,7 +121,7 @@ const TeamView = () => {
                               data-user-id={leave?.user?.id}
                             >
                             {teamViewData?.data?.loggedUser ? (
-                              <Link to={`/users/edit/${leave?.user?.id}/`}>
+                              <Link to={`/users/${leave?.user?.id}/`}>
                                 {leave?.user?.name} {leave?.user?.lastname}
                               </Link>
                             ) : (
@@ -210,9 +210,9 @@ const TeamView = () => {
                       data-user-id={leave?.user?.id}
                     >
                     {teamViewData?.data?.loggedUser ? (
-                      <a href={`/users/edit/${leave?.user?.id}/`}>
+                      <Link to={`/user/${leave?.user?.id}/`}>
                         {leave?.user?.name} {leave?.user?.lastname}
-                      </a>
+                      </Link>
                     ): (
                       <span>
                         {leave?.user?.name} {leave?.user?.lastname}

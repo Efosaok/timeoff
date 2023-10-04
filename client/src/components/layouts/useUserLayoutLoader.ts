@@ -7,6 +7,8 @@ export interface UserDetailsRes {
   isOnAbsence: boolean;
   isOnCalendar: boolean;
   isOnSchedule: boolean;
+  isLoading: boolean;
+  error: any,
   res: any;
 }
 
@@ -15,7 +17,7 @@ const useUserLayoutLoader = (): UserDetailsRes => {
   const matches = useMatches();
   const url = `users/edit/${id}`;
 
-  const { data } = useQuery(url, () => fetchInstance.get(url));
+  const { data, isLoading, error } = useQuery(url, () => fetchInstance.get(url));
 
   const res = data?.data;
 
@@ -25,14 +27,14 @@ const useUserLayoutLoader = (): UserDetailsRes => {
   const isOnCalendar = pathId === 'u-cal';
   const isOnSchedule = pathId === 'schedule';
 
-  console.log(isOnDetails, matches);
-
   return {
     res,
     isOnDetails,
     isOnAbsence,
     isOnCalendar,
     isOnSchedule,
+    isLoading,
+    error,
   };
 };
 

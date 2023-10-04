@@ -1,9 +1,9 @@
 import { AxiosResponse } from "axios";
 import {  useContext, useState } from "react";
-import { toast } from "react-hot-toast";
 import { useMutation, useQuery } from "react-query";
 import fetchInstance from "../../../axios/fetchInstance";
 import ModalContext from "../../../contexts/ModalContext";
+import useFlash from "../../../hooks/useFlash";
 import useInputs from "../../../hooks/useInputs";
 import { formatScheduleToApiFormat, formatUpdateSettingsInputPreflight, scrollToTop } from "../../../utils/helpers";
 
@@ -11,6 +11,7 @@ const useGeneralSettings = () => {
   const url = '/settings/general';
 
   const { data: settingsData, isLoading, error: pageError } = useQuery(url, () => fetchInstance.get(url));
+  const { messages, errors, updateFlash } = useFlash();
 
   const res = settingsData?.data;
 
@@ -19,10 +20,12 @@ const useGeneralSettings = () => {
   const carryOverAllowanceFn = () => fetchInstance.post('/settings/carryOverUnusedAllowance');
   const { mutate, data: carryOver, isLoading: carryingOver } = useMutation(carryOverAllowanceFn, {
     onSuccess: (data) => {
-      toast.success(data?.data?.message);
+      updateFlash(data?.data?.messages);
+      scrollToTop();
     },
-    onError: () => {
-      toast.error('Failed to carry over allowance')
+    onError: (err: any) => {
+      updateFlash(err?.response?.data?.errors, 'errors');
+      scrollToTop();
     }
   });
 
@@ -49,10 +52,12 @@ const useGeneralSettings = () => {
   const updateScheduleFn = () => fetchInstance.post('/settings/schedule', scheduleDays)
   const { mutate: updateScheduleMutate, isLoading: updatingSchedule } = useMutation(updateScheduleFn, {
     onSuccess: (data) => {
-      toast.success(data?.data?.message);
+      updateFlash(data?.data?.messages);
+      scrollToTop();
     },
-    onError: () => {
-      toast.error('Failed to carry over unused allowance')
+    onError: (err: any) => {
+      updateFlash(err?.response?.data?.errors, 'errors');
+      scrollToTop();
     }
   });
   const updateSchedule = () => updateScheduleMutate();
@@ -66,7 +71,12 @@ const useGeneralSettings = () => {
     data,
     error
   } = useMutation<AxiosResponse<any, any>, any>(updateSettingsFn, {
-    onSuccess: () => {
+    onSuccess: (data) => {
+      updateFlash(data?.data?.messages);
+      scrollToTop();
+    },
+    onError: (err: any) => {
+      updateFlash(err?.response?.data?.errors, 'errors');
       scrollToTop();
     }
   });
@@ -84,9 +94,17 @@ const useGeneralSettings = () => {
     mutate: deleteLeaveTypeMutate,
     data: deletedLeaveType,
     isLoading: deletingLeaveType,
-    error: deleteError,
     variables: selectedLeaveType,
-  } = useMutation(deleteLeaveTypeFn)
+  } = useMutation(deleteLeaveTypeFn, {
+    onSuccess: (data) => {
+      updateFlash(data?.data?.messages);
+      scrollToTop();
+    },
+    onError: (err: any) => {
+      updateFlash(err?.response?.data?.errors, 'errors');
+      scrollToTop();
+    }
+  })
   const deleteLeaveType = (id: string) => deleteLeaveTypeMutate(id);
 
   // const deleteErrors = deleteError?.response?.data?.errors as any;
@@ -106,15 +124,14 @@ const useGeneralSettings = () => {
     onChange,
     updateSettings,
     updatingSettings,
-    updateErrors,
-    updateMessage,
     toggleModal,
     deleteLeaveType,
     deletingLeaveType,
-    // deleteErrors,
     deleteMessages,
     selectedLeaveType,
     pageError,
+    messages,
+    errors,
   }
 };
 
