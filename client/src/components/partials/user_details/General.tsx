@@ -3,7 +3,7 @@ import { Link, useOutletContext } from "react-router-dom";
 import BreadCrumb from "./BreadCrumb";
 
 const General = () => {
-  const res = useOutletContext() as any;
+  const { res } = useOutletContext() as any;
 
   return (
     <div className="general">

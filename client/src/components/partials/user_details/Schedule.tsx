@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Page from "../bits/Page";
 import ScheduleWidget from "../bits/ScheduleWidget";
 import BreadCrumb from "./BreadCrumb";
@@ -24,7 +25,7 @@ const Schedule = () => {
               {res?.isUserSpecific ? (
                 <>Current employee has <strong data-vpp="declare-user-specific-schedule">custom</strong> schedule.</>
               ): (
-              <>Current employee uses <strong><a data-vpp="link-to-company-schedule" href="/settings/general/">company wide</a></strong> schedule.</>
+              <>Current employee uses <strong><Link data-vpp="link-to-company-schedule" to="/settings">company wide</Link></strong> schedule.</>
               )}
             </p>
 

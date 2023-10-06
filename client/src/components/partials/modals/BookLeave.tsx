@@ -32,7 +32,7 @@ const BookLeave = () => {
                   {res?.users?.map((user: any, i: number) => (
                     <option
                       key={user?.id}
-                      value={i}
+                      value={user?.id}
                       selected={user?.id === res?.loggedUser?.id}
                     >
                       {user?.name} {user?.lastname}

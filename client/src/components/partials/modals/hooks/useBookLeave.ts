@@ -1,15 +1,17 @@
 import moment from "moment";
 import { useContext } from "react";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
 import ModalContext from "../../../../contexts/ModalContext";
 import useFetchLeaveFormData from "../../../../hooks/useFetchLeaveFormData";
 import useFlash from "../../../../hooks/useFlash";
 import useInputs from "../../../../hooks/useInputs";
 import { BOOK_LEAVE_DEFAULTS } from "../../../../utils/constants";
+import { scrollToTop } from "../../../../utils/helpers";
 
 const useBookLeave = () => {
   const { res, url, isLoading } = useFetchLeaveFormData();
+  const queryClient = useQueryClient();
 
   const { toggleShowModal } = useContext(ModalContext);
 
@@ -27,7 +29,11 @@ const useBookLeave = () => {
     return fetchInstance.post(url, inputsToSend());
   }
   const { mutate, isLoading: booking } = useMutation(bookLeaveFn, {
-    onSuccess: (data) => updateFlash(data?.data?.messages),
+    onSuccess: (data) => {
+      updateFlash(data?.data?.messages);
+      scrollToTop();
+      queryClient.invalidateQueries('/requests');
+    },
     onError: (err: any) => updateFlash(err?.response?.data?.errors, 'errors')
   });
   const bookLeave = () => mutate();

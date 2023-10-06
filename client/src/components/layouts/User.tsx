@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import FlashMessages from "../partials/bits/FlashMessages";
 import Page from "../partials/bits/Page";
 import useUserLayoutLoader from "./useUserLayoutLoader";
 
@@ -13,6 +14,9 @@ const User = () => {
     isOnSchedule,
     isLoading,
     error,
+    messages,
+    errors,
+    outletContext,
   } = useUserLayoutLoader();
 
   return (
@@ -38,8 +42,7 @@ const User = () => {
         </div>
 
         <div className="row">&nbsp;</div>
-
-        {/* {{> show_flash_messages }} */}
+        <FlashMessages messages={messages} errors={errors} />
 
         <div className="col-md-3 list-group">
           <Link to={`/user/${res?.employee?.id}/`} className={classNames('list-group-item', { 'selected-item': isOnDetails })}>General details</Link>
@@ -49,7 +52,7 @@ const User = () => {
         </div>
 
         <div className="detail">
-          <Outlet context={res} />
+          <Outlet context={outletContext} />
         </div>
 
         <div className="row">&nbsp;</div>
