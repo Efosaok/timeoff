@@ -25,10 +25,18 @@ const useLoginDetails = () => {
   })
   const logout = () => mutate();
 
+  const notificationsUrl = '/api/v1/notifications';
+  const { data: notifData } = useQuery(notificationsUrl, () => fetchInstance.get(notificationsUrl), {
+    refetchInterval: 3000,
+  });
+
+  const notifRes = notifData?.data;
+
   return {
     res,
     toggleModal,
-    logout
+    logout,
+    notifRes,
   }
 }
 

@@ -11,11 +11,13 @@ const Root = () => {
 
   const canShowModal = (name: keyof ModalProps = 'general') =>  modalProps[name];
 
+  const setModalVisibility = (value: boolean, name: keyof ModalProps = 'general') => setShowModal({ [name]: value });
+
   const showModal = modalProps?.general;
 
   return (
     <div className="container">
-      <ModalContext.Provider value={{ canShowModal, setShowModal, toggleShowModal, showModal }}>
+      <ModalContext.Provider value={{ canShowModal, setShowModal, setModalVisibility, toggleShowModal, showModal }}>
         <Header />
         <Outlet />
         <Footer />

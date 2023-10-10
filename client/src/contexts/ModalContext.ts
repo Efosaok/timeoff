@@ -8,17 +8,20 @@ export interface ModalProps {
   addLeaveType?: boolean;
   addBankHoliday?: boolean;
   addBlockedView?: boolean;
+  selectSupervisors?: boolean;
 }
 
 interface ModalContextProps {
   showModal?: boolean,
   setShowModal?: Dispatch<SetStateAction<ModalProps>>,
   toggleShowModal: (name?: keyof ModalProps) => void,
+  setModalVisibility: (value: boolean, name?: keyof ModalProps) => void,
   canShowModal: (name?: keyof ModalProps) => boolean | undefined;
 }
 const ModalContext = createContext<ModalContextProps>({
   toggleShowModal: () => {},
-  canShowModal: () => false
+  canShowModal: () => false,
+  setModalVisibility: () => {},
 });
 
 export default ModalContext;

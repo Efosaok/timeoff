@@ -7,7 +7,16 @@ import FlashMessages from "../../components/partials/bits/FlashMessages";
 import Page from "../../components/partials/bits/Page";
 
 const Details = () => {
-  const { res, deleteDepartment, deleting, errors, isLoading, detailsError } = useDepartmentDetails();
+  const {
+    res,
+    deleteDepartment,
+    deleting,
+    errors,
+    messages,
+    isLoading,
+    detailsError,
+    updateFlash,
+  } = useDepartmentDetails();
 
   return (
     <Page isLoading={isLoading} error={detailsError}>
@@ -20,7 +29,7 @@ const Details = () => {
         <div className="col-md-3 lead">
           Department details
         </div>
-        <FlashMessages errors={errors} />
+
         <div className="col-md-1 col-md-offset-8">
           <ActionButton
             nativeProps={{
@@ -38,16 +47,20 @@ const Details = () => {
         </div>
       </div>
 
+      <FlashMessages errors={errors} messages={messages}  />
+
       <div className="row">&nbsp;</div>
-
-      {/* {{> show_flash_messages }} */}
-
       <div className="col-md-3 list-group">
         <Link to={`/departments/{${res?.department?.id}/`} className="list-group-item selected-item">General details</Link>
         <Link to={`/users/?department=${res?.department?.id}`} className="list-group-item">Employees from department</Link>
       </div>
 
-      <DepartmentGeneralDetails department={res?.department} users={res?.company?.users} allowanceOptions={res?.allowance_options} />
+      <DepartmentGeneralDetails
+        department={res?.department}
+        users={res?.company?.users}
+        allowanceOptions={res?.allowance_options}
+        updateFlash={updateFlash}
+      />
 
       <div className="row">&nbsp;</div>
 

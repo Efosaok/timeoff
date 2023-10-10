@@ -16,6 +16,7 @@ const AddLeaveType: FC<AddLeaveTypeProps> = ({ toggleModal }) => {
     messages,
     errors,
     inputs,
+    onSelectLeaveTypeColor,
   } = useAddLeaveType();
 
   return (
@@ -35,10 +36,10 @@ const AddLeaveType: FC<AddLeaveTypeProps> = ({ toggleModal }) => {
 
         <div className="form-group">
           <div className="dropdown" data-tom-color-picker="1">
-            <input value={inputs?.color__new} onChange={onChange} type="hidden" name="color__new" />
-            <button type="button" className="btn btn-default dropdown-toggle leave_type_color_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-paint-brush"></i> Pick up color for new type</button>
+            <input value={inputs?.color__new} type="hidden" name="color__new" />
+            <button type="button" className={`btn btn-default dropdown-toggle ${inputs?.color__new}`} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-paint-brush"></i> Pick up color for new type</button>
             <ul className="dropdown-menu">
-              <ColorPicker />
+              <ColorPicker onSelect={onSelectLeaveTypeColor} />
             </ul>
           </div>
           <p><em>Determine how leaves of new type are going to be highlighted on Calendar/Team view pages.</em></p>

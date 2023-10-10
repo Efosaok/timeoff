@@ -1,8 +1,11 @@
 import classNames from "classnames";
 import React from "react";
+import { toast } from "react-hot-toast";
 import { Link, Outlet } from "react-router-dom";
+import ConfirmationToast from "../partials/bits/ConfirmationToast";
 import FlashMessages from "../partials/bits/FlashMessages";
 import Page from "../partials/bits/Page";
+import ActionButton from "../partials/button/ActionButton";
 import useUserLayoutLoader from "./useUserLayoutLoader";
 
 const User = () => {
@@ -17,7 +20,14 @@ const User = () => {
     messages,
     errors,
     outletContext,
+    toastPromptMessage,
+    onConfirmToast,
+    deletingUser,
   } = useUserLayoutLoader();
+
+  const promptUserDelete = () => toast((t) => (
+    <ConfirmationToast confirmMessage="Delete" message={toastPromptMessage} onConfirm={() => onConfirmToast(t)} onDismiss={() => toast.dismiss(t.id)}  />
+  ), { position: 'top-center', duration: 10000 });
 
   return (
     <Page isLoading={isLoading} error={error}>
@@ -32,13 +42,21 @@ const User = () => {
 
           <div className="row">
             <div className="col-md-3 lead">Employee details</div>
-            <form id="add_new_user_frm" method="post" action="/users/delete/{{employee.id}}/" onSubmit={() => {}}
-            // "return confirm('Do you really want to delete the user {{employee.name}} {{employee.lastname}}?');"
-            >
+            <div>
               <div className="col-md-1 col-md-offset-8">
-              <button id="remove_btn" type="submit" className="pull-right btn btn-danger single-click" data-toggle="tooltip" data-placement="top" title="Remove employee"><i className="fa fa-trash"></i> Delete</button>
+              <ActionButton
+                nativeProps={{
+                  type: 'button',
+                  className: 'pull-right btn btn-danger single-click',
+                  onClick: promptUserDelete,
+                  title: 'Remove employee',
+                }}
+                isLoading={deletingUser}
+              >
+                {!deletingUser ? (<i className="fa fa-trash">&nbsp;</i>) : null} Delete
+              </ActionButton>
               </div>
-            </form>
+            </div>
         </div>
 
         <div className="row">&nbsp;</div>

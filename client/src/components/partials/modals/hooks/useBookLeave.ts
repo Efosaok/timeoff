@@ -10,7 +10,7 @@ import { BOOK_LEAVE_DEFAULTS } from "../../../../utils/constants";
 import { scrollToTop } from "../../../../utils/helpers";
 
 const useBookLeave = () => {
-  const { res, url, isLoading } = useFetchLeaveFormData();
+  const { res, url, isLoading, error } = useFetchLeaveFormData();
   const queryClient = useQueryClient();
 
   const { toggleShowModal } = useContext(ModalContext);
@@ -33,6 +33,7 @@ const useBookLeave = () => {
       updateFlash(data?.data?.messages);
       scrollToTop();
       queryClient.invalidateQueries('/requests');
+      queryClient.invalidateQueries('/calendar');
     },
     onError: (err: any) => updateFlash(err?.response?.data?.errors, 'errors')
   });
@@ -50,6 +51,7 @@ const useBookLeave = () => {
     errors,
     onChange,
     disableTimeField,
+    error
   }
 };
 

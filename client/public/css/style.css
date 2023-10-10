@@ -399,3 +399,12 @@ div.feeds-holder {
   width: 740px;
   margin: 50px auto 18px;
 }
+
+#add_secondary_supervisers_modal .modal-body {
+  overflow-y: auto;
+  max-height: 405.3px;
+}
+
+.accept-request, .reject-request {
+  margin-top: 3px;
+}

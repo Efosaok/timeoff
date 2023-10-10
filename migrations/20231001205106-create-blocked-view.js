@@ -27,10 +27,18 @@ module.exports = {
       companyId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'BankHolidays',
+          model: 'Companies',
           key: 'id',
         },
       },
+      departmentId: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+        references: {
+          model: 'Departments',
+          key: 'id',
+        },
+      }
     });
   },
   async down(queryInterface, Sequelize) {

@@ -11,6 +11,7 @@ const BookLeave = () => {
     res,
     toggleShowModal,
     isLoading,
+    error,
     messages,
     errors,
     booking,
@@ -21,7 +22,7 @@ const BookLeave = () => {
 
   return (
     <Modal title="New absence">
-      <Page isLoading={isLoading} error="">
+      <Page isLoading={isLoading} error={error}>
         <div>
           <FlashMessages messages={messages} errors={errors} />
           <div className="modal-body">
@@ -42,7 +43,6 @@ const BookLeave = () => {
               </div>
             ): null}
 
-              {/* {{# if_equal logged_user.supervised_users.length 1 }} */}
               {res?.users?.length <= 1 ? (
                 <div className="form-group">
                   <label htmlFor="leave_type" className="control-label">Leave type:</label>

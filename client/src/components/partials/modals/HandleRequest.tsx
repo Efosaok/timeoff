@@ -20,11 +20,12 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
     onChangeApproverComment,
     onChangeRejecterComment,
     inputs,
+    error,
   } = useHandleRequest(leave, toggleModal);
 
   return (
     <Modal title="Handle Leave Request" name="handleRequest">
-      <Page isLoading={isLoading} error="">
+      <Page isLoading={isLoading} error={error}>
         <div className="modal-body">
           <div className="form-group">
             <label htmlFor="leave_type" className="control-label">Leave type:</label>
@@ -48,7 +49,7 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
           <ActionButton
             nativeProps={{
               type: 'button',
-              className: 'btn btn-success single-click',
+              className: 'btn btn-success single-click accept-request',
               onClick: approveRequest,
             }}
             isLoading={approving}
@@ -62,7 +63,7 @@ const HandleRequest: FC<HandleRequestProps> = ({ leave, toggleModal }) => {
             <ActionButton
               nativeProps={{
                 type: 'button',
-                className: 'btn btn-warning single-click',
+                className: 'btn btn-warning single-click reject-request',
                 onClick: rejectRequest,
               }}
               isLoading={rejecting}

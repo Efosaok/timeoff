@@ -2,6 +2,7 @@ import { toast } from "react-hot-toast";
 import { useMutation, useQuery } from "react-query";
 import { useNavigate, useParams } from "react-router-dom";
 import fetchInstance from "../../../axios/fetchInstance";
+import useFlash from "../../../hooks/useFlash";
 
 const useDepartmentDetails = () => {
   const { id } = useParams();
@@ -14,17 +15,20 @@ const useDepartmentDetails = () => {
 
   const deleteFn = () => fetchInstance.post(`/settings/departments/delete/${id}`);
 
-  const { mutate, isLoading: deleting, error } = useMutation<any, any>(deleteFn, {
-    onSuccess: (data) => {
+  const { errors, messages, updateFlash } = useFlash();
+  const { mutate, isLoading: deleting } = useMutation<any, any>(deleteFn, {
+    onSuccess: () => {
       navigate('/departments');
       toast.success('Department deleted sucessfully');
+    },
+    onError: (err: any) => {
+      updateFlash(err?.response?.data?.errors, 'errors');
     },
   });
 
   const deleteDepartment = () => mutate();
 
   const res = data?.data;
-  const errors = error?.response?.data?.errors;
 
   return {
     res,
@@ -32,7 +36,9 @@ const useDepartmentDetails = () => {
     deleteDepartment,
     deleting,
     errors,
+    messages,
     detailsError,
+    updateFlash,
   }
 };
 

@@ -1,6 +1,7 @@
+import moment from "moment";
 import React, { useState } from "react"
 
-const useInputs = (defaults: Record<string, any>) => {
+const useInputs = (defaults: Record<string, any>, ignoreFormat?: boolean) => {
   const [inputs, setInputs] = useState(defaults);
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | any>) => {
@@ -9,8 +10,9 @@ const useInputs = (defaults: Record<string, any>) => {
     let finalValue = value;
   
     const newInputs = { ...inputs };
-    if (type === 'checkbox' && !checked) newInputs[name] = undefined;
-    else newInputs[name] = finalValue;
+    if (type === 'checkbox' && !checked) finalValue = undefined;
+    if (type === 'date' && !ignoreFormat) finalValue = moment(value).format('MM/DD/YY')
+    newInputs[name] = finalValue;
 
     setInputs(newInputs);
   }

@@ -1,5 +1,9 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
+import { UpdateFlashT } from "../../../hooks/useFlash";
+import ActionButton from "../button/ActionButton";
+import SupervisorsModal from "../modals/SupervisorsModal";
+import useDepartmentDetailsForm from "./useDepartmentDetailsForm";
 
 interface AllowanceI {
   value: number;
@@ -9,13 +13,23 @@ interface DptGeneralProps {
   department: Record<string, any>,
   users: Record<string, string>[],
   allowanceOptions: AllowanceI[],
+  updateFlash: UpdateFlashT;
 }
 
-const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) => {
+const General: FC<DptGeneralProps> = ({ department, allowanceOptions, updateFlash, users }) => {
+  const {
+    onChange,
+    saveDepartmentDetails,
+    isLoading,
+    removeSupervisor,
+    removingSupervisor,
+    toggleModal,
+    addSupervisors,
+  } = useDepartmentDetailsForm({ department, updateFlash });
+
   return (
     <div className="general-departments">
-      <form method="POST" action="/settings/departments/edit/{{ department.id }}/" id="department_edit_form">
-
+      <div>
         <div className="col-md-7">
 
           <ol className="breadcrumb">
@@ -27,12 +41,12 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
 
           <div className="form-group">
             <label htmlFor="name" className="control-label">Name</label>
-            <input className="form-control" id="name" name="name" required value={department?.name} />
+            <input onChange={onChange} className="form-control" id="name" name="name" required defaultValue={department?.name} />
           </div>
 
           <div className="form-group">
             <label htmlFor="manager_id" className="control-label">Manager</label>
-            <select className="form-control" name="boss_id" id="manager_id">
+            <select onChange={onChange} className="form-control" name="boss_id" id="manager_id">
               {users?.map((user: any) => (
                 <option value={user?.id}
                   selected={user?.id === department?.bossId}
@@ -43,10 +57,7 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
             </select>
             <span className="help-block">
               Head of {department?.name} department. Main manager.
-              <Link to={`/user/${department?.bossId}/`}>
-                More details
-                <i className="fa fa-angle-double-right" />
-              </Link>
+              <Link to={`/user/${department?.bossId}/`}> More details <i className="fa fa-angle-double-right" /></Link>
             </span>
           </div>
 
@@ -59,9 +70,17 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
                     <Link to={`/user/${sup?.id}/`}>
                       {sup?.name} {sup?.lastname}
                     </Link>
-                    <button type="submit" name="remove_supervisor_id" value={sup?.id} className="pull-right btn btn-link btn-xs">
-                      <i className="fa fa-trash" /> Remove
-                    </button>
+                    <ActionButton
+                      nativeProps={{
+                        type: 'button',
+                        className: 'pull-right btn btn-link btn-xs',
+                        onClick: () => removeSupervisor(sup?.id),
+                      }}
+                      isLoading={removingSupervisor(sup?.id)}
+                      noLoader
+                    >
+                      <i className="fa fa-trash" />&nbsp;Remove
+                    </ActionButton>
                   <span />
                 </li>
               ))}
@@ -70,10 +89,9 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
                 <span />&nbsp;
                 <Link className="pull-right btn btn-link btn-xs"
                   data-vpp-add-new-secondary-supervisor="1"
-                  data-toggle="modal"
-                  data-target="#add_secondary_supervisers_modal"
                   data-department_id={department?.id}
                   data-department_name={department?.name}
+                  onClick={toggleModal}
                   to="#"
                 >
                   <i className="fa fa-plus" /> Add new secondary supervisor
@@ -90,7 +108,7 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
           <div className="form-group">
             <label htmlFor="allowance_select">Allowance</label>
 
-            <select className="form-control" name="allowance" id="allowance_select">
+            <select onChange={onChange} className="form-control" name="allowance" id="allowance_select">
               {allowanceOptions?.map((allowance) => (
                 <option value={allowance?.value}
                   selected={department?.allowance === allowance?.value}
@@ -103,23 +121,21 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
 
           <div className="form-group">
             <label htmlFor="use_bank_holidays_inp" className="control-label">
-              <input className="" id="use_bank_holidays_inp" name="include_public_holidays" type="checkbox"
-              checked={department?.include_public_holidays}
-              />
-              Include public holidays
+              <input onChange={onChange} className="" id="use_bank_holidays_inp" name="include_public_holidays" type="checkbox"
+              defaultChecked={department?.include_public_holidays}
+              /> Include public holidays
             </label>
             <span className="help-block">
               Determine if employees from {department?.name} have
-              <Link to="/settings">bank holidays</Link> in addition to their allowance
+              <Link to="/settings"> bank holidays</Link> in addition to their allowance
             </span>
           </div>
 
           <div className="form-group">
             <label htmlFor="is_accrued_allowance_inp" className="control-label">
-              <input className="" id="is_accrued_allowance_inp" name="is_accrued_allowance" type="checkbox"
-              checked={department?.is_accrued_allowance}
-              />
-              Accrued allowance
+              <input onChange={onChange} className="" id="is_accrued_allowance_inp" name="is_accrued_allowance" type="checkbox"
+              defaultChecked={department?.is_accrued_allowance}
+              /> Accrued allowance
             </label>
             <span className="help-block">If enabled, holiday allowance starts to build up - or accrue - from the first day of employment. It accrues in proportion to the annual entitlement. E.g. an employee in the ninth month of employment would have built up 9/12ths (or three-quarters) of annual entitlement.</span>
           </div>
@@ -127,12 +143,27 @@ const General: FC<DptGeneralProps> = ({ department, users, allowanceOptions }) =
 
         <div className="row">
           <div className="col-md-12">
-            <button id="save_changes_btn" type="submit" className="btn btn-success pull-right single-click">Save changes to department</button>
-            <a className="btn btn-link pull-right" href="/settings/departments/">Cancel</a>
+            <ActionButton
+              nativeProps={{
+                type: 'button',
+                className: 'btn btn-success pull-right single-click',
+                onClick: saveDepartmentDetails,
+              }}
+              text="Save changes to department"
+              isLoading={isLoading}
+            />
+            <Link className="btn btn-link pull-right" to="/departments/">Cancel</Link>
           </div>
         </div>
 
-        </form>
+        </div>
+        <SupervisorsModal
+          users={users}
+          toggleModal={toggleModal}
+          addSupervisors={addSupervisors}
+          supervisorIds={department?.supervisors?.map((sup: any) => sup?.id?.toString())}
+          loading={isLoading}
+        />
     </div>
   );
 };

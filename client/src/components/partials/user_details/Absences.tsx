@@ -2,12 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Page from "../bits/Page";
 import UserRequestsGrouped from "../bits/UserRequestsGrouped";
+import ActionButton from "../button/ActionButton";
 import AllowanceBreakdown from "./AllowanceBreakdown";
 import BreadCrumb from "./BreadCrumb";
 import useUserAbsences from "./hooks/useUserAbsences";
 
 const Absences = () => {
-  const { res, isLoading, error } = useUserAbsences();
+  const {
+    res,
+    isLoading,
+    error,
+    updateFlash,
+    saveUserDetails,
+    savingAdjustments,
+    onChange,
+  } = useUserAbsences();
 
   return (
     <Page isLoading={isLoading} error={error}>
@@ -15,7 +24,6 @@ const Absences = () => {
         <div className="col-md-9">
           <form method="POST" action="/users/edit/{{employee.id}}/">
 
-          {/* {{> user_details/breadcrumb employee=employee }} */}
           <BreadCrumb employee={res?.employee} />
 
           <div className="form-group">
@@ -113,7 +121,7 @@ const Absences = () => {
             <label htmlFor="carried_over_allowance_inp" className="control-label">Allowance carried over from previous year</label>
             <div className="input-group col-md-4">
               <input className="form-control" readOnly id="carried_over_allowance_inp" type="number" step="0.5" name="carried_over_allowance"
-                value={res?.allowanceMeta?.carryOver || 0 } aria-describedby="carried_over_allowance_help"
+                defaultValue={res?.allowanceMeta?.carryOver || 0 } aria-describedby="carried_over_allowance_help"
               />
               <span className="input-group-addon">working days</span>
             </div>
@@ -126,7 +134,7 @@ const Absences = () => {
           <div className="form-group">
             <label htmlFor="adjustment_inp" className="control-label">Allowance adjustment in current year</label>
             <div className="input-group col-md-4">
-              <input className="form-control" id="adjustment_inp" type="number" step="0.5" name="adjustment" value={res?.employee_adjustment || 0 } aria-describedby="adjustment_help" />
+              <input onChange={onChange} className="form-control" id="adjustment_inp" type="number" step="0.5" name="adjustment" defaultValue={res?.employee_adjustment || 0 } aria-describedby="adjustment_help" />
               <span className="input-group-addon">working days</span>
             </div>
             <div id="adjustment_help" className="help-block">
@@ -138,14 +146,22 @@ const Absences = () => {
 
           <div className="form-group">
             <div className="col-md-12">
-              <button id="save_changes_btn" type="submit" className="btn btn-success pull-right single-click">Save changes</button>
+              <ActionButton
+                nativeProps={{
+                  type: 'button',
+                  className: 'btn btn-success pull-right single-click',
+                  onClick: saveUserDetails,
+                }}
+                text="Save changes"
+                isLoading={savingAdjustments}
+              />
             </div>
           </div>
           </form>
 
           <div className="main-row_header">&nbsp;</div>
 
-          <UserRequestsGrouped groups={res?.grouped_leaves} loggedUser={res?.loggedUser} metaData={res?.groupedLeavesMeta} />
+          <UserRequestsGrouped updateFlash={updateFlash} groups={res?.grouped_leaves} loggedUser={res?.loggedUser} metaData={res?.groupedLeavesMeta} />
 
         </div>
 

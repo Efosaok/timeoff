@@ -1,9 +1,14 @@
-import { toast } from "react-hot-toast";
+import { Toast, toast } from "react-hot-toast";
 import { useMutation, useQuery } from "react-query";
 import { useMatches, useNavigate, useParams } from "react-router-dom";
 import fetchInstance from "../../axios/fetchInstance";
-import useFlash from "../../hooks/useFlash";
+import useFlash, { UpdateFlashT } from "../../hooks/useFlash";
 import { scrollToTop } from "../../utils/helpers";
+
+export interface UserLayoutOutletContextProps {
+  res: any;
+  updateFlash: UpdateFlashT;
+}
 
 const useUserLayoutLoader = () => {
   const { id } = useParams();
@@ -37,6 +42,12 @@ const useUserLayoutLoader = () => {
   });
   const deleteUser = () => mutate();
 
+  const toastPromptMessage = `Do you really want to delete the user ${res?.employee?.name} ${res?.employee?.lastname}`;
+  const onConfirmToast = (t: Toast) => {
+    deleteUser();
+    toast.dismiss(t.id);
+  };
+
   return {
     res,
     isOnDetails,
@@ -50,6 +61,8 @@ const useUserLayoutLoader = () => {
     outletContext,
     deleteUser,
     deletingUser,
+    toastPromptMessage,
+    onConfirmToast,
   };
 };
 

@@ -6,7 +6,7 @@ import useFetchLeaveFormData from "../../../../hooks/useFetchLeaveFormData";
 import useInputs from "../../../../hooks/useInputs";
 
 const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) => void) => {
-  const { res, isLoading } = useFetchLeaveFormData();
+  const { res, isLoading, error } = useFetchLeaveFormData();
   const queryClient = useQueryClient();
 
   const { inputs, onChange, clearInputs, setInputs } = useInputs({});
@@ -25,7 +25,7 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
     },
     onError: () => {
       toast.error('An error occured');
-    }
+    },
   });
   const approveRequest = () => approveMutate();
 
@@ -63,6 +63,7 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
   return {
     res,
     isLoading,
+    error,
     onChange,
     approving,
     approveRequest,

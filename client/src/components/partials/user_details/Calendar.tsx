@@ -18,8 +18,8 @@ const Calendar = () => {
 
           <div className="row">
             <div className="col-xs-2">
-              <Link className="btn btn-default" to={`/user/${res?.employee?.id}/calendar/?year=${res?.previous_year}`}><span aria-hidden="true" className="fa fa-chevron-left"></span>
-              {res?.previous_year}
+              <Link className="btn btn-default" to={`/user/${res?.employee?.id}/calendar/?year=${res?.previous_year}`}>
+                <span aria-hidden="true" className="fa fa-chevron-left" /> {res?.previous_year}
               </Link>
             </div>
             <div className="col-xs-8 calendar-section-caption">
@@ -30,8 +30,7 @@ const Calendar = () => {
             <div className="col-xs-2">
               {res?.show_full_year ? (
                 <Link className="btn btn-default pull-right" to={`/user/${res?.employee?.id}/calendar/?year=${res?.next_year}&show_full_year=1`}>
-                {res?.next_year}
-                <span aria-hidden="true" className="fa fa-chevron-right"></span></Link>
+                {res?.next_year} <span aria-hidden="true" className="fa fa-chevron-right" /></Link>
               ) : null}
             </div>
           </div>

@@ -28,7 +28,6 @@ const General = () => {
     deletingLeaveType,
     messages,
     errors,
-    deleteMessages,
     selectedLeaveType,
     pageError,
   } = useGeneralSettings();
@@ -264,7 +263,6 @@ const General = () => {
               </div>
               <div className="panel-body">
                 <div className="row">
-                  <FlashMessages messages={deleteMessages} />
                   <div className="col-md-6">
                     <label className="control-label">Leave Type Name</label>
                     <p><em>Tick one to always be on top of the list</em></p>
@@ -286,7 +284,6 @@ const General = () => {
                   </div>
                 ): null}
 
-                {/* {{#each leave_types}} */}
                 {res?.leave_types?.map((type: any, i: number) => (
                   <>
                     <div className="row">

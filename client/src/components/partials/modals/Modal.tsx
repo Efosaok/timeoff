@@ -5,8 +5,9 @@ interface ModalWrapProps {
   children: React.ReactNode;
   title: string;
   name?: keyof ModalProps;
+  id?: string;
 }
-const Modal: React.FC<ModalWrapProps> = ({ children, title, name }) => {
+const Modal: React.FC<ModalWrapProps> = ({ children, title, name, id }) => {
   const { canShowModal, toggleShowModal } = useContext(ModalContext);
 
   const toggleModal = () => toggleShowModal(name)
@@ -17,7 +18,7 @@ const Modal: React.FC<ModalWrapProps> = ({ children, title, name }) => {
     <div className="modal-open">
       {showModal ? 
       (<>
-        <div className="modal fade in">
+        <div className="modal fade in" id={id}>
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">

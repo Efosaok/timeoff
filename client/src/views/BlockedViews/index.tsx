@@ -36,7 +36,8 @@ const BlockedViews = () => {
           <div className="blocked-views-list">
             <div className="row">
             <div className="col-md-4"><label className="control-label">Date</label></div>
-            <div className="col-md-6"><label className="control-label">Blocked View Name</label></div>
+            <div className="col-md-4"><label className="control-label">Name</label></div>
+            <div className="col-md-2"><label className="control-label">Department</label></div>
           </div>
           <div className="row">&nbsp;</div>
 

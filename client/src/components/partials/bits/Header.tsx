@@ -1,10 +1,16 @@
+import classNames from "classnames";
 import React from "react";
 import { Link } from "react-router-dom";
 import BookLeave from "../modals/BookLeave";
 import useLoginDetails from "./hooks/useLoginDetails";
 
 const Header = () => {
-  const { res, toggleModal, logout } = useLoginDetails();
+  const { res, toggleModal, logout, notifRes } = useLoginDetails();
+
+  const notificationBadgeClasses = classNames(
+    'label label-info notification-badge',
+    { hidden: !notifRes?.data?.length }
+  );
 
   return (
     <div className="header">
@@ -44,10 +50,18 @@ const Header = () => {
                     <li className="dropdown" id="header-notification-dropdown">
                       <Link to="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <span className="fa fa-bell-o"></span>
-                        <span className="label label-info notification-badge hidden"></span>
+                        <span className={notificationBadgeClasses}>{notifRes?.data?.length}</span>
                       </Link>
                       <ul className="dropdown-menu" role="menu">
-                        <li className="dropdown-header">No notifications</li>
+                        {notifRes?.data?.length ? (
+                          <>
+                            {notifRes?.data?.map((notif: any) => (
+                              <li>
+                                <Link to="/requests">{notif?.label}</Link>
+                              </li>
+                            ))}
+                          </>
+                        ): (<li className="dropdown-header">No notifications</li>)}
                       </ul>
                     </li>
                     {res?.loggedUser?.admin ? (

@@ -17,8 +17,14 @@ const useAddLeaveType = () => {
     );
   const addLeaveType = () => mutate();
 
+  const onSelectLeaveTypeColor = (color: string) => onChange(({
+    target: { name: 'color__new', type: 'text', value: color }
+  } as any))
+
   const messages = data?.data?.messages;
   const errors = error?.response?.data?.errors;
+
+  console.log(inputs, '>>>>>>>>>');
 
   return {
     onChange,
@@ -27,6 +33,7 @@ const useAddLeaveType = () => {
     messages,
     errors,
     inputs,
+    onSelectLeaveTypeColor,
   };
 };
 

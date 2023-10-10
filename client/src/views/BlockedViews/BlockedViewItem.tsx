@@ -7,8 +7,9 @@ interface BlockedViewItemProps {
   date: string;
   id: number;
   name: string;
+  department?: Record<string, any>
 }
-const BlockedViewItem: FC<BlockedViewItemProps> = ({ date, id, name }) => {
+const BlockedViewItem: FC<BlockedViewItemProps> = ({ date, id, name, department }) => {
   const { isLoading, deleteBlockedView } = useBlockedViewItem(id);
 
   return (
@@ -16,12 +17,15 @@ const BlockedViewItem: FC<BlockedViewItemProps> = ({ date, id, name }) => {
       <div className="row">
         <div className="col-md-4">
           <div className="input-append date">
-          <input disabled type="text" className="form-control" defaultValue={moment(date).format('MM/DD/YY')} name={`date__${id}`} data-date-autoclose="1" data-provide="datepicker" data-date-format="mm/dd/yy" data-date-week-start="1" />
-          <span className="add-on"><i className="icon-th"></i></span>
+            <input disabled type="text" className="form-control" defaultValue={moment(date).format('MM/DD/YY')} name={`date__${id}`} data-date-autoclose="1" data-provide="datepicker" data-date-format="mm/dd/yy" data-date-week-start="1" />
+            <span className="add-on"><i className="icon-th" /></span>
           </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-4">
           <input disabled type="text" className="form-control" defaultValue={name} name={`name__${id}`} />
+        </div>
+        <div className="col-md-2">
+          <input disabled type="text" className="form-control" defaultValue={department?.name} name={`name__${id}`} />
         </div>
         <div className="col-md-2">
           <ActionButton
@@ -32,7 +36,7 @@ const BlockedViewItem: FC<BlockedViewItemProps> = ({ date, id, name }) => {
             }}
             isLoading={isLoading}
           >
-            {!isLoading ? <><span className="fa fa-remove" />&nbsp; Delete</> : 'Delete'}
+            {!isLoading ? <><span className="fa fa-remove" />&nbsp;Delete</> : 'Delete'}
           </ActionButton>
         </div>
       </div>
