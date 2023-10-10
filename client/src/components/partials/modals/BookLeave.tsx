@@ -18,13 +18,14 @@ const BookLeave = () => {
     bookLeave,
     onChange,
     disableTimeField,
+    showFlash,
   } = useBookLeave();
 
   return (
     <Modal title="New absence">
       <Page isLoading={isLoading} error={error}>
         <div>
-          <FlashMessages messages={messages} errors={errors} />
+          <FlashMessages show={showFlash} messages={messages} errors={errors} />
           <div className="modal-body">
             {res?.users?.length > 1 ? (
               <div className="form-group">

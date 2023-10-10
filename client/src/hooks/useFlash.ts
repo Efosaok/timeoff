@@ -10,6 +10,7 @@ export type UpdateFlashT = (messages: string[], type?: keyof FlashProps) => void
 
 const useFlash = () => {
   const [flash, setFlash] = useState<FlashProps>(FLASH_DEFAULTS);
+  const [showFlash, setShowFlash] = useState(false);
 
   const updateFlash: UpdateFlashT = (messages, type = 'messages') => setFlash({ ...FLASH_DEFAULTS, [type]: messages });
   const { messages, errors } = flash;
@@ -18,6 +19,8 @@ const useFlash = () => {
     messages,
     errors,
     updateFlash,
+    showFlash,
+    setShowFlash,
   }
 };
 

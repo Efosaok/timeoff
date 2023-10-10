@@ -15,7 +15,7 @@ const useBookLeave = () => {
 
   const { toggleShowModal } = useContext(ModalContext);
 
-  const { messages, errors, updateFlash } = useFlash();
+  const { messages, errors, updateFlash, showFlash, setShowFlash } = useFlash();
   const { inputs, onChange } = useInputs(BOOK_LEAVE_DEFAULTS);
   const bookLeaveFn = () => {
     const inputsToSend = () => ({
@@ -35,9 +35,13 @@ const useBookLeave = () => {
       queryClient.invalidateQueries('/requests');
       queryClient.invalidateQueries('/calendar');
     },
-    onError: (err: any) => updateFlash(err?.response?.data?.errors, 'errors')
+    onError: (err: any) => updateFlash(err?.response?.data?.errors, 'errors'),
+    onSettled: () => setShowFlash(true),
   });
-  const bookLeave = () => mutate();
+  const bookLeave = () => {
+    setShowFlash(false)
+    mutate();
+  };
 
   const disableTimeField = inputs?.from_date !== inputs?.to_date;
 
@@ -51,7 +55,8 @@ const useBookLeave = () => {
     errors,
     onChange,
     disableTimeField,
-    error
+    error,
+    showFlash,
   }
 };
 
