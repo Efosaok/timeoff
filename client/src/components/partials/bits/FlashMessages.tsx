@@ -6,7 +6,7 @@ interface FlashMessagesProps {
   show?: boolean;
 };
 
-const FlashMessages: FC<FlashMessagesProps> = ({ errors, messages, show }) => (
+const FlashMessages: FC<FlashMessagesProps> = ({ errors, messages, show = true }) => (
     show ? (
       <div className="flash-messages">
       {errors?.map((error) => (
