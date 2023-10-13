@@ -1,9 +1,7 @@
 import { AxiosResponse } from "axios";
-import {  useContext } from "react";
 import { useMutation, useQuery } from "react-query";
 import fetchInstance from "../../../axios/fetchInstance";
 import useScheduleSelectors from "../../../components/partials/bits/hooks/useScheduleSelector";
-import ModalContext from "../../../contexts/ModalContext";
 import useFlash from "../../../hooks/useFlash";
 import useInputs from "../../../hooks/useInputs";
 import { formatUpdateSettingsInputPreflight, scrollToTop } from "../../../utils/helpers";
@@ -58,30 +56,6 @@ const useGeneralSettings = () => {
   });
   const updateSettings = () => updateSettingsMutate();
 
-  const { toggleShowModal } = useContext(ModalContext);
-
-  const toggleModal = () => toggleShowModal('addLeaveType');
-
-  const deleteLeaveTypeFn = (id: string) => fetchInstance.post(`/settings/leavetypes/delete/${id}`);
-  const {
-    mutate: deleteLeaveTypeMutate,
-    data: deletedLeaveType,
-    isLoading: deletingLeaveType,
-    variables: selectedLeaveType,
-  } = useMutation(deleteLeaveTypeFn, {
-    onSuccess: (data) => {
-      updateFlash(data?.data?.messages);
-      scrollToTop();
-    },
-    onError: (err: any) => {
-      updateFlash(err?.response?.data?.errors, 'errors');
-      scrollToTop();
-    }
-  });
-  const deleteLeaveType = (id: string) => deleteLeaveTypeMutate(id);
-
-  const deleteMessages = deletedLeaveType?.data?.messages;
-
   return {
     isLoading,
     countries,
@@ -96,14 +70,10 @@ const useGeneralSettings = () => {
     onChange,
     updateSettings,
     updatingSettings,
-    toggleModal,
-    deleteLeaveType,
-    deletingLeaveType,
-    deleteMessages,
-    selectedLeaveType,
     pageError,
     messages,
     errors,
+    updateFlash,
   }
 };
 

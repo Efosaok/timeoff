@@ -1,27 +1,24 @@
 import { toast } from "react-hot-toast";
-import { useMutation, useQueryClient } from "react-query";
+import { useMutation } from "react-query";
 import fetchInstance from "../../../axios/fetchInstance";
+import { removeItemFromList } from "../../../cache/updates";
 
 const useBlockedViewItem = (id: number) => {
   const url = `/settings/blocked-views/${id}`;
-  const queryClient = useQueryClient();
 
   const deleteBlockedViewFn = () => fetchInstance.delete(url);
   const { mutate, isLoading } = useMutation(deleteBlockedViewFn, {
-    onSuccess: (newData) => {
+    onSuccess: (data) => {
       toast.success('Blocked view deleted successfully');
-      queryClient.setQueryData('/settings/blocked-views', (cacheData: any) => {
-        const viewsList = cacheData?.data?.views?.filter((view: any) => view?.id !== Number(newData?.data?.viewToRemove?.id));
-        const newCacheData = {
-          ...cacheData,
-          data: {
-            ...cacheData?.data,
-            views: viewsList,
-          },
-        };
-
-        return newCacheData;
+      removeItemFromList({
+        itemsPath: 'views',
+        dataPath: 'viewToRemove',
+        queryKey: '/settings/blocked-views',
+        data,
       });
+    },
+    onError: () => {
+      toast.error('An error occured, please try again');
     },
   });
   const deleteBlockedView = () => mutate();

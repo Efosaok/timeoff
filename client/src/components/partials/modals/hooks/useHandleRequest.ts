@@ -2,6 +2,7 @@ import React from "react";
 import { toast } from "react-hot-toast";
 import { useMutation, useQueryClient } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
+import { removeItemFromList } from "../../../../cache/updates";
 import useFetchLeaveFormData from "../../../../hooks/useFetchLeaveFormData";
 import useInputs from "../../../../hooks/useInputs";
 
@@ -16,7 +17,13 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
     request: leave?.id,
   });
   const { mutate: approveMutate, isLoading: approving } = useMutation(approveRequestFn, {
-    onSuccess: () => {
+    onSuccess: (data) => {
+      removeItemFromList({
+        itemsPath: 'to_be_approved_leaves',
+        queryKey: '/requests',
+        data,
+        dataPath: 'leave',
+      });
       queryClient.invalidateQueries('/requests');
       queryClient.invalidateQueries('/calendar');
       toast.success('Leave approved successfully');
@@ -35,7 +42,13 @@ const useHandleRequest = (leave: any, toggleModal: (leave: Record<string, any>) 
     request: leave?.id,
   });
   const { mutate: rejectMutate, isLoading: rejecting } = useMutation(rejectRequestFn, {
-    onSuccess: () => {
+    onSuccess: (data) => {
+      removeItemFromList({
+        itemsPath: 'to_be_approved_leaves',
+        queryKey: '/requests',
+        data,
+        dataPath: 'leave',
+      });
       queryClient.invalidateQueries('/requests');
       queryClient.invalidateQueries('/calendar');
       toast.success('Leave rejected successfully');

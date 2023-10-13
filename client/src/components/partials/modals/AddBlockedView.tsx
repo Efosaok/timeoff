@@ -19,13 +19,14 @@ const AddBlockedView: FC<AddBlockedViewProps> = ({ toggleModal }) => {
     fetchingDpts,
     fetchingDptsErr,
     departments,
+    showFlash,
   } = useAddBlockedView();
 
   return (
     <Modal title="Add blocked view" name="addBlockedView">
       <Page isLoading={fetchingDpts} error={fetchingDptsErr}>
         <div className="add-blocked-view">
-          <FlashMessages messages={messages} errors={errors} />
+          <FlashMessages show={showFlash} messages={messages} errors={errors} />
           <div className="modal-body">
             <div className="form-group">
               <label htmlFor="blocked_view_name_new" className="control-label">Name:</label>

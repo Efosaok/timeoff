@@ -1,12 +1,15 @@
 import { AxiosResponse } from "axios";
-import { useMutation, useQuery, useQueryClient } from "react-query";
+import { useMutation, useQuery } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
+import { addItemToList } from "../../../../cache/updates";
+import useFlash from "../../../../hooks/useFlash";
 import useInputs from "../../../../hooks/useInputs";
 import { ADD_BLOCKED_VIEW_DEFAULTS } from "../../../../utils/constants";
 
 const useAddBlockedView = () => {
   const url = '/settings/blocked-views';
-  const queryClient = useQueryClient();
+
+  const { messages, errors, updateFlash, showFlash, setShowFlash } = useFlash();
 
   const { data: dptData, isLoading: fetchingDpts, error: fetchingDptsErr } = useQuery('/settings/departments-list', () => fetchInstance.get('/settings/departments-list'));
   const departments = dptData?.data?.departments;
@@ -14,27 +17,27 @@ const useAddBlockedView = () => {
   
   const { inputs, onChange, clearInputs } = useInputs(ADD_BLOCKED_VIEW_DEFAULTS, true);
   const addBlockedViewFn = () => fetchInstance.post(url, inputs);
-  const { mutate, isLoading, data, error } = useMutation<AxiosResponse<any, any>, any>(addBlockedViewFn,{
-    onSuccess: (newData) => {
+  const { mutate, isLoading, } = useMutation<AxiosResponse<any, any>, any>(addBlockedViewFn,{
+    onSuccess: (data) => {
+      setShowFlash(true);
       clearInputs();
-      queryClient.setQueryData('/settings/blocked-views', (cacheData: any) => {
-        const viewsList = cacheData?.data?.views?.concat(newData?.data?.newBlockedView);
-        const newCacheData = {
-          ...cacheData,
-          data: {
-            ...cacheData?.data,
-            views: viewsList,
-          },
-        };
-
-        return newCacheData;
+      addItemToList({
+        itemsPath: 'views',
+        dataPath: 'newBlockedView',
+        queryKey: '/settings/blocked-views',
+        data,
       });
-    }
+      updateFlash(data.data.messages);
+    },
+    onError: (err) => {
+      updateFlash(err.response.data.errors, 'errors')
+    },
   });
-  const addBlockedView = () => mutate();
 
-  const messages = data?.data?.messages;
-  const errors = error?.response?.data?.errors as any;
+  const addBlockedView = () => {
+    setShowFlash(false);
+    mutate();
+  }
 
   return {
     inputs,
@@ -47,6 +50,7 @@ const useAddBlockedView = () => {
     fetchingDpts,
     fetchingDptsErr,
     userDepartmentId,
+    showFlash,
   }
 };
 

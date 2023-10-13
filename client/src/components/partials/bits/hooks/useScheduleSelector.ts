@@ -23,8 +23,6 @@ const useScheduleSelectors = (schedule: any, updateFlash: UpdateFlashT) => {
     setScheduleDays(newSchedule);
   }
 
-  console.log(scheduleDays);
-
   const updateScheduleFn = (opts: any) => fetchInstance
     .post(
       '/settings/schedule',

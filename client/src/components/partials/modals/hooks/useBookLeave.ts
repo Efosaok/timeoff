@@ -2,6 +2,7 @@ import moment from "moment";
 import { useContext } from "react";
 import { useMutation, useQueryClient } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
+import { addItemToList } from "../../../../cache/updates";
 import ModalContext from "../../../../contexts/ModalContext";
 import useFetchLeaveFormData from "../../../../hooks/useFetchLeaveFormData";
 import useFlash from "../../../../hooks/useFlash";
@@ -32,6 +33,12 @@ const useBookLeave = () => {
     onSuccess: (data) => {
       updateFlash(data?.data?.messages);
       scrollToTop();
+      addItemToList({
+        data,
+        dataPath: 'leave',
+        itemsPath: 'to_be_approved_leaves',
+        queryKey: '/requests',
+      });
       queryClient.invalidateQueries('/requests');
       queryClient.invalidateQueries('/calendar');
     },

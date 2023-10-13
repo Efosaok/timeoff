@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export const isPendedRevokeLeave = (status: number) => status === 4;
 export const isNew = (status: number) => status === 1;
 export const isRejected = (status: number) => status === 3;
@@ -30,3 +32,7 @@ export const formatUpdateSettingsInputPreflight = (res: Record<any, any>, inputs
   is_team_view_hidden: (!inputs?.is_team_view_hidden && !res?.isTeamViewHidden) ? undefined : 'on',
   ...inputs,
 });
+
+export const pickColor = (color: string, onChange: (event: ChangeEvent<HTMLInputElement>) => void, name = 'color__new') => onChange(({
+  target: { name, type: 'text', value: color }
+} as any));
