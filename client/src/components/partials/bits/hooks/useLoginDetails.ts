@@ -32,11 +32,14 @@ const useLoginDetails = () => {
 
   const notifRes = notifData?.data;
 
+  const numberofNotifications = notifRes?.data?.reduce((acc: any, cur: any) => acc + cur?.numberOfRequests, 0)
+
   return {
     res,
     toggleModal,
     logout,
     notifRes,
+    numberofNotifications,
   }
 }
 

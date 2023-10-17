@@ -2,7 +2,9 @@ PTO request decision is made
 =====
 <p>Hello <strong>{{#with approver }}{{this.full_name}}{{/with}}</strong>,<p>
 
-{{> email/leave_comments comments=comments }}
+{{#if comment}}
+<p><strong>Supervisor comments:</strong> {{comment}} </p>
+{{/if}}
 
 <p>You just processed {{#if was_pended_revoke}}cancellation of {{/if}}PTO request {{>leave_request_detail leave=leave }} for {{#with requester}}{{this.full_name}}{{/with}}: to {{action}}.</p>
 

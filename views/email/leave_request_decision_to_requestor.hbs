@@ -2,7 +2,9 @@ PTO request was {{#if_equal action 'approve'}}accepted{{else}}denied{{/if_equal}
 =====
 <p>Hello <strong>{{#with requester}}{{this.full_name}}{{/with}}</strong>,</p>
 
-{{> email/leave_comments comments=comments }}
+{{#if comment}}
+<p><strong>Supervisor comments:</strong> {{comment}} </p>
+{{/if}}
 
 <p>{{#with approver }}{{this.full_name}}{{/with}} decided to <strong>{{action}}</strong> your {{#if was_pended_revoke}}cancellation of {{/if}}PTO request <strong>{{>leave_request_detail leave=leave }}</strong>.</p>
 

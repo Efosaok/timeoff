@@ -5,7 +5,13 @@ import BookLeave from "../modals/BookLeave";
 import useLoginDetails from "./hooks/useLoginDetails";
 
 const Header = () => {
-  const { res, toggleModal, logout, notifRes } = useLoginDetails();
+  const {
+    res,
+    toggleModal,
+    logout,
+    notifRes,
+    numberofNotifications,
+  } = useLoginDetails();
 
   const notificationBadgeClasses = classNames(
     'label label-info notification-badge',
@@ -50,7 +56,7 @@ const Header = () => {
                     <li className="dropdown" id="header-notification-dropdown">
                       <Link to="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                         <span className="fa fa-bell-o"></span>
-                        <span className={notificationBadgeClasses}>{notifRes?.data?.length}</span>
+                        <span className={notificationBadgeClasses}>{numberofNotifications}</span>
                       </Link>
                       <ul className="dropdown-menu" role="menu">
                         {notifRes?.data?.length ? (
