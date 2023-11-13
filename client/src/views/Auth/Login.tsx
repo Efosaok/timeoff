@@ -13,7 +13,7 @@ const Login = () => {
 
       <FlashMessages errors={errors} />
 
-      <div className="form-horizontal">
+      <form onSubmit={login} className="form-horizontal">
 
         <div className="row">&nbsp;</div>
 
@@ -36,7 +36,7 @@ const Login = () => {
             <ActionButton
               nativeProps={{
                 className: 'btn btn-success single-click',
-                type: 'button',
+                type: 'submit',
                 onClick: login,
               }}
               isLoading={isLoading}
@@ -50,7 +50,7 @@ const Login = () => {
           </div>
         </div>
 
-      </div>
+      </form>
 
       <div className="row">&nbsp;</div>
 
