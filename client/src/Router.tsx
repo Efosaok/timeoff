@@ -26,6 +26,9 @@ import ForgotPassword from "./views/Auth/ForgotPassword";
 import BlockedViews from "./views/BlockedViews";
 import ResetPassword from "./views/Auth/ResetPassword";
 import NotFound from "./components/NotFound";
+import Report from "./components/Report";
+import AllowanceByTime from "./components/Report/AllowanceByTime";
+import Leaves from "./components/Report/Leaves";
 
 const routes = createBrowserRouter([
   {
@@ -133,6 +136,18 @@ const routes = createBrowserRouter([
       {
         path: '/audit/email',
         element: <Emails />,
+      },
+      {
+        path: '/reports',
+        element: <Report />,
+      },
+      {
+        path: '/reports/allowancebytime',
+        element: <AllowanceByTime />,
+      },
+      {
+        path: '/reports/leaves',
+        element: <Leaves />
       },
       {
         path: '*',

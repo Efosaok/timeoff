@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.2.7",
     "axios": "^1.5.0",
     "classnames": "^2.3.2",
+    "dot-object": "^2.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
@@ -44,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/dot-object": "^2.1.6"
   }
 }

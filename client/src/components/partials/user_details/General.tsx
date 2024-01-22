@@ -35,7 +35,7 @@ const General = () => {
             <label htmlFor="select_inp" className="control-label">Department</label>
             <select onChange={onChange} className="form-control" id="select_inp" name="department" aria-describedby="department_help">
               {res?.departments?.map((dpt: any) => (
-                <option defaultValue={dpt?.id}
+                <option value={dpt?.id}
                   selected={res?.employee?.DepartmentId === dpt?.id}
                 >
                   {dpt?.name} (approver {dpt?.boss?.name} {dpt?.boss?.lastname})

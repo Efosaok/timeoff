@@ -1,3 +1,4 @@
+import moment from "moment";
 import React, { FC } from "react";
 import FlashMessages from "../bits/FlashMessages";
 import ActionButton from "../button/ActionButton";
@@ -31,23 +32,12 @@ const AddBankHoliday: FC<AddBankHolidayProps> = ({ yearCurrent, bankHolidays, to
 
         <div className="form-group">
           <label htmlFor="bank_holiday_date_new" className="control-label">Date:</label>
-          {/* <input
-            type="text"
-            className="form-control"
-            id="bank_holiday_date_new"
-            name="date__new"
-            required
-            data-provide="datepicker"
-            data-date-autoclose="1"
-            data-date-week-start="1"
-          /> */}
           <input
             type="date"
             className="form-control"
             id="bank_holiday_date_new"
             name="date__new"
             onChange={onChange}
-            value={inputs?.date__new}
             required
           />
         </div>

@@ -2,6 +2,7 @@ import { AxiosResponse } from "axios";
 import moment from "moment";
 import { useMutation } from "react-query";
 import fetchInstance from "../../../../axios/fetchInstance";
+import { addItemToList } from "../../../../cache/updates";
 import useInputs from "../../../../hooks/useInputs";
 import { ADD_BANK_HOLIDAY } from "../../../../utils/constants";
 
@@ -18,8 +19,14 @@ const useAddBankHoliday = () => {
   }
 
   const { mutate, data, error, isLoading } = useMutation<AxiosResponse<any, any>, any>(addBankHolidayFn, {
-    onSuccess: () => {
-      clearInputs();
+    onSuccess: (data) => {
+      clearInputs({}, ['#bank_holiday_date_new']);
+      addItemToList({
+        data,
+        dataPath: 'bankHolidays',
+        itemsPath: 'bankHolidays',
+        queryKey: '/settings/bankholidays',
+      });
     },
   });
   const addBankHoliday = () => mutate();

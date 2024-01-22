@@ -30,7 +30,7 @@ const Header = () => {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link className="navbar-brand" to="/">Rocco's Collision PTO</Link>
+            <Link className="navbar-brand" to={res?.loggedUser ? '/calendar/' : '/'}>Rocco's Collision PTO</Link>
           </div>
 
           {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
@@ -84,7 +84,7 @@ const Header = () => {
                           <li><Link to="/users/import/">Import employees</Link></li>
                           <li role="separator" className="divider"></li>
                           <li><Link to="/audit/email/">Emails audit</Link></li>
-                          {/* <li><Link to="/reports/">Reports</Link></li> */}
+                          <li><Link to="/reports/">Reports</Link></li>
                         </ul>
                       </li>
                     ) : null}

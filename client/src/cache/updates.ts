@@ -1,10 +1,13 @@
 import { queryClient } from "../App";
+import dot from 'dot-object';
 
 interface CacheUpdateParamsI {
   itemsPath: string;
   dataPath: string;
   queryKey: string;
-  data: Record<string, any>,
+  data?: Record<string, any>,
+  queryId?: number | string,
+  replace?: boolean;
 }
 
 export const addItemToList = ({
@@ -12,12 +15,13 @@ export const addItemToList = ({
   dataPath,
   queryKey,
   data,
+  replace,
 }: CacheUpdateParamsI) => queryClient.setQueryData(
   queryKey,
   (cacheData: any) => {
     if (!cacheData) return null;
 
-    const newList = cacheData?.data?.[itemsPath]?.concat(data?.data?.[dataPath]);
+    const newList = replace ? data?.data?.[dataPath] : dot.pick(itemsPath, cacheData?.data)?.concat(data?.data?.[dataPath]);
 
     const newCacheData = {
       ...cacheData,
@@ -36,13 +40,14 @@ export const removeItemFromList = ({
   dataPath,
   queryKey,
   data,
+  queryId,
 }: CacheUpdateParamsI) => queryClient.setQueryData(
   queryKey,
   (cacheData: any) => {
     if (!cacheData) return null;
 
-    const id = data?.data?.[dataPath]?.id;
-    const newList = cacheData?.data?.[itemsPath]?.filter((item: Record<string, any>) => item?.id !== Number(id));
+    const id = queryId || data?.data?.[dataPath]?.id;
+    const newList = dot.pick(itemsPath, cacheData?.data)?.filter((item: Record<string, any>) => item?.id !== Number(id));
 
     const newCacheData = {
       ...cacheData,

@@ -26,9 +26,9 @@ const TeamView = () => {
             {teamViewData?.data?.loggedUser?.name} {teamViewData?.data?.loggedUser?.lastname}
             's team
             {' '}
-            <a href="/calendar/feeds/" data-toggle="tooltip" data-placement="right" title="Export Team View to external calendars">
+            <Link to="/feeds/" data-toggle="tooltip" data-placement="right" title="Export Team View to external calendars">
               <span className="fa fa-rss" />
-            </a>
+            </Link>
           </div>
           <div className="col-md-3 col-md-offset-3">
             <div className="btn-group btn-group-sm pull-right" role="group">

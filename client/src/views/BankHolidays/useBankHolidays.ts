@@ -2,6 +2,7 @@ import moment from "moment";
 import { useContext } from "react";
 import { useMutation, useQuery } from "react-query";
 import fetchInstance from "../../axios/fetchInstance";
+import { removeItemFromList } from "../../cache/updates";
 import ModalContext from "../../contexts/ModalContext";
 import useFlash from "../../hooks/useFlash";
 import useInputs from "../../hooks/useInputs";
@@ -22,9 +23,15 @@ const useBankHolidays = () => {
 
   const deleteBankHolidayFn = (id: string) => fetchInstance.post(`/settings/bankholidays/delete/${id}`);
   const { mutate: deleteBankHolidayMutate, isLoading: deletingHoliday, variables: selectedId } = useMutation(deleteBankHolidayFn, {
-    onSuccess: (data) => {
+    onSuccess: (data, id) => {
       updateFlash(data?.data?.messages);
       scrollToTop();
+      removeItemFromList({
+        queryId: id,
+        dataPath: '',
+        itemsPath: 'bankHolidays',
+        queryKey: '/settings/bankholidays',
+      });
     },
     onError: (err: any) => {
       updateFlash(err.response?.data?.errors);

@@ -1,5 +1,5 @@
 import moment from "moment";
-import React, { useState } from "react"
+import React, { ReactHTML, useState } from "react"
 
 const useInputs = (defaults: Record<string, any>, ignoreFormat?: boolean) => {
   const [inputs, setInputs] = useState(defaults);
@@ -17,7 +17,16 @@ const useInputs = (defaults: Record<string, any>, ignoreFormat?: boolean) => {
     setInputs(newInputs);
   }
 
-  const clearInputs = () => setInputs(defaults);
+  const clearInputs = (
+    e?: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | any> | Record<string, any>,
+    dateFieldIds?: string[]
+  ) => {
+    setInputs(defaults);
+    dateFieldIds?.forEach((id) => {
+      const dateInputField = document.querySelector(id) as HTMLInputElement;
+      dateInputField.value = '';
+    });
+  };
 
   return {
     inputs,
