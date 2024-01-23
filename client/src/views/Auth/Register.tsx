@@ -62,7 +62,7 @@ const Register = () => {
             <div className="form-group">
               <label htmlFor="country_inp" className="col-md-2 control-label">Country</label>
               <div className="col-md-6">
-                <select className="form-control" id="country_inp" placeholder="Country name" name="country">
+                <select className="form-control" id="country_inp" name="country">
                   {/* {{#each countries}}
                   <option value="{{@key}}" {{#if this.default }} selected="selected" {{/if}}>{{@key}}: {{this.name}}</option>
                   {{/each}} */}
@@ -73,7 +73,7 @@ const Register = () => {
             <div className="form-group">
               <label htmlFor="timezone_inp" className="col-md-2 control-label">Time zone</label>
               <div className="col-md-6">
-                <select className="form-control" id="timezone_inp" placeholder="Time zone" name="timezone">
+                <select className="form-control" id="timezone_inp" name="timezone">
                   {/* {{#each timezones_available}}
                   <option value="{{this}}" {{#if_equal this 'Europe/London' }} selected="selected" {{/if_equal}}>{{this}}</option>
                   {{/each}} */}
