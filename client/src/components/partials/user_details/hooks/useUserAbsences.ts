@@ -6,7 +6,7 @@ import useUserGeneralDetails from "./useUserGeneralDetails";
 
 const useUserAbsences = () => {
   const { id } = useParams();
-  const url = `users/edit/${id}/absences`;
+  const url = `/users/edit/${id}/absences`;
   const { updateFlash } = useOutletContext() as UserLayoutOutletContextProps;
 
   const { data, isLoading, error } = useQuery(url, () => fetchInstance(url));

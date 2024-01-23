@@ -23,7 +23,7 @@ const useEmployeeList = () => {
   );
 
   const downloadAsCSVURL = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '';
-  const csvpath = `${downloadAsCSVURL}/users/`;
+  const csvpath = `/${downloadAsCSVURL}/users/`;
 
   return {
     employeeList,

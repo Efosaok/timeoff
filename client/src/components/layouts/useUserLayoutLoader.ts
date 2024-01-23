@@ -13,7 +13,7 @@ export interface UserLayoutOutletContextProps {
 const useUserLayoutLoader = () => {
   const { id } = useParams();
   const matches = useMatches();
-  const url = `users/edit/${id}`;
+  const url = `/users/edit/${id}`;
 
   const { messages, errors, updateFlash } = useFlash();
   const { data, isLoading, error } = useQuery(url, () => fetchInstance.get(url));

@@ -7,7 +7,7 @@ import useScheduleSelectors from "../../bits/hooks/useScheduleSelector";
 const useUserSchedule = () => {
   const { updateFlash } = useOutletContext() as UserLayoutOutletContextProps;
   const { id } = useParams();
-  const url = `users/edit/${id}/schedule`;
+  const url = `/users/edit/${id}/schedule`;
 
   const { data, isLoading, error } = useQuery(url, () => fetchInstance.get(url));
   const res = data?.data;
