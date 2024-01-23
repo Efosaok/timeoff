@@ -21,7 +21,7 @@
   },
   "ga_analytics_on": false,
   "crypto_secret": "!2~`HswpPPLa22+=±§sdq qwe,appp qwwokDF_",
-  "application_domain": "http://localhost:3001",
+  "application_domain": "http://45.33.81.246:3000",
   "promotion_website_domain": "https://pto.roccosnetwork.com",
   "locale_code_for_sorting": "en"
 }
