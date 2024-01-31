@@ -10,19 +10,19 @@ const useUserSummary = (userId: number) => {
   const url = `/users/summary/${userId}`;
   const { data: summaryData, isLoading } = useQuery(url, () => fetchInstance.get(url));
 
-  const accruedDays = summaryData?.data?.allowanceMeta?.accruedDays;
+  const totalAllowance = summaryData?.data?.allowanceMeta?.accruedDays;
 
-  const totalAllowance = summaryData?.data?.allowanceMeta?.totalNumberOfDaysInAllowance;
+  const numberOfDaysAvailableInAllowance = summaryData?.data?.allowanceMeta?.numberOfDaysAvailableInAllowance;
 
   return {
     isLoading,
-    accruedDays,
     totalAllowance,
+    numberOfDaysAvailableInAllowance,
   }
 };
 
 const UserLeaveSummary: FC<UserLeaveSummaryProps> = ({ userId }) => {
-  const { isLoading, accruedDays, totalAllowance } = useUserSummary(userId);
+  const { isLoading, numberOfDaysAvailableInAllowance, totalAllowance } = useUserSummary(userId);
 
   return (
     <div className="leave-summary">
@@ -30,7 +30,7 @@ const UserLeaveSummary: FC<UserLeaveSummaryProps> = ({ userId }) => {
       <div>
         <strong>Available:</strong>
         {' '}
-        {accruedDays} ({accruedDays} accrued)
+        {numberOfDaysAvailableInAllowance}(accrued)
         {' '}
         days out of {totalAllowance}.
       </div>

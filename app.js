@@ -37,7 +37,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/client/build')));
 
-const origin = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3001'
+const isProduction = process.env.NODE_ENV === 'production';
+const origin = isProduction ? '' : 'http://localhost:3001'
 
 app.use(cors({ credentials: true, origin }));
 
@@ -68,6 +69,7 @@ app.use(function (req, res, next) {
   res.locals.logged_user = req.user;
   res.locals.url_to_the_site_root = '/';
   res.locals.requested_path = req.originalUrl;
+  res.locals.isProduction = isProduction;
   // For book leave request modal
   res.locals.booking_start = today,
     res.locals.booking_end = today,
@@ -141,13 +143,10 @@ app.use(
   require('./lib/route/reports')
 );
 
-
-app.use(async (req, res, next) => {
-  if (!req.headers.react_app) {
+app.use((req, res) => {
+  if (!req.headers.react_app && isProduction) {
     return res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
   }
-
-  next();
 });
 
 // production error handler
