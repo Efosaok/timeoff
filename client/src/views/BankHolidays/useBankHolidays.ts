@@ -7,7 +7,7 @@ import ModalContext from "../../contexts/ModalContext";
 import useFlash from "../../hooks/useFlash";
 import useInputs from "../../hooks/useInputs";
 import useSearchParamsInQuery from "../../hooks/useSearchParamsInQuery";
-import { scrollToTop } from "../../utils/helpers";
+import { getInputDates, scrollToTop } from "../../utils/helpers";
 
 const useBankHolidays = () => {
   const url = '/settings/bankholidays';
@@ -49,9 +49,13 @@ const useBankHolidays = () => {
       previousData[`name__${holiday?.id}`] = holiday?.name;
       previousData[`date__${holiday?.id}`] = moment(holiday?.date).format('MM/DD/YY');
     });
+
+    const dateInputs = getInputDates();
+
     const inputsToSend = {
       ...previousData,
       ...inputs,
+      ...dateInputs,
     };
 
     return fetchInstance.post('/settings/bankholidays', inputsToSend);

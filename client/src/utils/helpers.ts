@@ -33,6 +33,15 @@ export const formatUpdateSettingsInputPreflight = (res: Record<any, any>, inputs
   ...inputs,
 });
 
+export const getInputDates = () => {
+  const dateInputs: Record<any, any> = {};
+  document.querySelectorAll<HTMLInputElement>('.input-append input').forEach((el) => {
+    dateInputs[el.name] = el?.value;
+  })
+
+  return dateInputs;
+}
+
 export const pickColor = (color: string, onChange: (event: ChangeEvent<HTMLInputElement>) => void, name = 'color__new') => onChange(({
   target: { name, type: 'text', value: color }
 } as any));
