@@ -1,6 +1,7 @@
 import moment from "moment";
 import { useContext } from "react";
 import { useMutation, useQuery } from "react-query";
+import { queryClient } from "../../App";
 import fetchInstance from "../../axios/fetchInstance";
 import { removeItemFromList } from "../../cache/updates";
 import ModalContext from "../../contexts/ModalContext";
@@ -64,6 +65,7 @@ const useBankHolidays = () => {
     onSuccess: (data) => {
       updateFlash(data?.data?.messages);
       scrollToTop();
+      queryClient.invalidateQueries(url);
     },
     onError: (err: any) => {
       updateFlash(err.response?.data?.errors);
